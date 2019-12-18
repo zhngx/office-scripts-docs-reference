@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShowAsRule:interface'
+    name: ExcelScript.ShowAsRule
+    fullName: ExcelScript.ShowAsRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShowAsRule#baseField:member'
+      - 'excel!ExcelScript.ShowAsRule#baseItem:member'
+      - 'excel!ExcelScript.ShowAsRule#calculation:member'
+  - uid: 'excel!ExcelScript.ShowAsRule#baseField:member'
+    name: baseField
+    fullName: baseField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseField?: PivotField;'
+      return:
+        type:
+          - 'excel!ExcelScript.PivotField:interface'
+  - uid: 'excel!ExcelScript.ShowAsRule#baseItem:member'
+    name: baseItem
+    fullName: baseItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseItem?: PivotItem;'
+      return:
+        type:
+          - 'excel!ExcelScript.PivotItem:interface'
+  - uid: 'excel!ExcelScript.ShowAsRule#calculation:member'
+    name: calculation
+    fullName: calculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculation: ShowAsCalculation;'
+      return:
+        type:
+          - 'excel!ExcelScript.ShowAsCalculation:enum'
+references:
+  - uid: 'excel!ExcelScript.PivotField:interface'
+    name: PivotField
+  - uid: 'excel!ExcelScript.PivotItem:interface'
+    name: PivotItem
+  - uid: 'excel!ExcelScript.ShowAsCalculation:enum'
+    name: ShowAsCalculation

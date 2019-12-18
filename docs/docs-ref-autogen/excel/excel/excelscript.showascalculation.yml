@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShowAsCalculation:enum'
+    name: ExcelScript.ShowAsCalculation
+    fullName: ExcelScript.ShowAsCalculation
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShowAsCalculation.differenceFrom:member'
+      - 'excel!ExcelScript.ShowAsCalculation.index:member'
+      - 'excel!ExcelScript.ShowAsCalculation.none:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOf:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.rankAscending:member'
+      - 'excel!ExcelScript.ShowAsCalculation.rankDecending:member'
+      - 'excel!ExcelScript.ShowAsCalculation.runningTotal:member'
+      - 'excel!ExcelScript.ShowAsCalculation.unknown:member'
+  - uid: 'excel!ExcelScript.ShowAsCalculation.differenceFrom:member'
+    name: differenceFrom
+    fullName: differenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.index:member'
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+    name: percentDifferenceFrom
+    fullName: percentDifferenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOf:member'
+    name: percentOf
+    fullName: percentOf
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+    name: percentOfColumnTotal
+    fullName: percentOfColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+    name: percentOfGrandTotal
+    fullName: percentOfGrandTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+    name: percentOfParentColumnTotal
+    fullName: percentOfParentColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+    name: percentOfParentRowTotal
+    fullName: percentOfParentRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+    name: percentOfParentTotal
+    fullName: percentOfParentTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+    name: percentOfRowTotal
+    fullName: percentOfRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+    name: percentRunningTotal
+    fullName: percentRunningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.rankAscending:member'
+    name: rankAscending
+    fullName: rankAscending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.rankDecending:member'
+    name: rankDecending
+    fullName: rankDecending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.runningTotal:member'
+    name: runningTotal
+    fullName: runningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShowAsCalculation.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

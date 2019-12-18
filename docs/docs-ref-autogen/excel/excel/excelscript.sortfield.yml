@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SortField:interface'
+    name: ExcelScript.SortField
+    fullName: ExcelScript.SortField
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SortField#ascending:member'
+      - 'excel!ExcelScript.SortField#color:member'
+      - 'excel!ExcelScript.SortField#dataOption:member'
+      - 'excel!ExcelScript.SortField#icon:member'
+      - 'excel!ExcelScript.SortField#key:member'
+      - 'excel!ExcelScript.SortField#sortOn:member'
+      - 'excel!ExcelScript.SortField#subField:member'
+  - uid: 'excel!ExcelScript.SortField#ascending:member'
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ascending?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.SortField#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.SortField#dataOption:member'
+    name: dataOption
+    fullName: dataOption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataOption?: SortDataOption;'
+      return:
+        type:
+          - 'excel!ExcelScript.SortDataOption:enum'
+  - uid: 'excel!ExcelScript.SortField#icon:member'
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type:
+          - 'excel!ExcelScript.Icon:interface'
+  - uid: 'excel!ExcelScript.SortField#key:member'
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!ExcelScript.SortField#sortOn:member'
+    name: sortOn
+    fullName: sortOn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortOn?: SortOn;'
+      return:
+        type:
+          - 'excel!ExcelScript.SortOn:enum'
+  - uid: 'excel!ExcelScript.SortField#subField:member'
+    name: subField
+    fullName: subField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!ExcelScript.SortDataOption:enum'
+    name: SortDataOption
+  - uid: 'excel!ExcelScript.Icon:interface'
+    name: Icon
+  - uid: 'excel!ExcelScript.SortOn:enum'
+    name: SortOn

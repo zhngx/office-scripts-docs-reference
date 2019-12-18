@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SearchDirection:enum'
+    name: ExcelScript.SearchDirection
+    fullName: ExcelScript.SearchDirection
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SearchDirection.backwards:member'
+      - 'excel!ExcelScript.SearchDirection.forward:member'
+  - uid: 'excel!ExcelScript.SearchDirection.backwards:member'
+    name: backwards
+    fullName: backwards
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SearchDirection.forward:member'
+    name: forward
+    fullName: forward
+    langs:
+      - typeScript
+    type: field

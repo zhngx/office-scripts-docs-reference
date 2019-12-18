@@ -1,0 +1,103 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.DataValidationRule:interface'
+    name: ExcelScript.DataValidationRule
+    fullName: ExcelScript.DataValidationRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.DataValidationRule#custom:member'
+      - 'excel!ExcelScript.DataValidationRule#date:member'
+      - 'excel!ExcelScript.DataValidationRule#decimal:member'
+      - 'excel!ExcelScript.DataValidationRule#list:member'
+      - 'excel!ExcelScript.DataValidationRule#textLength:member'
+      - 'excel!ExcelScript.DataValidationRule#time:member'
+      - 'excel!ExcelScript.DataValidationRule#wholeNumber:member'
+  - uid: 'excel!ExcelScript.DataValidationRule#custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: CustomDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.CustomDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#date:member'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: DateTimeDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.DateTimeDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#decimal:member'
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimal?: BasicDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.BasicDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#list:member'
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'list?: ListDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.ListDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#textLength:member'
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textLength?: BasicDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.BasicDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#time:member'
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'time?: DateTimeDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.DateTimeDataValidation:interface'
+  - uid: 'excel!ExcelScript.DataValidationRule#wholeNumber:member'
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wholeNumber?: BasicDataValidation;'
+      return:
+        type:
+          - 'excel!ExcelScript.BasicDataValidation:interface'
+references:
+  - uid: 'excel!ExcelScript.CustomDataValidation:interface'
+    name: CustomDataValidation
+  - uid: 'excel!ExcelScript.DateTimeDataValidation:interface'
+    name: DateTimeDataValidation
+  - uid: 'excel!ExcelScript.BasicDataValidation:interface'
+    name: BasicDataValidation
+  - uid: 'excel!ExcelScript.ListDataValidation:interface'
+    name: ListDataValidation

@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellPropertiesProtection:interface'
+    name: ExcelScript.CellPropertiesProtection
+    fullName: ExcelScript.CellPropertiesProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+      - 'excel!ExcelScript.CellPropertiesProtection#locked:member'
+  - uid: 'excel!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesProtection#locked:member'
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

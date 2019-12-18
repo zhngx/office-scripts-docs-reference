@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.WorksheetSearchCriteria:interface'
+    name: ExcelScript.WorksheetSearchCriteria
+    fullName: ExcelScript.WorksheetSearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+      - 'excel!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+  - uid: 'excel!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean

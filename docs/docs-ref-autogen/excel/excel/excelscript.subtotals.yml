@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.Subtotals:interface'
+    name: ExcelScript.Subtotals
+    fullName: ExcelScript.Subtotals
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.Subtotals#automatic:member'
+      - 'excel!ExcelScript.Subtotals#average:member'
+      - 'excel!ExcelScript.Subtotals#count:member'
+      - 'excel!ExcelScript.Subtotals#countNumbers:member'
+      - 'excel!ExcelScript.Subtotals#max:member'
+      - 'excel!ExcelScript.Subtotals#min:member'
+      - 'excel!ExcelScript.Subtotals#product:member'
+      - 'excel!ExcelScript.Subtotals#standardDeviation:member'
+      - 'excel!ExcelScript.Subtotals#standardDeviationP:member'
+      - 'excel!ExcelScript.Subtotals#sum:member'
+      - 'excel!ExcelScript.Subtotals#variance:member'
+      - 'excel!ExcelScript.Subtotals#varianceP:member'
+  - uid: 'excel!ExcelScript.Subtotals#automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'automatic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#average:member'
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'average?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#count:member'
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#countNumbers:member'
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'countNumbers?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#max:member'
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'max?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#min:member'
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'min?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#product:member'
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'product?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#standardDeviation:member'
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#standardDeviationP:member'
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviationP?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#sum:member'
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sum?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#variance:member'
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variance?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.Subtotals#varianceP:member'
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'varianceP?: boolean;'
+      return:
+        type:
+          - boolean

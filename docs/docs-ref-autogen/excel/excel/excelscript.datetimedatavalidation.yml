@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.DateTimeDataValidation:interface'
+    name: ExcelScript.DateTimeDataValidation
+    fullName: ExcelScript.DateTimeDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.DateTimeDataValidation#formula1:member'
+      - 'excel!ExcelScript.DateTimeDataValidation#formula2:member'
+      - 'excel!ExcelScript.DateTimeDataValidation#operator:member'
+  - uid: 'excel!ExcelScript.DateTimeDataValidation#formula1:member'
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string | Date | Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.DateTimeDataValidation#formula1~0:complex'
+  - uid: 'excel!ExcelScript.DateTimeDataValidation#formula2:member'
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string | Date | Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.DateTimeDataValidation#formula2~0:complex'
+  - uid: 'excel!ExcelScript.DateTimeDataValidation#operator:member'
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: DataValidationOperator;'
+      return:
+        type:
+          - 'excel!ExcelScript.DataValidationOperator:enum'
+references:
+  - uid: 'excel!ExcelScript.DateTimeDataValidation#formula1~0:complex'
+    name: string | Date | Range
+    fullName: string | Date | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'excel!ExcelScript.DateTimeDataValidation#formula2~0:complex'
+    name: string | Date | Range
+    fullName: string | Date | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'excel!ExcelScript.DataValidationOperator:enum'
+    name: DataValidationOperator

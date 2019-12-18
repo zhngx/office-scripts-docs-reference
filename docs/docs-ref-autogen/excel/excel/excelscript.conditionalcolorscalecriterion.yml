@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion:interface'
+    name: ExcelScript.ConditionalColorScaleCriterion
+    fullName: ExcelScript.ConditionalColorScaleCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ConditionalColorScaleCriterion#color:member'
+      - 'excel!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+      - 'excel!ExcelScript.ConditionalColorScaleCriterion#type:member'
+  - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type:
+          - 'excel!ExcelScript.ConditionalFormatColorCriterionType:enum'
+references:
+  - uid: 'excel!ExcelScript.ConditionalFormatColorCriterionType:enum'
+    name: ConditionalFormatColorCriterionType

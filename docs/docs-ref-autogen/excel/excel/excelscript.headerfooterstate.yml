@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.HeaderFooterState:enum'
+    name: ExcelScript.HeaderFooterState
+    fullName: ExcelScript.HeaderFooterState
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.HeaderFooterState.default:member'
+      - 'excel!ExcelScript.HeaderFooterState.firstAndDefault:member'
+      - 'excel!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+      - 'excel!ExcelScript.HeaderFooterState.oddAndEven:member'
+  - uid: 'excel!ExcelScript.HeaderFooterState.default:member'
+    name: default
+    fullName: default
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    name: firstAndDefault
+    fullName: firstAndDefault
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    name: firstOddAndEven
+    fullName: firstOddAndEven
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.HeaderFooterState.oddAndEven:member'
+    name: oddAndEven
+    fullName: oddAndEven
+    langs:
+      - typeScript
+    type: field

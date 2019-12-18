@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ReplaceCriteria:interface'
+    name: ExcelScript.ReplaceCriteria
+    fullName: ExcelScript.ReplaceCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ReplaceCriteria#completeMatch:member'
+      - 'excel!ExcelScript.ReplaceCriteria#matchCase:member'
+  - uid: 'excel!ExcelScript.ReplaceCriteria#completeMatch:member'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.ReplaceCriteria#matchCase:member'
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean

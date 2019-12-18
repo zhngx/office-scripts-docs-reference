@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SortBy:enum'
+    name: ExcelScript.SortBy
+    fullName: ExcelScript.SortBy
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SortBy.ascending:member'
+      - 'excel!ExcelScript.SortBy.descending:member'
+  - uid: 'excel!ExcelScript.SortBy.ascending:member'
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SortBy.descending:member'
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

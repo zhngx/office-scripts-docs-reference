@@ -1,0 +1,130 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions:interface'
+    name: ExcelScript.CellPropertiesFontLoadOptions
+    fullName: ExcelScript.CellPropertiesFontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+      - 'excel!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

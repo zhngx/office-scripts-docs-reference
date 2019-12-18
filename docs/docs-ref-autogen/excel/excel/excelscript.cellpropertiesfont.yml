@@ -1,0 +1,133 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellPropertiesFont:interface'
+    name: ExcelScript.CellPropertiesFont
+    fullName: ExcelScript.CellPropertiesFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellPropertiesFont#bold:member'
+      - 'excel!ExcelScript.CellPropertiesFont#color:member'
+      - 'excel!ExcelScript.CellPropertiesFont#italic:member'
+      - 'excel!ExcelScript.CellPropertiesFont#name:member'
+      - 'excel!ExcelScript.CellPropertiesFont#size:member'
+      - 'excel!ExcelScript.CellPropertiesFont#strikethrough:member'
+      - 'excel!ExcelScript.CellPropertiesFont#subscript:member'
+      - 'excel!ExcelScript.CellPropertiesFont#superscript:member'
+      - 'excel!ExcelScript.CellPropertiesFont#tintAndShade:member'
+      - 'excel!ExcelScript.CellPropertiesFont#underline:member'
+  - uid: 'excel!ExcelScript.CellPropertiesFont#bold:member'
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFont#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.CellPropertiesFont#italic:member'
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFont#name:member'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.CellPropertiesFont#size:member'
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!ExcelScript.CellPropertiesFont#strikethrough:member'
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFont#subscript:member'
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFont#superscript:member'
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFont#tintAndShade:member'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!ExcelScript.CellPropertiesFont#underline:member'
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: RangeUnderlineStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.RangeUnderlineStyle:enum'
+references:
+  - uid: 'excel!ExcelScript.RangeUnderlineStyle:enum'
+    name: RangeUnderlineStyle

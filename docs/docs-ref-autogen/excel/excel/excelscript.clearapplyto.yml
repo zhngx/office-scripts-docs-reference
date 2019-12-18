@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ClearApplyTo:enum'
+    name: ExcelScript.ClearApplyTo
+    fullName: ExcelScript.ClearApplyTo
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ClearApplyTo.all:member'
+      - 'excel!ExcelScript.ClearApplyTo.contents:member'
+      - 'excel!ExcelScript.ClearApplyTo.formats:member'
+      - 'excel!ExcelScript.ClearApplyTo.hyperlinks:member'
+      - 'excel!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+  - uid: 'excel!ExcelScript.ClearApplyTo.all:member'
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ClearApplyTo.contents:member'
+    name: contents
+    fullName: contents
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ClearApplyTo.formats:member'
+    name: formats
+    fullName: formats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ClearApplyTo.hyperlinks:member'
+    name: hyperlinks
+    fullName: hyperlinks
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+    name: removeHyperlinks
+    fullName: removeHyperlinks
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShapeAutoSize:enum'
+    name: ExcelScript.ShapeAutoSize
+    fullName: ExcelScript.ShapeAutoSize
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
+      - 'excel!ExcelScript.ShapeAutoSize.autoSizeNone:member'
+      - 'excel!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
+      - 'excel!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
+  - uid: 'excel!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
+    name: autoSizeMixed
+    fullName: autoSizeMixed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeAutoSize.autoSizeNone:member'
+    name: autoSizeNone
+    fullName: autoSizeNone
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
+    name: autoSizeShapeToFitText
+    fullName: autoSizeShapeToFitText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
+    name: autoSizeTextToFitShape
+    fullName: autoSizeTextToFitShape
+    langs:
+      - typeScript
+    type: field

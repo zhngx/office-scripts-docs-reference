@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.RangeHyperlink:interface'
+    name: ExcelScript.RangeHyperlink
+    fullName: ExcelScript.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.RangeHyperlink#address:member'
+      - 'excel!ExcelScript.RangeHyperlink#documentReference:member'
+      - 'excel!ExcelScript.RangeHyperlink#screenTip:member'
+      - 'excel!ExcelScript.RangeHyperlink#textToDisplay:member'
+  - uid: 'excel!ExcelScript.RangeHyperlink#address:member'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.RangeHyperlink#documentReference:member'
+    name: documentReference
+    fullName: documentReference
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.RangeHyperlink#screenTip:member'
+    name: screenTip
+    fullName: screenTip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.RangeHyperlink#textToDisplay:member'
+    name: textToDisplay
+    fullName: textToDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type:
+          - string

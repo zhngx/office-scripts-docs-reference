@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.BasicDataValidation:interface'
+    name: ExcelScript.BasicDataValidation
+    fullName: ExcelScript.BasicDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.BasicDataValidation#formula1:member'
+      - 'excel!ExcelScript.BasicDataValidation#formula2:member'
+      - 'excel!ExcelScript.BasicDataValidation#operator:member'
+  - uid: 'excel!ExcelScript.BasicDataValidation#formula1:member'
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string | number | Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.BasicDataValidation#formula1~0:complex'
+  - uid: 'excel!ExcelScript.BasicDataValidation#formula2:member'
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string | number | Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.BasicDataValidation#formula2~0:complex'
+  - uid: 'excel!ExcelScript.BasicDataValidation#operator:member'
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: DataValidationOperator;'
+      return:
+        type:
+          - 'excel!ExcelScript.DataValidationOperator:enum'
+references:
+  - uid: 'excel!ExcelScript.BasicDataValidation#formula1~0:complex'
+    name: string | number | Range
+    fullName: string | number | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'excel!ExcelScript.BasicDataValidation#formula2~0:complex'
+    name: string | number | Range
+    fullName: string | number | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'excel!ExcelScript.DataValidationOperator:enum'
+    name: DataValidationOperator

@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ConditionalCellValueRule:interface'
+    name: ExcelScript.ConditionalCellValueRule
+    fullName: ExcelScript.ConditionalCellValueRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ConditionalCellValueRule#formula1:member'
+      - 'excel!ExcelScript.ConditionalCellValueRule#formula2:member'
+      - 'excel!ExcelScript.ConditionalCellValueRule#operator:member'
+  - uid: 'excel!ExcelScript.ConditionalCellValueRule#formula1:member'
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.ConditionalCellValueRule#formula2:member'
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.ConditionalCellValueRule#operator:member'
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalCellValueOperator;'
+      return:
+        type:
+          - 'excel!ExcelScript.ConditionalCellValueOperator:enum'
+references:
+  - uid: 'excel!ExcelScript.ConditionalCellValueOperator:enum'
+    name: ConditionalCellValueOperator

@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    name: ExcelScript.CellPropertiesFillLoadOptions
+    fullName: ExcelScript.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+      - 'excel!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+      - 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'excel!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

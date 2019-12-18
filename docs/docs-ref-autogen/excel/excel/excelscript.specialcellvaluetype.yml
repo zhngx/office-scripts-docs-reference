@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SpecialCellValueType:enum'
+    name: ExcelScript.SpecialCellValueType
+    fullName: ExcelScript.SpecialCellValueType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SpecialCellValueType.all:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errors:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsLogical:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.errorsText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.logical:member'
+      - 'excel!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+      - 'excel!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.logicalText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.numbers:member'
+      - 'excel!ExcelScript.SpecialCellValueType.numbersText:member'
+      - 'excel!ExcelScript.SpecialCellValueType.text:member'
+  - uid: 'excel!ExcelScript.SpecialCellValueType.all:member'
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errors:member'
+    name: errors
+    fullName: errors
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    name: errorsLogical
+    fullName: errorsLogical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    name: errorsLogicalNumber
+    fullName: errorsLogicalNumber
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    name: errorsLogicalText
+    fullName: errorsLogicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    name: errorsNumbers
+    fullName: errorsNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    name: errorsNumberText
+    fullName: errorsNumberText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.errorsText:member'
+    name: errorsText
+    fullName: errorsText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.logical:member'
+    name: logical
+    fullName: logical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    name: logicalNumbers
+    fullName: logicalNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    name: logicalNumbersText
+    fullName: logicalNumbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.logicalText:member'
+    name: logicalText
+    fullName: logicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.numbers:member'
+    name: numbers
+    fullName: numbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.numbersText:member'
+    name: numbersText
+    fullName: numbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellValueType.text:member'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field

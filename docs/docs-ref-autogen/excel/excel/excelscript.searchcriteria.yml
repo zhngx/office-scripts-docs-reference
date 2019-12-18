@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SearchCriteria:interface'
+    name: ExcelScript.SearchCriteria
+    fullName: ExcelScript.SearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SearchCriteria#completeMatch:member'
+      - 'excel!ExcelScript.SearchCriteria#matchCase:member'
+      - 'excel!ExcelScript.SearchCriteria#searchDirection:member'
+  - uid: 'excel!ExcelScript.SearchCriteria#completeMatch:member'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.SearchCriteria#matchCase:member'
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!ExcelScript.SearchCriteria#searchDirection:member'
+    name: searchDirection
+    fullName: searchDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchDirection?: SearchDirection;'
+      return:
+        type:
+          - 'excel!ExcelScript.SearchDirection:enum'
+references:
+  - uid: 'excel!ExcelScript.SearchDirection:enum'
+    name: SearchDirection

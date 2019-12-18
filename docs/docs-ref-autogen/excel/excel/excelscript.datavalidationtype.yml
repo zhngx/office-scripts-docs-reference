@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.DataValidationType:enum'
+    name: ExcelScript.DataValidationType
+    fullName: ExcelScript.DataValidationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.DataValidationType.custom:member'
+      - 'excel!ExcelScript.DataValidationType.date:member'
+      - 'excel!ExcelScript.DataValidationType.decimal:member'
+      - 'excel!ExcelScript.DataValidationType.inconsistent:member'
+      - 'excel!ExcelScript.DataValidationType.list:member'
+      - 'excel!ExcelScript.DataValidationType.mixedCriteria:member'
+      - 'excel!ExcelScript.DataValidationType.none:member'
+      - 'excel!ExcelScript.DataValidationType.textLength:member'
+      - 'excel!ExcelScript.DataValidationType.time:member'
+      - 'excel!ExcelScript.DataValidationType.wholeNumber:member'
+  - uid: 'excel!ExcelScript.DataValidationType.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.date:member'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.decimal:member'
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.inconsistent:member'
+    name: inconsistent
+    fullName: inconsistent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.list:member'
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.mixedCriteria:member'
+    name: mixedCriteria
+    fullName: mixedCriteria
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.textLength:member'
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.time:member'
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.DataValidationType.wholeNumber:member'
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.SpecialCellType:enum'
+    name: ExcelScript.SpecialCellType
+    fullName: ExcelScript.SpecialCellType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.SpecialCellType.blanks:member'
+      - 'excel!ExcelScript.SpecialCellType.conditionalFormats:member'
+      - 'excel!ExcelScript.SpecialCellType.constants:member'
+      - 'excel!ExcelScript.SpecialCellType.dataValidations:member'
+      - 'excel!ExcelScript.SpecialCellType.formulas:member'
+      - 'excel!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+      - 'excel!ExcelScript.SpecialCellType.sameDataValidation:member'
+      - 'excel!ExcelScript.SpecialCellType.visible:member'
+  - uid: 'excel!ExcelScript.SpecialCellType.blanks:member'
+    name: blanks
+    fullName: blanks
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.conditionalFormats:member'
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.constants:member'
+    name: constants
+    fullName: constants
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.dataValidations:member'
+    name: dataValidations
+    fullName: dataValidations
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.formulas:member'
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+    name: sameConditionalFormat
+    fullName: sameConditionalFormat
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.sameDataValidation:member'
+    name: sameDataValidation
+    fullName: sameDataValidation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.SpecialCellType.visible:member'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: field

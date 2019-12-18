@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShapeLineStyle:enum'
+    name: ExcelScript.ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShapeLineStyle.single:member'
+      - 'excel!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+      - 'excel!ExcelScript.ShapeLineStyle.thickThin:member'
+      - 'excel!ExcelScript.ShapeLineStyle.thinThick:member'
+      - 'excel!ExcelScript.ShapeLineStyle.thinThin:member'
+  - uid: 'excel!ExcelScript.ShapeLineStyle.single:member'
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    name: thickBetweenThin
+    fullName: thickBetweenThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeLineStyle.thickThin:member'
+    name: thickThin
+    fullName: thickThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeLineStyle.thinThick:member'
+    name: thinThick
+    fullName: thinThick
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeLineStyle.thinThin:member'
+    name: thinThin
+    fullName: thinThin
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,1849 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.Workbook:interface'
+    summary: >-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+    name: ExcelScript.Workbook
+    fullName: ExcelScript.Workbook
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.Workbook#addBinding:member(1)'
+      - 'excel!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+      - 'excel!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+      - 'excel!ExcelScript.Workbook#addComment:member(1)'
+      - 'excel!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+      - 'excel!ExcelScript.Workbook#addNamedItem:member(1)'
+      - 'excel!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+      - 'excel!ExcelScript.Workbook#addPivotTable:member(1)'
+      - 'excel!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#addSetting:member(1)'
+      - 'excel!ExcelScript.Workbook#addSlicer:member(1)'
+      - 'excel!ExcelScript.Workbook#addSlicerStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#addTable:member(1)'
+      - 'excel!ExcelScript.Workbook#addTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#addTimelineStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#addvoid:member(1)'
+      - 'excel!ExcelScript.Workbook#addWorksheet:member(1)'
+      - 'excel!ExcelScript.Workbook#getActiveCell:member(1)'
+      - 'excel!ExcelScript.Workbook#getActiveChart:member(1)'
+      - 'excel!ExcelScript.Workbook#getActiveSlicer:member(1)'
+      - 'excel!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+      - 'excel!ExcelScript.Workbook#getApplication:member(1)'
+      - 'excel!ExcelScript.Workbook#getAutoSave:member(1)'
+      - 'excel!ExcelScript.Workbook#getBinding:member(1)'
+      - 'excel!ExcelScript.Workbook#getBindings:member(1)'
+      - 'excel!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+      - 'excel!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+      - 'excel!ExcelScript.Workbook#getComment:member(1)'
+      - 'excel!ExcelScript.Workbook#getCommentByCell:member(1)'
+      - 'excel!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+      - 'excel!ExcelScript.Workbook#getComments:member(1)'
+      - 'excel!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+      - 'excel!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+      - 'excel!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+      - 'excel!ExcelScript.Workbook#getIsDirty:member(1)'
+      - 'excel!ExcelScript.Workbook#getLastWorksheet:member(1)'
+      - 'excel!ExcelScript.Workbook#getName:member(1)'
+      - 'excel!ExcelScript.Workbook#getNamedItem:member(1)'
+      - 'excel!ExcelScript.Workbook#getNames:member(1)'
+      - 'excel!ExcelScript.Workbook#getPivotTable:member(1)'
+      - 'excel!ExcelScript.Workbook#getPivotTables:member(1)'
+      - 'excel!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+      - 'excel!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+      - 'excel!ExcelScript.Workbook#getProperties:member(1)'
+      - 'excel!ExcelScript.Workbook#getProtection:member(1)'
+      - 'excel!ExcelScript.Workbook#getReadOnly:member(1)'
+      - 'excel!ExcelScript.Workbook#getSelectedRange:member(1)'
+      - 'excel!ExcelScript.Workbook#getSelectedRanges:member(1)'
+      - 'excel!ExcelScript.Workbook#getSetting:member(1)'
+      - 'excel!ExcelScript.Workbook#getSettings:member(1)'
+      - 'excel!ExcelScript.Workbook#getSlicer:member(1)'
+      - 'excel!ExcelScript.Workbook#getSlicers:member(1)'
+      - 'excel!ExcelScript.Workbook#getSlicerStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getSlicerStyles:member(1)'
+      - 'excel!ExcelScript.Workbook#getStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getStyles:member(1)'
+      - 'excel!ExcelScript.Workbook#getTable:member(1)'
+      - 'excel!ExcelScript.Workbook#getTables:member(1)'
+      - 'excel!ExcelScript.Workbook#getTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getTableStyles:member(1)'
+      - 'excel!ExcelScript.Workbook#getTimelineStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#getTimelineStyles:member(1)'
+      - 'excel!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+      - 'excel!ExcelScript.Workbook#getWorksheet:member(1)'
+      - 'excel!ExcelScript.Workbook#getWorksheets:member(1)'
+      - 'excel!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+      - 'excel!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+      - 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+      - 'excel!ExcelScript.Workbook#setIsDirty:member(1)'
+      - 'excel!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+  - uid: 'excel!ExcelScript.Workbook#addBinding:member(1)'
+    name: 'addBinding(range, bindingType, id)'
+    fullName: 'addBinding(range, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBinding(
+                    range: Range | string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'excel!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addBinding~0:complex'
+        - id: bindingType
+          description: ''
+          type:
+            - 'excel!ExcelScript.BindingType:enum'
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+    name: 'addBindingFromNamedItem(name, bindingType, id)'
+    fullName: 'addBindingFromNamedItem(name, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBindingFromNamedItem(
+                    name: string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'excel!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: bindingType
+          description: ''
+          type:
+            - 'excel!ExcelScript.BindingType:enum'
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+    name: 'addBindingFromSelection(bindingType, id)'
+    fullName: 'addBindingFromSelection(bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
+      return:
+        type:
+          - 'excel!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: bindingType
+          description: ''
+          type:
+            - 'excel!ExcelScript.BindingType:enum'
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addComment:member(1)'
+    name: 'addComment(cellAddress, content, contentType)'
+    fullName: 'addComment(cellAddress, content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addComment(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      return:
+        type:
+          - 'excel!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addComment~0:complex'
+        - id: content
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addComment~1:complex'
+        - id: contentType
+          description: ''
+          type:
+            - 'excel!ExcelScript.ContentType:enum'
+  - uid: 'excel!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+    name: addCustomXmlPart(xml)
+    fullName: addCustomXmlPart(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!ExcelScript.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: xml
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addNamedItem:member(1)'
+    name: 'addNamedItem(name, reference, comment)'
+    fullName: 'addNamedItem(name, reference, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItem(
+                    name: string,
+                    reference: Range | string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'excel!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: reference
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addNamedItem~0:complex'
+        - id: comment
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+    name: 'addNamedItemFormulaLocal(name, formula, comment)'
+    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItemFormulaLocal(
+                    name: string,
+                    formula: string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'excel!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: formula
+          description: ''
+          type:
+            - string
+        - id: comment
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addPivotTable:member(1)'
+    name: 'addPivotTable(name, source, destination)'
+    fullName: 'addPivotTable(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTable(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'excel!ExcelScript.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: source
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addPivotTable~0:complex'
+        - id: destination
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addPivotTable~1:complex'
+  - uid: 'excel!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+    name: 'addPivotTableStyle(name, makeUniqueName)'
+    fullName: 'addPivotTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTableStyle(
+                    name: string,
+                    makeUniqueName?: boolean
+                ): PivotTableStyle;
+      return:
+        type:
+          - 'excel!ExcelScript.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: makeUniqueName
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#addSetting:member(1)'
+    name: 'addSetting(key, value)'
+    fullName: 'addSetting(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSetting(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'excel!ExcelScript.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addSetting~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#addSlicer:member(1)'
+    name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSlicer(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'excel!ExcelScript.Slicer:interface'
+        description: ''
+      parameters:
+        - id: slicerSource
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addSlicer~0:complex'
+        - id: sourceField
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addSlicer~1:complex'
+        - id: slicerDestination
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addSlicer~2:complex'
+  - uid: 'excel!ExcelScript.Workbook#addSlicerStyle:member(1)'
+    name: 'addSlicerStyle(name, makeUniqueName)'
+    fullName: 'addSlicerStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: makeUniqueName
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#addTable:member(1)'
+    name: 'addTable(address, hasHeaders)'
+    fullName: 'addTable(address, hasHeaders)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+      return:
+        type:
+          - 'excel!ExcelScript.Table:interface'
+        description: ''
+      parameters:
+        - id: address
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#addTable~0:complex'
+        - id: hasHeaders
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#addTableStyle:member(1)'
+    name: 'addTableStyle(name, makeUniqueName)'
+    fullName: 'addTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: makeUniqueName
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#addTimelineStyle:member(1)'
+    name: 'addTimelineStyle(name, makeUniqueName)'
+    fullName: 'addTimelineStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: makeUniqueName
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#addvoid:member(1)'
+    name: addvoid(name)
+    fullName: addvoid(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addvoid(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#addWorksheet:member(1)'
+    name: addWorksheet(name)
+    fullName: addWorksheet(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addWorksheet(name?: string): Worksheet;'
+      return:
+        type:
+          - 'excel!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getActiveCell:member(1)'
+    summary: Gets the currently active cell from the workbook.
+    name: getActiveCell()
+    fullName: getActiveCell()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getActiveChart:member(1)'
+    summary: 'Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.'
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Chart;'
+      return:
+        type:
+          - 'excel!ExcelScript.Chart:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getActiveSlicer:member(1)'
+    summary: 'Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.'
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Slicer;'
+      return:
+        type:
+          - 'excel!ExcelScript.Slicer:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+    name: getActiveWorksheet()
+    fullName: getActiveWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'excel!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getApplication:member(1)'
+    summary: Represents the Excel application instance that contains this workbook. Read-only.
+    name: getApplication()
+    fullName: getApplication()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getApplication(): Application;'
+      return:
+        type:
+          - 'excel!ExcelScript.Application:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getAutoSave:member(1)'
+    summary: Specifies whether or not the workbook is in autosave mode. Read-Only.
+    name: getAutoSave()
+    fullName: getAutoSave()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoSave(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getBinding:member(1)'
+    name: getBinding(id)
+    fullName: getBinding(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBinding(id: string): Binding | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getBinding~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getBindings:member(1)'
+    name: getBindings()
+    fullName: getBindings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBindings(): Binding[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getBindings~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+    summary: Returns a number about the version of Excel Calculation Engine. Read-Only.
+    name: getCalculationEngineVersion()
+    fullName: getCalculationEngineVersion()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+    name: getChartDataPointTrack()
+    fullName: getChartDataPointTrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartDataPointTrack(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getComment:member(1)'
+    name: getComment(commentId)
+    fullName: getComment(commentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComment(commentId: string): Comment;'
+      return:
+        type:
+          - 'excel!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: commentId
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getCommentByCell:member(1)'
+    name: getCommentByCell(cellAddress)
+    fullName: getCommentByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+      return:
+        type:
+          - 'excel!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#getCommentByCell~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+    name: getCommentByReplyId(replyId)
+    fullName: getCommentByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByReplyId(replyId: string): Comment;'
+      return:
+        type:
+          - 'excel!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: replyId
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getComments:member(1)'
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): Comment[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getComments~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+    name: getCustomXmlPart(id)
+    fullName: getCustomXmlPart(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+    name: getCustomXmlParts()
+    fullName: getCustomXmlParts()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlParts(): CustomXmlPart[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+    name: getDefaultPivotTableStyle()
+    fullName: getDefaultPivotTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultPivotTableStyle(): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.PivotTableStyle:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+    name: getDefaultSlicerStyle()
+    fullName: getDefaultSlicerStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultSlicerStyle(): SlicerStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.SlicerStyle:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+    name: getDefaultTableStyle()
+    fullName: getDefaultTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTableStyle(): TableStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+    name: getDefaultTimelineStyle()
+    fullName: getDefaultTimelineStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTimelineStyle(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+    name: getFirstWorksheet(visibleOnly)
+    fullName: getFirstWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#getIsDirty:member(1)'
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+    name: getIsDirty()
+    fullName: getIsDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsDirty(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getLastWorksheet:member(1)'
+    name: getLastWorksheet(visibleOnly)
+    fullName: getLastWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#getName:member(1)'
+    summary: Gets the workbook name. Read-only.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getNamedItem:member(1)'
+    name: getNamedItem(name)
+    fullName: getNamedItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamedItem(name: string): NamedItem | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getNamedItem~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getNames:member(1)'
+    name: getNames()
+    fullName: getNames()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNames(): NamedItem[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getNames~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getPivotTable:member(1)'
+    name: getPivotTable(name)
+    fullName: getPivotTable(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTable(name: string): PivotTable | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getPivotTable~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getPivotTables:member(1)'
+    name: getPivotTables()
+    fullName: getPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTables(): PivotTable[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getPivotTables~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+    name: getPivotTableStyle(name)
+    fullName: getPivotTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+    name: getPivotTableStyles()
+    fullName: getPivotTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyles(): PivotTableStyle[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+    summary: Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+    name: getPreviouslySaved()
+    fullName: getPreviouslySaved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPreviouslySaved(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getProperties:member(1)'
+    summary: Gets the workbook properties. Read-only.
+    name: getProperties()
+    fullName: getProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProperties(): DocumentProperties;'
+      return:
+        type:
+          - 'excel!ExcelScript.DocumentProperties:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getProtection:member(1)'
+    summary: Returns workbook protection object for a workbook. Read-only.
+    name: getProtection()
+    fullName: getProtection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtection(): WorkbookProtection;'
+      return:
+        type:
+          - 'excel!ExcelScript.WorkbookProtection:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getReadOnly:member(1)'
+    summary: True if the workbook is open in Read-only mode. Read-only.
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getSelectedRange:member(1)'
+    summary: >-
+      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
+      will throw an error.
+    name: getSelectedRange()
+    fullName: getSelectedRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Range;'
+      return:
+        type:
+          - 'excel!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getSelectedRanges:member(1)'
+    summary: >-
+      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
+      RangeAreas object that represents all the selected ranges.
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): RangeAreas;'
+      return:
+        type:
+          - 'excel!ExcelScript.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getSetting:member(1)'
+    name: getSetting(key)
+    fullName: getSetting(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSetting(key: string): Setting | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSetting~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getSettings:member(1)'
+    name: getSettings()
+    fullName: getSettings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSettings(): Setting[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSettings~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getSlicer:member(1)'
+    name: getSlicer(key)
+    fullName: getSlicer(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicer(key: string): Slicer | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSlicer~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getSlicers:member(1)'
+    name: getSlicers()
+    fullName: getSlicers()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicers(): Slicer[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSlicers~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getSlicerStyle:member(1)'
+    name: getSlicerStyle(name)
+    fullName: getSlicerStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyle(name: string): SlicerStyle | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSlicerStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getSlicerStyles:member(1)'
+    name: getSlicerStyles()
+    fullName: getSlicerStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyles(): SlicerStyle[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getSlicerStyles~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getStyle:member(1)'
+    name: getStyle(name)
+    fullName: getStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(name: string): Style;'
+      return:
+        type:
+          - 'excel!ExcelScript.Style:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getStyles:member(1)'
+    name: getStyles()
+    fullName: getStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyles(): Style[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getStyles~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getTable:member(1)'
+    name: getTable(key)
+    fullName: getTable(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(key: string): Table | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTable~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getTables:member(1)'
+    name: getTables()
+    fullName: getTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(): Table[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTables~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getTableStyle:member(1)'
+    name: getTableStyle(name)
+    fullName: getTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyle(name: string): TableStyle | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getTableStyles:member(1)'
+    name: getTableStyles()
+    fullName: getTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyles(): TableStyle[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTableStyles~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getTimelineStyle:member(1)'
+    name: getTimelineStyle(name)
+    fullName: getTimelineStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTimelineStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getTimelineStyles:member(1)'
+    name: getTimelineStyles()
+    fullName: getTimelineStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyles(): TimelineStyle[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getTimelineStyles~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+    name: getUsePrecisionAsDisplayed()
+    fullName: getUsePrecisionAsDisplayed()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsePrecisionAsDisplayed(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#getWorksheet:member(1)'
+    name: getWorksheet(key)
+    fullName: getWorksheet(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(key: string): Worksheet | undefined;'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getWorksheet~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+  - uid: 'excel!ExcelScript.Workbook#getWorksheets:member(1)'
+    name: getWorksheets()
+    fullName: getWorksheets()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheets(): Worksheet[];'
+      return:
+        type:
+          - 'excel!ExcelScript.Workbook#getWorksheets~0:complex'
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+    name: refreshAllPivotTables()
+    fullName: refreshAllPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAllPivotTables(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+    name: setChartDataPointTrack(chartDataPointTrack)
+    fullName: setChartDataPointTrack(chartDataPointTrack)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setChartDataPointTrack(chartDataPointTrack: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: chartDataPointTrack
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+    name: setDefaultPivotTableStyle(newDefaultStyle)
+    fullName: setDefaultPivotTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setDefaultPivotTableStyle(
+                    newDefaultStyle: PivotTableStyle | string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+    name: setDefaultSlicerStyle(newDefaultStyle)
+    fullName: setDefaultSlicerStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+    name: setDefaultTableStyle(newDefaultStyle)
+    fullName: setDefaultTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+    name: setDefaultTimelineStyle(newDefaultStyle)
+    fullName: setDefaultTimelineStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: ''
+          type:
+            - 'excel!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+  - uid: 'excel!ExcelScript.Workbook#setIsDirty:member(1)'
+    name: setIsDirty(isDirty)
+    fullName: setIsDirty(isDirty)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsDirty(isDirty: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isDirty
+          description: ''
+          type:
+            - boolean
+  - uid: 'excel!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+    name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUsePrecisionAsDisplayed(usePrecisionAsDisplayed: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: usePrecisionAsDisplayed
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'excel!ExcelScript.Binding:interface'
+    name: Binding
+  - uid: 'excel!ExcelScript.Workbook#addBinding~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.BindingType:enum'
+    name: BindingType
+  - uid: 'excel!ExcelScript.Comment:interface'
+    name: Comment
+  - uid: 'excel!ExcelScript.Workbook#addComment~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.Workbook#addComment~1:complex'
+    name: CommentRichContent | string
+    fullName: ExcelScript.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: ExcelScript.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.ContentType:enum'
+    name: ContentType
+  - uid: 'excel!ExcelScript.CustomXmlPart:interface'
+    name: CustomXmlPart
+  - uid: 'excel!ExcelScript.NamedItem:interface'
+    name: NamedItem
+  - uid: 'excel!ExcelScript.Workbook#addNamedItem~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.PivotTable:interface'
+    name: PivotTable
+  - uid: 'excel!ExcelScript.Workbook#addPivotTable~0:complex'
+    name: Range | string | Table
+    fullName: ExcelScript.Range | string | ExcelScript.Table
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'excel!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'excel!ExcelScript.Workbook#addPivotTable~1:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'excel!ExcelScript.PivotTableStyle:interface'
+    name: PivotTableStyle
+  - uid: 'excel!ExcelScript.Setting:interface'
+    name: Setting
+  - uid: 'excel!ExcelScript.Workbook#addSetting~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any
+                  
+  - uid: 'excel!ExcelScript.Slicer:interface'
+    name: Slicer
+  - uid: 'excel!ExcelScript.Workbook#addSlicer~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | ExcelScript.PivotTable | ExcelScript.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'excel!ExcelScript.Workbook#addSlicer~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | ExcelScript.PivotField | number | ExcelScript.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'excel!ExcelScript.TableColumn:interface'
+        name: TableColumn
+        fullName: ExcelScript.TableColumn
+  - uid: 'excel!ExcelScript.Workbook#addSlicer~2:complex'
+    name: string | Worksheet
+    fullName: string | ExcelScript.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+  - uid: 'excel!ExcelScript.SlicerStyle:interface'
+    name: SlicerStyle
+  - uid: 'excel!ExcelScript.Table:interface'
+    name: Table
+  - uid: 'excel!ExcelScript.Workbook#addTable~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.TableStyle:interface'
+    name: TableStyle
+  - uid: 'excel!ExcelScript.TimelineStyle:interface'
+    name: TimelineStyle
+  - uid: 'excel!ExcelScript.Worksheet:interface'
+    name: Worksheet
+  - uid: 'excel!ExcelScript.Range:interface'
+    name: Range
+  - uid: 'excel!ExcelScript.Chart:interface'
+    name: Chart
+  - uid: 'excel!ExcelScript.Application:interface'
+    name: Application
+  - uid: 'excel!ExcelScript.Workbook#getBinding~0:complex'
+    name: Binding | undefined
+    fullName: ExcelScript.Binding | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getBindings~0:complex'
+    name: 'Binding[]'
+    fullName: 'ExcelScript.Binding[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getCommentByCell~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.Workbook#getComments~0:complex'
+    name: 'Comment[]'
+    fullName: 'ExcelScript.Comment[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Comment:interface'
+        name: Comment
+        fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+    name: CustomXmlPart | undefined
+    fullName: ExcelScript.CustomXmlPart | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+    name: 'CustomXmlPart[]'
+    fullName: 'ExcelScript.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getNamedItem~0:complex'
+    name: NamedItem | undefined
+    fullName: ExcelScript.NamedItem | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getNames~0:complex'
+    name: 'NamedItem[]'
+    fullName: 'ExcelScript.NamedItem[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getPivotTable~0:complex'
+    name: PivotTable | undefined
+    fullName: ExcelScript.PivotTable | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getPivotTables~0:complex'
+    name: 'PivotTable[]'
+    fullName: 'ExcelScript.PivotTable[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+    name: PivotTableStyle | undefined
+    fullName: ExcelScript.PivotTableStyle | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+    name: 'PivotTableStyle[]'
+    fullName: 'ExcelScript.PivotTableStyle[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.DocumentProperties:interface'
+    name: DocumentProperties
+  - uid: 'excel!ExcelScript.WorkbookProtection:interface'
+    name: WorkbookProtection
+  - uid: 'excel!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+  - uid: 'excel!ExcelScript.Workbook#getSetting~0:complex'
+    name: Setting | undefined
+    fullName: ExcelScript.Setting | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getSettings~0:complex'
+    name: 'Setting[]'
+    fullName: 'ExcelScript.Setting[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getSlicer~0:complex'
+    name: Slicer | undefined
+    fullName: ExcelScript.Slicer | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getSlicers~0:complex'
+    name: 'Slicer[]'
+    fullName: 'ExcelScript.Slicer[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getSlicerStyle~0:complex'
+    name: SlicerStyle | undefined
+    fullName: ExcelScript.SlicerStyle | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getSlicerStyles~0:complex'
+    name: 'SlicerStyle[]'
+    fullName: 'ExcelScript.SlicerStyle[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Style:interface'
+    name: Style
+  - uid: 'excel!ExcelScript.Workbook#getStyles~0:complex'
+    name: 'Style[]'
+    fullName: 'ExcelScript.Style[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Style:interface'
+        name: Style
+        fullName: ExcelScript.Style
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getTable~0:complex'
+    name: Table | undefined
+    fullName: ExcelScript.Table | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getTableStyle~0:complex'
+    name: TableStyle | undefined
+    fullName: ExcelScript.TableStyle | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getTableStyles~0:complex'
+    name: 'TableStyle[]'
+    fullName: 'ExcelScript.TableStyle[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getTimelineStyle~0:complex'
+    name: TimelineStyle | undefined
+    fullName: ExcelScript.TimelineStyle | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getTimelineStyles~0:complex'
+    name: 'TimelineStyle[]'
+    fullName: 'ExcelScript.TimelineStyle[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#getWorksheet~0:complex'
+    name: Worksheet | undefined
+    fullName: ExcelScript.Worksheet | undefined
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'excel!ExcelScript.Workbook#getWorksheets~0:complex'
+    name: 'Worksheet[]'
+    fullName: 'ExcelScript.Worksheet[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+    name: PivotTableStyle | string
+    fullName: ExcelScript.PivotTableStyle | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'excel!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+    name: SlicerStyle | string
+    fullName: ExcelScript.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+    name: TableStyle | string
+    fullName: ExcelScript.TableStyle | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+    name: TimelineStyle | string
+    fullName: ExcelScript.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

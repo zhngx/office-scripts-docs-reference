@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellBorder:interface'
+    name: ExcelScript.CellBorder
+    fullName: ExcelScript.CellBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellBorder#color:member'
+      - 'excel!ExcelScript.CellBorder#style:member'
+      - 'excel!ExcelScript.CellBorder#tintAndShade:member'
+      - 'excel!ExcelScript.CellBorder#weight:member'
+  - uid: 'excel!ExcelScript.CellBorder#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.CellBorder#style:member'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!ExcelScript.BorderLineStyle:enum'
+  - uid: 'excel!ExcelScript.CellBorder#tintAndShade:member'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!ExcelScript.CellBorder#weight:member'
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: BorderWeight;'
+      return:
+        type:
+          - 'excel!ExcelScript.BorderWeight:enum'
+references:
+  - uid: 'excel!ExcelScript.BorderLineStyle:enum'
+    name: BorderLineStyle
+  - uid: 'excel!ExcelScript.BorderWeight:enum'
+    name: BorderWeight

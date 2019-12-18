@@ -28,10 +28,7 @@ tryCatch(async () => {
     let releaseDefinitions = cleanUpDts(localReleaseDtsPath);
 
     console.log("\ncreate file: excel.d.ts (preview)");
-    fsx.writeFileSync(
-        '../api-extractor-inputs-excel/excel.d.ts',
-        handleLiteralParameterOverloads(excelSpecificCleanup(releaseDefinitions))
-    );
+    fsx.writeFileSync('../api-extractor-inputs-excel/excel.d.ts', releaseDefinitions);
 
     // TODO: Deal with Script Lab snippets
     // ----
@@ -94,12 +91,6 @@ tryCatch(async () => {
     process.exit(0);
 });
 
-function excelSpecificCleanup(dtsContent: string) {
-    return dtsContent.replace(/export interface .*Set {\r?\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
-        .replace("export interface IconCollections {", "/** [Api set: ExcelApi 1.2] */\n\texport interface IconCollections {")
-        .replace("var icons: IconCollections;", "/** [Api set: ExcelApi 1.2] */\n\tvar icons: IconCollections;");
-}
-
 function cleanUpDts(localDtsPath: string): string {
     console.log(`\nReading from ${path.resolve(localDtsPath)}`);
     let definitions = fsx.readFileSync(localDtsPath).toString();
@@ -130,29 +121,6 @@ function applyRegularExpressions (definitionsIn) {
         .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-}
-
-function handleLiteralParameterOverloads(dtsString: string): string {
-    // rename parameters for string literal overloads
-    const matches = dtsString.match(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g);
-    let matchIndex = 0;
-    matches.forEach((match) => {
-        let parameterName = match.substring(0, match.indexOf(": "));
-        matchIndex = dtsString.indexOf(match, matchIndex);
-        parameterName = parameterName.indexOf("?") >= 0 ? parameterName.substring(0, parameterName.length - 1) : parameterName;
-        const parameterString = "@param " + parameterName + " ";
-        const index = dtsString.lastIndexOf(parameterString, matchIndex);
-        if (index < 0) {
-            console.warn("Missing @param for literal parameter: " + match);
-        } else {
-        dtsString = dtsString.substring(0, index)
-         + "@param " + parameterName + "String "
-         + dtsString.substring(index + parameterString.length);
-         matchIndex += match.length;
-        }
-    });
-
-    return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
 }
 
 async function tryCatch(call: () => Promise<void>) {

@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.FilterDatetime:interface'
+    name: ExcelScript.FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.FilterDatetime#date:member'
+      - 'excel!ExcelScript.FilterDatetime#specificity:member'
+  - uid: 'excel!ExcelScript.FilterDatetime#date:member'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.FilterDatetime#specificity:member'
+    name: specificity
+    fullName: specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type:
+          - 'excel!ExcelScript.FilterDatetimeSpecificity:enum'
+references:
+  - uid: 'excel!ExcelScript.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity

@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ProtectionSelectionMode:enum'
+    name: ExcelScript.ProtectionSelectionMode
+    fullName: ExcelScript.ProtectionSelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ProtectionSelectionMode.none:member'
+      - 'excel!ExcelScript.ProtectionSelectionMode.normal:member'
+      - 'excel!ExcelScript.ProtectionSelectionMode.unlocked:member'
+  - uid: 'excel!ExcelScript.ProtectionSelectionMode.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ProtectionSelectionMode.normal:member'
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ProtectionSelectionMode.unlocked:member'
+    name: unlocked
+    fullName: unlocked
+    langs:
+      - typeScript
+    type: field

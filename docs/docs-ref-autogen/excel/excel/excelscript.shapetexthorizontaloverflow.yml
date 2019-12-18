@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShapeTextHorizontalOverflow:enum'
+    name: ExcelScript.ShapeTextHorizontalOverflow
+    fullName: ExcelScript.ShapeTextHorizontalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShapeTextHorizontalOverflow.clip:member'
+      - 'excel!ExcelScript.ShapeTextHorizontalOverflow.overflow:member'
+  - uid: 'excel!ExcelScript.ShapeTextHorizontalOverflow.clip:member'
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeTextHorizontalOverflow.overflow:member'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

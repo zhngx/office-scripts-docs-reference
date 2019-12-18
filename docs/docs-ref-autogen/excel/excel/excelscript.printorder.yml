@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.PrintOrder:enum'
+    name: ExcelScript.PrintOrder
+    fullName: ExcelScript.PrintOrder
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.PrintOrder.downThenOver:member'
+      - 'excel!ExcelScript.PrintOrder.overThenDown:member'
+  - uid: 'excel!ExcelScript.PrintOrder.downThenOver:member'
+    name: downThenOver
+    fullName: downThenOver
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PrintOrder.overThenDown:member'
+    name: overThenDown
+    fullName: overThenDown
+    langs:
+      - typeScript
+    type: field

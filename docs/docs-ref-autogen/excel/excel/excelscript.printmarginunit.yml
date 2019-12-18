@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.PrintMarginUnit:enum'
+    name: ExcelScript.PrintMarginUnit
+    fullName: ExcelScript.PrintMarginUnit
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.PrintMarginUnit.centimeters:member'
+      - 'excel!ExcelScript.PrintMarginUnit.inches:member'
+      - 'excel!ExcelScript.PrintMarginUnit.points:member'
+  - uid: 'excel!ExcelScript.PrintMarginUnit.centimeters:member'
+    name: centimeters
+    fullName: centimeters
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PrintMarginUnit.inches:member'
+    name: inches
+    fullName: inches
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PrintMarginUnit.points:member'
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: field

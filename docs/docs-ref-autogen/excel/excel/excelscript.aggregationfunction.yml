@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.AggregationFunction:enum'
+    name: ExcelScript.AggregationFunction
+    fullName: ExcelScript.AggregationFunction
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.AggregationFunction.automatic:member'
+      - 'excel!ExcelScript.AggregationFunction.average:member'
+      - 'excel!ExcelScript.AggregationFunction.count:member'
+      - 'excel!ExcelScript.AggregationFunction.countNumbers:member'
+      - 'excel!ExcelScript.AggregationFunction.max:member'
+      - 'excel!ExcelScript.AggregationFunction.min:member'
+      - 'excel!ExcelScript.AggregationFunction.product:member'
+      - 'excel!ExcelScript.AggregationFunction.standardDeviation:member'
+      - 'excel!ExcelScript.AggregationFunction.standardDeviationP:member'
+      - 'excel!ExcelScript.AggregationFunction.sum:member'
+      - 'excel!ExcelScript.AggregationFunction.unknown:member'
+      - 'excel!ExcelScript.AggregationFunction.variance:member'
+      - 'excel!ExcelScript.AggregationFunction.varianceP:member'
+  - uid: 'excel!ExcelScript.AggregationFunction.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.average:member'
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.count:member'
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.countNumbers:member'
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.max:member'
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.min:member'
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.product:member'
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.standardDeviation:member'
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.standardDeviationP:member'
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.sum:member'
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.variance:member'
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.AggregationFunction.varianceP:member'
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: field

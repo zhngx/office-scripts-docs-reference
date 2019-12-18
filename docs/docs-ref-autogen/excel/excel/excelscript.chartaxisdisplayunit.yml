@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit:enum'
+    name: ExcelScript.ChartAxisDisplayUnit
+    fullName: ExcelScript.ChartAxisDisplayUnit
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.billions:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.custom:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.millions:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.none:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+      - 'excel!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.billions:member'
+    name: billions
+    fullName: billions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+    name: hundredMillions
+    fullName: hundredMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+    name: hundreds
+    fullName: hundreds
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+    name: hundredThousands
+    fullName: hundredThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.millions:member'
+    name: millions
+    fullName: millions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+    name: tenMillions
+    fullName: tenMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+    name: tenThousands
+    fullName: tenThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+    name: thousands
+    fullName: thousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+    name: trillions
+    fullName: trillions
+    langs:
+      - typeScript
+    type: field

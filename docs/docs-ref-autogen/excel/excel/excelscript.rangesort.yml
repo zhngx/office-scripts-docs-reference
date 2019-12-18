@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.RangeSort:interface'
+    summary: Manages sorting operations on Range objects.
+    name: ExcelScript.RangeSort
+    fullName: ExcelScript.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.RangeSort#apply:member(1)'
+  - uid: 'excel!ExcelScript.RangeSort#apply:member(1)'
+    summary: Perform a sort operation.
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: ''
+          type:
+            - 'excel!ExcelScript.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: ''
+          type:
+            - boolean
+        - id: hasHeaders
+          description: ''
+          type:
+            - boolean
+        - id: orientation
+          description: ''
+          type:
+            - 'excel!ExcelScript.SortOrientation:enum'
+        - id: method
+          description: ''
+          type:
+            - 'excel!ExcelScript.SortMethod:enum'
+references:
+  - uid: 'excel!ExcelScript.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'ExcelScript.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.SortField:interface'
+        name: SortField
+        fullName: ExcelScript.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!ExcelScript.SortOrientation:enum'
+    name: SortOrientation
+  - uid: 'excel!ExcelScript.SortMethod:enum'
+    name: SortMethod

@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.RangeReference:interface'
+    name: ExcelScript.RangeReference
+    fullName: ExcelScript.RangeReference
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.RangeReference#address:member'
+  - uid: 'excel!ExcelScript.RangeReference#address:member'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string

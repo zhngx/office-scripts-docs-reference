@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellPropertiesFill:interface'
+    name: ExcelScript.CellPropertiesFill
+    fullName: ExcelScript.CellPropertiesFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellPropertiesFill#color:member'
+      - 'excel!ExcelScript.CellPropertiesFill#pattern:member'
+      - 'excel!ExcelScript.CellPropertiesFill#patternColor:member'
+      - 'excel!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
+      - 'excel!ExcelScript.CellPropertiesFill#tintAndShade:member'
+  - uid: 'excel!ExcelScript.CellPropertiesFill#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.CellPropertiesFill#pattern:member'
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: FillPattern;'
+      return:
+        type:
+          - 'excel!ExcelScript.FillPattern:enum'
+  - uid: 'excel!ExcelScript.CellPropertiesFill#patternColor:member'
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!ExcelScript.CellPropertiesFill#tintAndShade:member'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!ExcelScript.FillPattern:enum'
+    name: FillPattern

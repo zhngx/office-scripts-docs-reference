@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.FilterCriteria:interface'
+    name: ExcelScript.FilterCriteria
+    fullName: ExcelScript.FilterCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.FilterCriteria#color:member'
+      - 'excel!ExcelScript.FilterCriteria#criterion1:member'
+      - 'excel!ExcelScript.FilterCriteria#criterion2:member'
+      - 'excel!ExcelScript.FilterCriteria#dynamicCriteria:member'
+      - 'excel!ExcelScript.FilterCriteria#filterOn:member'
+      - 'excel!ExcelScript.FilterCriteria#icon:member'
+      - 'excel!ExcelScript.FilterCriteria#operator:member'
+      - 'excel!ExcelScript.FilterCriteria#subField:member'
+      - 'excel!ExcelScript.FilterCriteria#values:member'
+  - uid: 'excel!ExcelScript.FilterCriteria#color:member'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.FilterCriteria#criterion1:member'
+    name: criterion1
+    fullName: criterion1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.FilterCriteria#criterion2:member'
+    name: criterion2
+    fullName: criterion2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.FilterCriteria#dynamicCriteria:member'
+    name: dynamicCriteria
+    fullName: dynamicCriteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dynamicCriteria?: DynamicFilterCriteria;'
+      return:
+        type:
+          - 'excel!ExcelScript.DynamicFilterCriteria:enum'
+  - uid: 'excel!ExcelScript.FilterCriteria#filterOn:member'
+    name: filterOn
+    fullName: filterOn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filterOn: FilterOn;'
+      return:
+        type:
+          - 'excel!ExcelScript.FilterOn:enum'
+  - uid: 'excel!ExcelScript.FilterCriteria#icon:member'
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type:
+          - 'excel!ExcelScript.Icon:interface'
+  - uid: 'excel!ExcelScript.FilterCriteria#operator:member'
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator?: FilterOperator;'
+      return:
+        type:
+          - 'excel!ExcelScript.FilterOperator:enum'
+  - uid: 'excel!ExcelScript.FilterCriteria#subField:member'
+    name: subField
+    fullName: subField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!ExcelScript.FilterCriteria#values:member'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type:
+          - 'excel!ExcelScript.FilterCriteria#values~0:complex'
+references:
+  - uid: 'excel!ExcelScript.DynamicFilterCriteria:enum'
+    name: DynamicFilterCriteria
+  - uid: 'excel!ExcelScript.FilterOn:enum'
+    name: FilterOn
+  - uid: 'excel!ExcelScript.Icon:interface'
+    name: Icon
+  - uid: 'excel!ExcelScript.FilterOperator:enum'
+    name: FilterOperator
+  - uid: 'excel!ExcelScript.FilterCriteria#values~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | ExcelScript.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!ExcelScript.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: ExcelScript.FilterDatetime
+      - name: '>'
+        fullName: '>'

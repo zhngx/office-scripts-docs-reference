@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.PictureFormat:enum'
+    name: ExcelScript.PictureFormat
+    fullName: ExcelScript.PictureFormat
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.PictureFormat.bmp:member'
+      - 'excel!ExcelScript.PictureFormat.gif:member'
+      - 'excel!ExcelScript.PictureFormat.jpeg:member'
+      - 'excel!ExcelScript.PictureFormat.png:member'
+      - 'excel!ExcelScript.PictureFormat.svg:member'
+      - 'excel!ExcelScript.PictureFormat.unknown:member'
+  - uid: 'excel!ExcelScript.PictureFormat.bmp:member'
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PictureFormat.gif:member'
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PictureFormat.jpeg:member'
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PictureFormat.png:member'
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PictureFormat.svg:member'
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.PictureFormat.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

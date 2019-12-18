@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CellBorderCollection:interface'
+    name: ExcelScript.CellBorderCollection
+    fullName: ExcelScript.CellBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CellBorderCollection#bottom:member'
+      - 'excel!ExcelScript.CellBorderCollection#diagonalDown:member'
+      - 'excel!ExcelScript.CellBorderCollection#diagonalUp:member'
+      - 'excel!ExcelScript.CellBorderCollection#horizontal:member'
+      - 'excel!ExcelScript.CellBorderCollection#left:member'
+      - 'excel!ExcelScript.CellBorderCollection#right:member'
+      - 'excel!ExcelScript.CellBorderCollection#top:member'
+      - 'excel!ExcelScript.CellBorderCollection#vertical:member'
+  - uid: 'excel!ExcelScript.CellBorderCollection#bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#diagonalDown:member'
+    name: diagonalDown
+    fullName: diagonalDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalDown?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#diagonalUp:member'
+    name: diagonalUp
+    fullName: diagonalUp
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalUp?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#horizontal:member'
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontal?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+  - uid: 'excel!ExcelScript.CellBorderCollection#vertical:member'
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'vertical?: CellBorder;'
+      return:
+        type:
+          - 'excel!ExcelScript.CellBorder:interface'
+references:
+  - uid: 'excel!ExcelScript.CellBorder:interface'
+    name: CellBorder

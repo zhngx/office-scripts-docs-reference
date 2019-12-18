@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.CommentRichContent:interface'
+    name: ExcelScript.CommentRichContent
+    fullName: ExcelScript.CommentRichContent
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.CommentRichContent#mentions:member'
+      - 'excel!ExcelScript.CommentRichContent#richContent:member'
+  - uid: 'excel!ExcelScript.CommentRichContent#mentions:member'
+    name: mentions
+    fullName: mentions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mentions?: CommentMention[];'
+      return:
+        type:
+          - 'excel!ExcelScript.CommentRichContent#mentions~0:complex'
+  - uid: 'excel!ExcelScript.CommentRichContent#richContent:member'
+    name: richContent
+    fullName: richContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'richContent: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!ExcelScript.CommentRichContent#mentions~0:complex'
+    name: 'CommentMention[]'
+    fullName: 'ExcelScript.CommentMention[]'
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.CommentMention:interface'
+        name: CommentMention
+        fullName: ExcelScript.CommentMention
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ShapeTextVerticalOverflow:enum'
+    name: ExcelScript.ShapeTextVerticalOverflow
+    fullName: ExcelScript.ShapeTextVerticalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+      - 'excel!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'excel!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'excel!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'excel!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

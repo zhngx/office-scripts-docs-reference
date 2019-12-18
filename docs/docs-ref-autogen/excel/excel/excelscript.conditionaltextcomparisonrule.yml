@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!ExcelScript.ConditionalTextComparisonRule:interface'
+    name: ExcelScript.ConditionalTextComparisonRule
+    fullName: ExcelScript.ConditionalTextComparisonRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!ExcelScript.ConditionalTextComparisonRule#operator:member'
+      - 'excel!ExcelScript.ConditionalTextComparisonRule#text:member'
+  - uid: 'excel!ExcelScript.ConditionalTextComparisonRule#operator:member'
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalTextOperator;'
+      return:
+        type:
+          - 'excel!ExcelScript.ConditionalTextOperator:enum'
+  - uid: 'excel!ExcelScript.ConditionalTextComparisonRule#text:member'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!ExcelScript.ConditionalTextOperator:enum'
+    name: ConditionalTextOperator
