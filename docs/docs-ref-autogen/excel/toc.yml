@@ -273,9 +273,6 @@ items:
                 uid: 'excel!ExcelScript.VerticalAlignment:enum'
               - name: WorksheetPositionType
                 uid: 'excel!ExcelScript.WorksheetPositionType:enum'
-          - name: Icon Sets
-            uid: ''
-            items: []
           - name: Application
             uid: 'excel!ExcelScript.Application:interface'
           - name: AutoFilter

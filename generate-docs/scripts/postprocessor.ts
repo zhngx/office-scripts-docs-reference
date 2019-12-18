@@ -125,8 +125,8 @@ function fixToc(tocPath: string): Toc {
                         });
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                        primaryList.unshift(excelIconSetRoot);
+                        // let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                        // primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
