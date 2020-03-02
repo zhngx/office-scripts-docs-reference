@@ -16,11 +16,13 @@ items:
       - 'excel!ExcelScript.DataValidation#getErrorAlert:member(1)'
       - 'excel!ExcelScript.DataValidation#getIgnoreBlanks:member(1)'
       - 'excel!ExcelScript.DataValidation#getInvalidCells:member(1)'
+      - 'excel!ExcelScript.DataValidation#getPrompt:member(1)'
       - 'excel!ExcelScript.DataValidation#getRule:member(1)'
       - 'excel!ExcelScript.DataValidation#getType:member(1)'
       - 'excel!ExcelScript.DataValidation#getValid:member(1)'
       - 'excel!ExcelScript.DataValidation#setErrorAlert:member(1)'
       - 'excel!ExcelScript.DataValidation#setIgnoreBlanks:member(1)'
+      - 'excel!ExcelScript.DataValidation#setPrompt:member(1)'
       - 'excel!ExcelScript.DataValidation#setRule:member(1)'
   - uid: 'excel!ExcelScript.DataValidation#clear:member(1)'
     summary: Clears the data validation from the current range.
@@ -76,6 +78,19 @@ items:
         type:
           - 'excel!ExcelScript.RangeAreas:interface'
         description: ''
+  - uid: 'excel!ExcelScript.DataValidation#getPrompt:member(1)'
+    summary: Prompt when users select a cell.
+    name: getPrompt()
+    fullName: getPrompt()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrompt(): DataValidationPrompt;'
+      return:
+        type:
+          - 'excel!ExcelScript.DataValidationPrompt:interface'
+        description: ''
   - uid: 'excel!ExcelScript.DataValidation#getRule:member(1)'
     summary: Data validation rule that contains different type of data validation criteria.
     name: getRule()
@@ -119,6 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.DataValidation#setErrorAlert:member(1)'
+    summary: Error alert when user enters invalid data.
     name: setErrorAlert(errorAlert)
     fullName: setErrorAlert(errorAlert)
     langs:
@@ -136,6 +152,7 @@ items:
           type:
             - 'excel!ExcelScript.DataValidationErrorAlert:interface'
   - uid: 'excel!ExcelScript.DataValidation#setIgnoreBlanks:member(1)'
+    summary: 'Ignore blanks: no data validation will be performed on blank cells, it defaults to true.'
     name: setIgnoreBlanks(ignoreBlanks)
     fullName: setIgnoreBlanks(ignoreBlanks)
     langs:
@@ -152,7 +169,26 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'excel!ExcelScript.DataValidation#setPrompt:member(1)'
+    summary: Prompt when users select a cell.
+    name: setPrompt(prompt)
+    fullName: setPrompt(prompt)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPrompt(prompt: DataValidationPrompt): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prompt
+          description: ''
+          type:
+            - 'excel!ExcelScript.DataValidationPrompt:interface'
   - uid: 'excel!ExcelScript.DataValidation#setRule:member(1)'
+    summary: Data validation rule that contains different type of data validation criteria.
     name: setRule(rule)
     fullName: setRule(rule)
     langs:
@@ -174,6 +210,8 @@ references:
     name: DataValidationErrorAlert
   - uid: 'excel!ExcelScript.RangeAreas:interface'
     name: RangeAreas
+  - uid: 'excel!ExcelScript.DataValidationPrompt:interface'
+    name: DataValidationPrompt
   - uid: 'excel!ExcelScript.DataValidationRule:interface'
     name: DataValidationRule
   - uid: 'excel!ExcelScript.DataValidationType:enum'

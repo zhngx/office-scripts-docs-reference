@@ -41,6 +41,7 @@ items:
           - 'excel!ExcelScript.ConditionalPresetCriteriaRule:interface'
         description: ''
   - uid: 'excel!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+    summary: The rule of the conditional format.
     name: setRule(rule)
     fullName: setRule(rule)
     langs:

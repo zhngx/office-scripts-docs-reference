@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalIconCriterion:interface'
+    summary: >-
+      Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
+      an iconset.
     name: ExcelScript.ConditionalIconCriterion
     fullName: ExcelScript.ConditionalIconCriterion
     langs:
@@ -13,6 +16,7 @@ items:
       - 'excel!ExcelScript.ConditionalIconCriterion#operator:member'
       - 'excel!ExcelScript.ConditionalIconCriterion#type:member'
   - uid: 'excel!ExcelScript.ConditionalIconCriterion#customIcon:member'
+    summary: 'The custom icon for the current criterion if different from the default IconSet, else null will be returned.'
     name: customIcon
     fullName: customIcon
     langs:
@@ -24,6 +28,7 @@ items:
         type:
           - 'excel!ExcelScript.Icon:interface'
   - uid: 'excel!ExcelScript.ConditionalIconCriterion#formula:member'
+    summary: A number or a formula depending on the type.
     name: formula
     fullName: formula
     langs:
@@ -35,6 +40,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.ConditionalIconCriterion#operator:member'
+    summary: GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
     name: operator
     fullName: operator
     langs:
@@ -46,6 +52,7 @@ items:
         type:
           - 'excel!ExcelScript.ConditionalIconCriterionOperator:enum'
   - uid: 'excel!ExcelScript.ConditionalIconCriterion#type:member'
+    summary: What the icon conditional formula should be based on.
     name: type
     fullName: type
     langs:

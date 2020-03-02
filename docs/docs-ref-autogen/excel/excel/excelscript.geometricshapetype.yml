@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.GeometricShapeType:enum'
+    summary: Specifies the shape type for a GeometricShape object.
     name: ExcelScript.GeometricShapeType
     fullName: ExcelScript.GeometricShapeType
     langs:

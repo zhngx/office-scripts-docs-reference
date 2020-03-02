@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.DataValidationOperator:enum'
+    summary: Represents Data validation operator enum.
     name: ExcelScript.DataValidationOperator
     fullName: ExcelScript.DataValidationOperator
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalIconCriterionOperator:enum'
+    summary: Represents the operator for each icon criteria.
     name: ExcelScript.ConditionalIconCriterionOperator
     fullName: ExcelScript.ConditionalIconCriterionOperator
     langs:

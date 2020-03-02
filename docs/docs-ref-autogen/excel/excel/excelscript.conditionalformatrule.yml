@@ -40,6 +40,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.ConditionalFormatRule#setFormula:member(1)'
+    summary: 'The formula, if required, to evaluate the conditional format rule on.'
     name: setFormula(formula)
     fullName: setFormula(formula)
     langs:
@@ -57,6 +58,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ConditionalFormatRule#setFormulaLocal:member(1)'
+    summary: 'The formula, if required, to evaluate the conditional format rule on in the user''s language.'
     name: setFormulaLocal(formulaLocal)
     fullName: setFormulaLocal(formulaLocal)
     langs:

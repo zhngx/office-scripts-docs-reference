@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.SortField:interface'
+    summary: Represents a condition in a sorting operation.
     name: ExcelScript.SortField
     fullName: ExcelScript.SortField
     langs:
@@ -16,6 +17,7 @@ items:
       - 'excel!ExcelScript.SortField#sortOn:member'
       - 'excel!ExcelScript.SortField#subField:member'
   - uid: 'excel!ExcelScript.SortField#ascending:member'
+    summary: Represents whether the sorting is done in an ascending fashion.
     name: ascending
     fullName: ascending
     langs:
@@ -27,6 +29,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.SortField#color:member'
+    summary: Represents the color that is the target of the condition if the sorting is on font or cell color.
     name: color
     fullName: color
     langs:
@@ -38,6 +41,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.SortField#dataOption:member'
+    summary: Represents additional sorting options for this field.
     name: dataOption
     fullName: dataOption
     langs:
@@ -49,6 +53,7 @@ items:
         type:
           - 'excel!ExcelScript.SortDataOption:enum'
   - uid: 'excel!ExcelScript.SortField#icon:member'
+    summary: Represents the icon that is the target of the condition if the sorting is on the cell's icon.
     name: icon
     fullName: icon
     langs:
@@ -60,6 +65,9 @@ items:
         type:
           - 'excel!ExcelScript.Icon:interface'
   - uid: 'excel!ExcelScript.SortField#key:member'
+    summary: >-
+      Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an
+      offset from the first column (or row).
     name: key
     fullName: key
     langs:
@@ -71,6 +79,7 @@ items:
         type:
           - number
   - uid: 'excel!ExcelScript.SortField#sortOn:member'
+    summary: Represents the type of sorting of this condition.
     name: sortOn
     fullName: sortOn
     langs:
@@ -82,6 +91,7 @@ items:
         type:
           - 'excel!ExcelScript.SortOn:enum'
   - uid: 'excel!ExcelScript.SortField#subField:member'
+    summary: Represents the subfield that is the target property name of a rich value to sort on.
     name: subField
     fullName: subField
     langs:

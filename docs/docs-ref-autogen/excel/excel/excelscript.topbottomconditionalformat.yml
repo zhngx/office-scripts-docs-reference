@@ -41,6 +41,7 @@ items:
           - 'excel!ExcelScript.ConditionalTopBottomRule:interface'
         description: ''
   - uid: 'excel!ExcelScript.TopBottomConditionalFormat#setRule:member(1)'
+    summary: The criteria of the Top/Bottom conditional format.
     name: setRule(rule)
     fullName: setRule(rule)
     langs:

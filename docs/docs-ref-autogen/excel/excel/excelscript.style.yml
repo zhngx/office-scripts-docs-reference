@@ -79,6 +79,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Style#getBorders:member(1)'
+    summary: A Border collection of four Border objects that represent the style of the four borders.
     name: getBorders()
     fullName: getBorders()
     langs:
@@ -305,6 +306,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.Style#getRangeBorder:member(1)'
+    summary: Gets a border object using its name.
     name: getRangeBorder(index)
     fullName: getRangeBorder(index)
     langs:
@@ -318,7 +320,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
             - 'excel!ExcelScript.BorderIndex:enum'
   - uid: 'excel!ExcelScript.Style#getReadingOrder:member(1)'
@@ -387,6 +389,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Style#setAutoIndent:member(1)'
+    summary: Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
     name: setAutoIndent(autoIndent)
     fullName: setAutoIndent(autoIndent)
     langs:
@@ -404,6 +407,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setFormulaHidden:member(1)'
+    summary: Indicates if the formula will be hidden when the worksheet is protected.
     name: setFormulaHidden(formulaHidden)
     fullName: setFormulaHidden(formulaHidden)
     langs:
@@ -421,6 +425,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setHorizontalAlignment:member(1)'
+    summary: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -438,6 +443,9 @@ items:
           type:
             - 'excel!ExcelScript.HorizontalAlignment:enum'
   - uid: 'excel!ExcelScript.Style#setIncludeAlignment:member(1)'
+    summary: >-
+      Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      TextOrientation properties.
     name: setIncludeAlignment(includeAlignment)
     fullName: setIncludeAlignment(includeAlignment)
     langs:
@@ -455,6 +463,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIncludeBorder:member(1)'
+    summary: 'Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.'
     name: setIncludeBorder(includeBorder)
     fullName: setIncludeBorder(includeBorder)
     langs:
@@ -472,6 +481,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIncludeFont:member(1)'
+    summary: >-
+      Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Strikethrough, Subscript, Superscript, and Underline font properties.
     name: setIncludeFont(includeFont)
     fullName: setIncludeFont(includeFont)
     langs:
@@ -489,6 +501,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIncludeNumber:member(1)'
+    summary: Indicates if the style includes the NumberFormat property.
     name: setIncludeNumber(includeNumber)
     fullName: setIncludeNumber(includeNumber)
     langs:
@@ -506,6 +519,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIncludePatterns:member(1)'
+    summary: >-
+      Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      PatternColorIndex interior properties.
     name: setIncludePatterns(includePatterns)
     fullName: setIncludePatterns(includePatterns)
     langs:
@@ -523,6 +539,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIncludeProtection:member(1)'
+    summary: Indicates if the style includes the FormulaHidden and Locked protection properties.
     name: setIncludeProtection(includeProtection)
     fullName: setIncludeProtection(includeProtection)
     langs:
@@ -540,6 +557,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setIndentLevel:member(1)'
+    summary: An integer from 0 to 250 that indicates the indent level for the style.
     name: setIndentLevel(indentLevel)
     fullName: setIndentLevel(indentLevel)
     langs:
@@ -557,6 +575,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Style#setLocked:member(1)'
+    summary: Indicates if the object is locked when the worksheet is protected.
     name: setLocked(locked)
     fullName: setLocked(locked)
     langs:
@@ -574,6 +593,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setNumberFormat:member(1)'
+    summary: The format code of the number format for the style.
     name: setNumberFormat(numberFormat)
     fullName: setNumberFormat(numberFormat)
     langs:
@@ -591,6 +611,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Style#setNumberFormatLocal:member(1)'
+    summary: The localized format code of the number format for the style.
     name: setNumberFormatLocal(numberFormatLocal)
     fullName: setNumberFormatLocal(numberFormatLocal)
     langs:
@@ -608,6 +629,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Style#setReadingOrder:member(1)'
+    summary: The reading order for the style.
     name: setReadingOrder(readingOrder)
     fullName: setReadingOrder(readingOrder)
     langs:
@@ -625,6 +647,7 @@ items:
           type:
             - 'excel!ExcelScript.ReadingOrder:enum'
   - uid: 'excel!ExcelScript.Style#setShrinkToFit:member(1)'
+    summary: Indicates if text automatically shrinks to fit in the available column width.
     name: setShrinkToFit(shrinkToFit)
     fullName: setShrinkToFit(shrinkToFit)
     langs:
@@ -642,6 +665,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Style#setTextOrientation:member(1)'
+    summary: The text orientation for the style.
     name: setTextOrientation(textOrientation)
     fullName: setTextOrientation(textOrientation)
     langs:
@@ -659,6 +683,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Style#setVerticalAlignment:member(1)'
+    summary: Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
@@ -676,6 +701,7 @@ items:
           type:
             - 'excel!ExcelScript.VerticalAlignment:enum'
   - uid: 'excel!ExcelScript.Style#setWrapText:member(1)'
+    summary: Indicates if Microsoft Excel wraps the text in the object.
     name: setWrapText(wrapText)
     fullName: setWrapText(wrapText)
     langs:

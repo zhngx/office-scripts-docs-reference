@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.CellPropertiesFill:interface'
+    summary: >-
+      Represents the `format.fill` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+      `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
+      -->, and `setColumnProperties`<!-- -->.
     name: ExcelScript.CellPropertiesFill
     fullName: ExcelScript.CellPropertiesFill
     langs:
@@ -14,6 +18,7 @@ items:
       - 'excel!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
       - 'excel!ExcelScript.CellPropertiesFill#tintAndShade:member'
   - uid: 'excel!ExcelScript.CellPropertiesFill#color:member'
+    summary: Represents the `format.fill.color` property.
     name: color
     fullName: color
     langs:
@@ -25,6 +30,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.CellPropertiesFill#pattern:member'
+    summary: Represents the `format.fill.pattern` property.
     name: pattern
     fullName: pattern
     langs:
@@ -36,6 +42,7 @@ items:
         type:
           - 'excel!ExcelScript.FillPattern:enum'
   - uid: 'excel!ExcelScript.CellPropertiesFill#patternColor:member'
+    summary: Represents the `format.fill.patternColor` property.
     name: patternColor
     fullName: patternColor
     langs:
@@ -47,6 +54,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
+    summary: Represents the `format.fill.patternTintAndShade` property.
     name: patternTintAndShade
     fullName: patternTintAndShade
     langs:
@@ -58,6 +66,7 @@ items:
         type:
           - number
   - uid: 'excel!ExcelScript.CellPropertiesFill#tintAndShade:member'
+    summary: Represents the `format.fill.tintAndShade` property.
     name: tintAndShade
     fullName: tintAndShade
     langs:

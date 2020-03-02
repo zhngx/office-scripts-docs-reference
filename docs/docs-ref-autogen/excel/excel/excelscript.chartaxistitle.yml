@@ -69,10 +69,11 @@ items:
         description: ''
       parameters:
         - id: formula
-          description: ''
+          description: a string that present the formula to set
           type:
             - string
   - uid: 'excel!ExcelScript.ChartAxisTitle#setText:member(1)'
+    summary: Represents the axis title.
     name: setText(text)
     fullName: setText(text)
     langs:
@@ -90,6 +91,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartAxisTitle#setVisible:member(1)'
+    summary: A boolean that specifies the visibility of an axis title.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

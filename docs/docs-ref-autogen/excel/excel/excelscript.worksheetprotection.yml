@@ -54,11 +54,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: Optional. Sheet protection options.
           type:
             - 'excel!ExcelScript.WorksheetProtectionOptions:interface'
         - id: password
-          description: ''
+          description: Optional. Sheet protection password.
           type:
             - string
   - uid: 'excel!ExcelScript.WorksheetProtection#unprotect:member(1)'
@@ -76,7 +76,7 @@ items:
         description: ''
       parameters:
         - id: password
-          description: ''
+          description: sheet protection password.
           type:
             - string
 references:

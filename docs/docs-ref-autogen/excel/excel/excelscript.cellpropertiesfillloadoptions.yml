@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    summary: Specifies which properties to load on the `format.fill` object.
     name: ExcelScript.CellPropertiesFillLoadOptions
     fullName: ExcelScript.CellPropertiesFillLoadOptions
     langs:
@@ -14,6 +15,7 @@ items:
       - 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
       - 'excel!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    summary: Specifies whether to load on the `color` property.
     name: color
     fullName: color
     langs:
@@ -25,6 +27,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    summary: Specifies whether to load on the `pattern` property.
     name: pattern
     fullName: pattern
     langs:
@@ -36,6 +39,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: Specifies whether to load on the `patternColor` property.
     name: patternColor
     fullName: patternColor
     langs:
@@ -47,6 +51,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: Specifies whether to load on the `patternTintAndShade` property.
     name: patternTintAndShade
     fullName: patternTintAndShade
     langs:
@@ -58,6 +63,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: Specifies whether to load on the `tintAndShade` property.
     name: tintAndShade
     fullName: tintAndShade
     langs:

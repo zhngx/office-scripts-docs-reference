@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.RangeHyperlink:interface'
+    summary: Represents the necessary strings to get/set a hyperlink (XHL) object.
     name: ExcelScript.RangeHyperlink
     fullName: ExcelScript.RangeHyperlink
     langs:
@@ -13,6 +14,7 @@ items:
       - 'excel!ExcelScript.RangeHyperlink#screenTip:member'
       - 'excel!ExcelScript.RangeHyperlink#textToDisplay:member'
   - uid: 'excel!ExcelScript.RangeHyperlink#address:member'
+    summary: Represents the url target for the hyperlink.
     name: address
     fullName: address
     langs:
@@ -24,6 +26,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.RangeHyperlink#documentReference:member'
+    summary: Represents the document reference target for the hyperlink.
     name: documentReference
     fullName: documentReference
     langs:
@@ -35,6 +38,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.RangeHyperlink#screenTip:member'
+    summary: Represents the string displayed when hovering over the hyperlink.
     name: screenTip
     fullName: screenTip
     langs:
@@ -46,6 +50,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.RangeHyperlink#textToDisplay:member'
+    summary: Represents the string that is displayed in the top left most cell in the range.
     name: textToDisplay
     fullName: textToDisplay
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartBoxQuartileCalculation:enum'
+    summary: Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
     name: ExcelScript.ChartBoxQuartileCalculation
     fullName: ExcelScript.ChartBoxQuartileCalculation
     langs:

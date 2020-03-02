@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartGradientStyle:enum'
+    summary: Represents the gradient style of a chart series. This is only applicable for region map charts.
     name: ExcelScript.ChartGradientStyle
     fullName: ExcelScript.ChartGradientStyle
     langs:

@@ -91,6 +91,9 @@ items:
           - 'excel!ExcelScript.BorderWeight:enum'
         description: ''
   - uid: 'excel!ExcelScript.RangeBorder#setColor:member(1)'
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange").
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -108,6 +111,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.RangeBorder#setStyle:member(1)'
+    summary: >-
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -125,6 +131,10 @@ items:
           type:
             - 'excel!ExcelScript.BorderLineStyle:enum'
   - uid: 'excel!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
+      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
+      tintAndShade setting.
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -142,6 +152,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeBorder#setWeight:member(1)'
+    summary: Specifies the weight of the border around a range. See Excel.BorderWeight for details.
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeTextHorizontalAlignment:enum'
+    summary: Specifies the horizontal alignment for the text frame in a shape.
     name: ExcelScript.ShapeTextHorizontalAlignment
     fullName: ExcelScript.ShapeTextHorizontalAlignment
     langs:

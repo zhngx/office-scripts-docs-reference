@@ -47,11 +47,13 @@ items:
         description: ''
       parameters:
         - id: shape
-          description: ''
+          description: The shape to connect.
           type:
             - 'excel!ExcelScript.Shape:interface'
         - id: connectionSite
-          description: ''
+          description: >-
+            The connection site on the shape to which the beginning of the connector is attached. Must be an integer
+            between 0 (inclusive) and the connection-site count of the specified shape (exclusive).
           type:
             - number
   - uid: 'excel!ExcelScript.Line#connectEndShape:member(1)'
@@ -69,11 +71,13 @@ items:
         description: ''
       parameters:
         - id: shape
-          description: ''
+          description: The shape to connect.
           type:
             - 'excel!ExcelScript.Shape:interface'
         - id: connectionSite
-          description: ''
+          description: >-
+            The connection site on the shape to which the end of the connector is attached. Must be an integer between 0
+            (inclusive) and the connection-site count of the specified shape (exclusive).
           type:
             - number
   - uid: 'excel!ExcelScript.Line#disconnectBeginShape:member(1)'
@@ -263,6 +267,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Line#setBeginArrowheadLength:member(1)'
+    summary: Represents the length of the arrowhead at the beginning of the specified line.
     name: setBeginArrowheadLength(beginArrowheadLength)
     fullName: setBeginArrowheadLength(beginArrowheadLength)
     langs:
@@ -280,6 +285,7 @@ items:
           type:
             - 'excel!ExcelScript.ArrowheadLength:enum'
   - uid: 'excel!ExcelScript.Line#setBeginArrowheadStyle:member(1)'
+    summary: Represents the style of the arrowhead at the beginning of the specified line.
     name: setBeginArrowheadStyle(beginArrowheadStyle)
     fullName: setBeginArrowheadStyle(beginArrowheadStyle)
     langs:
@@ -297,6 +303,7 @@ items:
           type:
             - 'excel!ExcelScript.ArrowheadStyle:enum'
   - uid: 'excel!ExcelScript.Line#setBeginArrowheadWidth:member(1)'
+    summary: Represents the width of the arrowhead at the beginning of the specified line.
     name: setBeginArrowheadWidth(beginArrowheadWidth)
     fullName: setBeginArrowheadWidth(beginArrowheadWidth)
     langs:
@@ -314,6 +321,7 @@ items:
           type:
             - 'excel!ExcelScript.ArrowheadWidth:enum'
   - uid: 'excel!ExcelScript.Line#setConnectorType:member(1)'
+    summary: Represents the connector type for the line.
     name: setConnectorType(connectorType)
     fullName: setConnectorType(connectorType)
     langs:
@@ -331,6 +339,7 @@ items:
           type:
             - 'excel!ExcelScript.ConnectorType:enum'
   - uid: 'excel!ExcelScript.Line#setEndArrowheadLength:member(1)'
+    summary: Represents the length of the arrowhead at the end of the specified line.
     name: setEndArrowheadLength(endArrowheadLength)
     fullName: setEndArrowheadLength(endArrowheadLength)
     langs:
@@ -348,6 +357,7 @@ items:
           type:
             - 'excel!ExcelScript.ArrowheadLength:enum'
   - uid: 'excel!ExcelScript.Line#setEndArrowheadStyle:member(1)'
+    summary: Represents the style of the arrowhead at the end of the specified line.
     name: setEndArrowheadStyle(endArrowheadStyle)
     fullName: setEndArrowheadStyle(endArrowheadStyle)
     langs:
@@ -365,6 +375,7 @@ items:
           type:
             - 'excel!ExcelScript.ArrowheadStyle:enum'
   - uid: 'excel!ExcelScript.Line#setEndArrowheadWidth:member(1)'
+    summary: Represents the width of the arrowhead at the end of the specified line.
     name: setEndArrowheadWidth(endArrowheadWidth)
     fullName: setEndArrowheadWidth(endArrowheadWidth)
     langs:

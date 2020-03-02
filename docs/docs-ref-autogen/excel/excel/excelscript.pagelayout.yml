@@ -367,6 +367,7 @@ items:
           - 'excel!ExcelScript.PageLayoutZoomOptions:interface'
         description: ''
   - uid: 'excel!ExcelScript.PageLayout#setBlackAndWhite:member(1)'
+    summary: Gets or sets the worksheet's black and white print option.
     name: setBlackAndWhite(blackAndWhite)
     fullName: setBlackAndWhite(blackAndWhite)
     langs:
@@ -384,6 +385,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PageLayout#setBottomMargin:member(1)'
+    summary: Gets or sets the worksheet's bottom page margin to use for printing in points.
     name: setBottomMargin(bottomMargin)
     fullName: setBottomMargin(bottomMargin)
     langs:
@@ -401,6 +403,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setCenterHorizontally:member(1)'
+    summary: >-
+      Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
+      horizontally when it's printed.
     name: setCenterHorizontally(centerHorizontally)
     fullName: setCenterHorizontally(centerHorizontally)
     langs:
@@ -418,6 +423,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PageLayout#setCenterVertically:member(1)'
+    summary: >-
+      Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
+      vertically when it's printed.
     name: setCenterVertically(centerVertically)
     fullName: setCenterVertically(centerVertically)
     langs:
@@ -435,6 +443,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PageLayout#setDraftMode:member(1)'
+    summary: Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
     name: setDraftMode(draftMode)
     fullName: setDraftMode(draftMode)
     langs:
@@ -452,6 +461,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PageLayout#setFirstPageNumber:member(1)'
+    summary: Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
     name: setFirstPageNumber(firstPageNumber)
     fullName: setFirstPageNumber(firstPageNumber)
     langs:
@@ -469,6 +479,7 @@ items:
           type:
             - number | ""
   - uid: 'excel!ExcelScript.PageLayout#setFooterMargin:member(1)'
+    summary: 'Gets or sets the worksheet''s footer margin, in points, for use when printing.'
     name: setFooterMargin(footerMargin)
     fullName: setFooterMargin(footerMargin)
     langs:
@@ -486,6 +497,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setHeaderMargin:member(1)'
+    summary: 'Gets or sets the worksheet''s header margin, in points, for use when printing.'
     name: setHeaderMargin(headerMargin)
     fullName: setHeaderMargin(headerMargin)
     langs:
@@ -503,6 +515,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setLeftMargin:member(1)'
+    summary: 'Gets or sets the worksheet''s left margin, in points, for use when printing.'
     name: setLeftMargin(leftMargin)
     fullName: setLeftMargin(leftMargin)
     langs:
@@ -520,6 +533,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setOrientation:member(1)'
+    summary: Gets or sets the worksheet's orientation of the page.
     name: setOrientation(orientation)
     fullName: setOrientation(orientation)
     langs:
@@ -537,6 +551,7 @@ items:
           type:
             - 'excel!ExcelScript.PageOrientation:enum'
   - uid: 'excel!ExcelScript.PageLayout#setPaperSize:member(1)'
+    summary: Gets or sets the worksheet's paper size of the page.
     name: setPaperSize(paperSize)
     fullName: setPaperSize(paperSize)
     langs:
@@ -568,10 +583,11 @@ items:
         description: ''
       parameters:
         - id: printArea
-          description: ''
+          description: 'The range, or RangeAreas of the content to print.'
           type:
             - 'excel!ExcelScript.PageLayout#setPrintArea~0:complex'
   - uid: 'excel!ExcelScript.PageLayout#setPrintComments:member(1)'
+    summary: Gets or sets whether the worksheet's comments should be displayed when printing.
     name: setPrintComments(printComments)
     fullName: setPrintComments(printComments)
     langs:
@@ -589,6 +605,7 @@ items:
           type:
             - 'excel!ExcelScript.PrintComments:enum'
   - uid: 'excel!ExcelScript.PageLayout#setPrintErrors:member(1)'
+    summary: Gets or sets the worksheet's print errors option.
     name: setPrintErrors(printErrors)
     fullName: setPrintErrors(printErrors)
     langs:
@@ -606,6 +623,7 @@ items:
           type:
             - 'excel!ExcelScript.PrintErrorType:enum'
   - uid: 'excel!ExcelScript.PageLayout#setPrintGridlines:member(1)'
+    summary: Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
     name: setPrintGridlines(printGridlines)
     fullName: setPrintGridlines(printGridlines)
     langs:
@@ -623,6 +641,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PageLayout#setPrintHeadings:member(1)'
+    summary: Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
     name: setPrintHeadings(printHeadings)
     fullName: setPrintHeadings(printHeadings)
     langs:
@@ -658,14 +677,17 @@ items:
         description: ''
       parameters:
         - id: unit
-          description: ''
+          description: Measurement unit for the margins provided.
           type:
             - 'excel!ExcelScript.PrintMarginUnit:enum'
         - id: marginOptions
-          description: ''
+          description: 'Margin values to set, margins not provided will remain unchanged.'
           type:
             - 'excel!ExcelScript.PageLayoutMarginOptions:interface'
   - uid: 'excel!ExcelScript.PageLayout#setPrintOrder:member(1)'
+    summary: >-
+      Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
+      number printed.
     name: setPrintOrder(printOrder)
     fullName: setPrintOrder(printOrder)
     langs:
@@ -697,7 +719,7 @@ items:
         description: ''
       parameters:
         - id: printTitleColumns
-          description: ''
+          description: 'The columns to be repeated to the left of each page, range must span the entire column to be valid.'
           type:
             - 'excel!ExcelScript.PageLayout#setPrintTitleColumns~0:complex'
   - uid: 'excel!ExcelScript.PageLayout#setPrintTitleRows:member(1)'
@@ -715,10 +737,11 @@ items:
         description: ''
       parameters:
         - id: printTitleRows
-          description: ''
+          description: 'The rows to be repeated at the top of each page, range must span the entire row to be valid.'
           type:
             - 'excel!ExcelScript.PageLayout#setPrintTitleRows~0:complex'
   - uid: 'excel!ExcelScript.PageLayout#setRightMargin:member(1)'
+    summary: 'Gets or sets the worksheet''s right margin, in points, for use when printing.'
     name: setRightMargin(rightMargin)
     fullName: setRightMargin(rightMargin)
     langs:
@@ -736,6 +759,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setTopMargin:member(1)'
+    summary: 'Gets or sets the worksheet''s top margin, in points, for use when printing.'
     name: setTopMargin(topMargin)
     fullName: setTopMargin(topMargin)
     langs:
@@ -753,6 +777,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.PageLayout#setZoom:member(1)'
+    summary: >-
+      Gets or sets the worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object
+      (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
     name: setZoom(zoom)
     fullName: setZoom(zoom)
     langs:

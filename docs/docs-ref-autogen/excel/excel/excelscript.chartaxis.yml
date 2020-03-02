@@ -24,9 +24,13 @@ items:
       - 'excel!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getMaximum:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getMinimum:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getMinorUnit:member(1)'
       - 'excel!ExcelScript.ChartAxis#getMultiLevel:member(1)'
       - 'excel!ExcelScript.ChartAxis#getNumberFormat:member(1)'
       - 'excel!ExcelScript.ChartAxis#getOffset:member(1)'
@@ -35,7 +39,9 @@ items:
       - 'excel!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
       - 'excel!ExcelScript.ChartAxis#getScaleType:member(1)'
       - 'excel!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getTextOrientation:member(1)'
       - 'excel!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
+      - 'excel!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
       - 'excel!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
       - 'excel!ExcelScript.ChartAxis#getTitle:member(1)'
       - 'excel!ExcelScript.ChartAxis#getTop:member(1)'
@@ -53,8 +59,12 @@ items:
       - 'excel!ExcelScript.ChartAxis#setLogBase:member(1)'
       - 'excel!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
       - 'excel!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setMaximum:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setMinimum:member(1)'
       - 'excel!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
       - 'excel!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setMinorUnit:member(1)'
       - 'excel!ExcelScript.ChartAxis#setMultiLevel:member(1)'
       - 'excel!ExcelScript.ChartAxis#setNumberFormat:member(1)'
       - 'excel!ExcelScript.ChartAxis#setOffset:member(1)'
@@ -63,7 +73,9 @@ items:
       - 'excel!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
       - 'excel!ExcelScript.ChartAxis#setScaleType:member(1)'
       - 'excel!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setTextOrientation:member(1)'
       - 'excel!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+      - 'excel!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
       - 'excel!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
       - 'excel!ExcelScript.ChartAxis#setVisible:member(1)'
   - uid: 'excel!ExcelScript.ChartAxis#getAlignment:member(1)'
@@ -269,6 +281,51 @@ items:
         type:
           - 'excel!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+    name: getMajorUnit()
+    fullName: getMajorUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMajorUnit(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getMaximum:member(1)'
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    name: getMaximum()
+    fullName: getMaximum()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMaximum(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getMinimum:member(1)'
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    name: getMinimum()
+    fullName: getMinimum()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinimum(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
     summary: Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
     name: getMinorGridlines()
@@ -309,6 +366,21 @@ items:
       return:
         type:
           - 'excel!ExcelScript.ChartAxisTimeUnit:enum'
+        description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getMinorUnit:member(1)'
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+    name: getMinorUnit()
+    fullName: getMinorUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinorUnit(): number;'
+      return:
+        type:
+          - number
         description: ''
   - uid: 'excel!ExcelScript.ChartAxis#getMultiLevel:member(1)'
     summary: Represents whether an axis is multilevel or not.
@@ -418,6 +490,21 @@ items:
         type:
           - boolean
         description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getTextOrientation:member(1)'
+    summary: >-
+      Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an
+      integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
@@ -432,6 +519,21 @@ items:
       return:
         type:
           - 'excel!ExcelScript.ChartAxisTickLabelPosition:enum'
+        description: ''
+  - uid: 'excel!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
+    summary: >-
+      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
+    name: getTickLabelSpacing()
+    fullName: getTickLabelSpacing()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTickLabelSpacing(): number;'
+      return:
+        type:
+          - number
         description: ''
   - uid: 'excel!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
     summary: Represents the number of categories or series between tick marks.
@@ -514,6 +616,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartAxis#setAlignment:member(1)'
+    summary: Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
     name: setAlignment(alignment)
     fullName: setAlignment(alignment)
     langs:
@@ -531,6 +634,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartTickLabelAlignment:enum'
   - uid: 'excel!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
+    summary: Returns or sets the base unit for the specified category axis.
     name: setBaseTimeUnit(baseTimeUnit)
     fullName: setBaseTimeUnit(baseTimeUnit)
     langs:
@@ -562,10 +666,11 @@ items:
         description: ''
       parameters:
         - id: sourceData
-          description: ''
+          description: The Range object corresponding to the source data.
           type:
             - 'excel!ExcelScript.Range:interface'
   - uid: 'excel!ExcelScript.ChartAxis#setCategoryType:member(1)'
+    summary: Returns or sets the category axis type.
     name: setCategoryType(categoryType)
     fullName: setCategoryType(categoryType)
     langs:
@@ -597,10 +702,11 @@ items:
         description: ''
       parameters:
         - id: value
-          description: ''
+          description: Custom value of the display unit.
           type:
             - number
   - uid: 'excel!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
+    summary: Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
     name: setDisplayUnit(displayUnit)
     fullName: setDisplayUnit(displayUnit)
     langs:
@@ -618,6 +724,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartAxisDisplayUnit:enum'
   - uid: 'excel!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
+    summary: Represents whether value axis crosses the category axis between categories.
     name: setIsBetweenCategories(isBetweenCategories)
     fullName: setIsBetweenCategories(isBetweenCategories)
     langs:
@@ -635,6 +742,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
+    summary: >-
+      Represents whether or not the number format is linked to the cells. If true, the number format will change in the
+      labels when it changes in the cells.
     name: setLinkNumberFormat(linkNumberFormat)
     fullName: setLinkNumberFormat(linkNumberFormat)
     langs:
@@ -652,6 +762,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartAxis#setLogBase:member(1)'
+    summary: Represents the base of the logarithm when using logarithmic scales.
     name: setLogBase(logBase)
     fullName: setLogBase(logBase)
     langs:
@@ -669,6 +780,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
+    summary: Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
     name: setMajorTickMark(majorTickMark)
     fullName: setMajorTickMark(majorTickMark)
     langs:
@@ -686,6 +798,9 @@ items:
           type:
             - 'excel!ExcelScript.ChartAxisTickMark:enum'
   - uid: 'excel!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+    summary: >-
+      Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
+      TimeScale.
     name: setMajorTimeUnitScale(majorTimeUnitScale)
     fullName: setMajorTimeUnitScale(majorTimeUnitScale)
     langs:
@@ -702,7 +817,68 @@ items:
           description: ''
           type:
             - 'excel!ExcelScript.ChartAxisTimeUnit:enum'
+  - uid: 'excel!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+    name: setMajorUnit(majorUnit)
+    fullName: setMajorUnit(majorUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMajorUnit(majorUnit: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: majorUnit
+          description: ''
+          type:
+            - number
+  - uid: 'excel!ExcelScript.ChartAxis#setMaximum:member(1)'
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    name: setMaximum(maximum)
+    fullName: setMaximum(maximum)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMaximum(maximum: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: maximum
+          description: ''
+          type:
+            - number
+  - uid: 'excel!ExcelScript.ChartAxis#setMinimum:member(1)'
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    name: setMinimum(minimum)
+    fullName: setMinimum(minimum)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinimum(minimum: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minimum
+          description: ''
+          type:
+            - number
   - uid: 'excel!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
+    summary: Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
     name: setMinorTickMark(minorTickMark)
     fullName: setMinorTickMark(minorTickMark)
     langs:
@@ -720,6 +896,9 @@ items:
           type:
             - 'excel!ExcelScript.ChartAxisTickMark:enum'
   - uid: 'excel!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+    summary: >-
+      Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
+      TimeScale.
     name: setMinorTimeUnitScale(minorTimeUnitScale)
     fullName: setMinorTimeUnitScale(minorTimeUnitScale)
     langs:
@@ -736,7 +915,28 @@ items:
           description: ''
           type:
             - 'excel!ExcelScript.ChartAxisTimeUnit:enum'
+  - uid: 'excel!ExcelScript.ChartAxis#setMinorUnit:member(1)'
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+    name: setMinorUnit(minorUnit)
+    fullName: setMinorUnit(minorUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinorUnit(minorUnit: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minorUnit
+          description: ''
+          type:
+            - number
   - uid: 'excel!ExcelScript.ChartAxis#setMultiLevel:member(1)'
+    summary: Represents whether an axis is multilevel or not.
     name: setMultiLevel(multiLevel)
     fullName: setMultiLevel(multiLevel)
     langs:
@@ -754,6 +954,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartAxis#setNumberFormat:member(1)'
+    summary: Represents the format code for the axis tick label.
     name: setNumberFormat(numberFormat)
     fullName: setNumberFormat(numberFormat)
     langs:
@@ -771,6 +972,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartAxis#setOffset:member(1)'
+    summary: >-
+      Represents the distance between the levels of labels, and the distance between the first level and the axis line.
+      The value should be an integer from 0 to 1000.
     name: setOffset(offset)
     fullName: setOffset(offset)
     langs:
@@ -788,6 +992,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartAxis#setPosition:member(1)'
+    summary: Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -819,10 +1024,11 @@ items:
         description: ''
       parameters:
         - id: value
-          description: ''
+          description: Custom value of the crosses at
           type:
             - number
   - uid: 'excel!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
+    summary: Represents whether Microsoft Excel plots data points from last to first.
     name: setReversePlotOrder(reversePlotOrder)
     fullName: setReversePlotOrder(reversePlotOrder)
     langs:
@@ -840,6 +1046,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartAxis#setScaleType:member(1)'
+    summary: Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
     name: setScaleType(scaleType)
     fullName: setScaleType(scaleType)
     langs:
@@ -857,6 +1064,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartAxisScaleType:enum'
   - uid: 'excel!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+    summary: Represents whether the axis display unit label is visible.
     name: setShowDisplayUnitLabel(showDisplayUnitLabel)
     fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
     langs:
@@ -873,7 +1081,30 @@ items:
           description: ''
           type:
             - boolean
+  - uid: 'excel!ExcelScript.ChartAxis#setTextOrientation:member(1)'
+    summary: >-
+      Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an
+      integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
   - uid: 'excel!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+    summary: >-
+      Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      details.
     name: setTickLabelPosition(tickLabelPosition)
     fullName: setTickLabelPosition(tickLabelPosition)
     langs:
@@ -893,7 +1124,28 @@ items:
           description: ''
           type:
             - 'excel!ExcelScript.ChartAxisTickLabelPosition:enum'
+  - uid: 'excel!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
+    summary: >-
+      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
+    name: setTickLabelSpacing(tickLabelSpacing)
+    fullName: setTickLabelSpacing(tickLabelSpacing)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tickLabelSpacing
+          description: ''
+          type:
+            - number
   - uid: 'excel!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
+    summary: Represents the number of categories or series between tick marks.
     name: setTickMarkSpacing(tickMarkSpacing)
     fullName: setTickMarkSpacing(tickMarkSpacing)
     langs:
@@ -911,6 +1163,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartAxis#setVisible:member(1)'
+    summary: A boolean value represents the visibility of the axis.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

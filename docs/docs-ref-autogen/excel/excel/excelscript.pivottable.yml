@@ -33,6 +33,7 @@ items:
       - 'excel!ExcelScript.PivotTable#setName:member(1)'
       - 'excel!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
   - uid: 'excel!ExcelScript.PivotTable#addDataPivotHierarchy:member(1)'
+    summary: Adds the PivotHierarchy to the current axis.
     name: addDataPivotHierarchy(pivotHierarchy)
     fullName: addDataPivotHierarchy(pivotHierarchy)
     langs:
@@ -53,6 +54,9 @@ items:
           type:
             - 'excel!ExcelScript.PivotHierarchy:interface'
   - uid: 'excel!ExcelScript.PivotTable#addFilterPivotHierarchy:member(1)'
+    summary: >-
+      Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter
+      axis, it will be removed from that location.
     name: addFilterPivotHierarchy(pivotHierarchy)
     fullName: addFilterPivotHierarchy(pivotHierarchy)
     langs:
@@ -86,6 +90,7 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#getDataHierarchies:member(1)'
+    summary: The Data Pivot Hierarchies of the PivotTable.
     name: getDataHierarchies()
     fullName: getDataHierarchies()
     langs:
@@ -98,6 +103,7 @@ items:
           - 'excel!ExcelScript.PivotTable#getDataHierarchies~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#getDataPivotHierarchy:member(1)'
+    summary: 'Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.'
     name: getDataPivotHierarchy(name)
     fullName: getDataPivotHierarchy(name)
     langs:
@@ -111,7 +117,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the DataPivotHierarchy to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)'
@@ -128,6 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#getFilterHierarchies:member(1)'
+    summary: The Filter Pivot Hierarchies of the PivotTable.
     name: getFilterHierarchies()
     fullName: getFilterHierarchies()
     langs:
@@ -140,6 +147,7 @@ items:
           - 'excel!ExcelScript.PivotTable#getFilterHierarchies~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#getFilterPivotHierarchy:member(1)'
+    summary: 'Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.'
     name: getFilterPivotHierarchy(name)
     fullName: getFilterPivotHierarchy(name)
     langs:
@@ -153,10 +161,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the FilterPivotHierarchy to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.PivotTable#getHierarchies:member(1)'
+    summary: The Pivot Hierarchies of the PivotTable.
     name: getHierarchies()
     fullName: getHierarchies()
     langs:
@@ -208,6 +217,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#getPivotHierarchy:member(1)'
+    summary: 'Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.'
     name: getPivotHierarchy(name)
     fullName: getPivotHierarchy(name)
     langs:
@@ -221,7 +231,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotHierarchy to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.PivotTable#getUseCustomSortLists:member(1)'
@@ -264,6 +274,7 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.PivotTable#removeDataPivotHierarchy:member(1)'
+    summary: Removes the PivotHierarchy from the current axis.
     name: removeDataPivotHierarchy(DataPivotHierarchy)
     fullName: removeDataPivotHierarchy(DataPivotHierarchy)
     langs:
@@ -281,6 +292,7 @@ items:
           type:
             - 'excel!ExcelScript.DataPivotHierarchy:interface'
   - uid: 'excel!ExcelScript.PivotTable#removeFilterPivotHierarchy:member(1)'
+    summary: Removes the PivotHierarchy from the current axis.
     name: removeFilterPivotHierarchy(filterPivotHierarchy)
     fullName: removeFilterPivotHierarchy(filterPivotHierarchy)
     langs:
@@ -301,6 +313,7 @@ items:
           type:
             - 'excel!ExcelScript.FilterPivotHierarchy:interface'
   - uid: 'excel!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
+    summary: Specifies whether the PivotTable allows values in the data body to be edited by the user.
     name: setEnableDataValueEditing(enableDataValueEditing)
     fullName: setEnableDataValueEditing(enableDataValueEditing)
     langs:
@@ -318,6 +331,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotTable#setName:member(1)'
+    summary: Name of the PivotTable.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -335,6 +349,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
+    summary: Specifies whether the PivotTable uses custom lists when sorting.
     name: setUseCustomSortLists(useCustomSortLists)
     fullName: setUseCustomSortLists(useCustomSortLists)
     langs:

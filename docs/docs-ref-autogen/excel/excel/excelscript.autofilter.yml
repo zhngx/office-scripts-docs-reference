@@ -38,15 +38,15 @@ items:
         description: ''
       parameters:
         - id: range
-          description: ''
+          description: The range over which the AutoFilter will apply on.
           type:
             - 'excel!ExcelScript.AutoFilter#apply~0:complex'
         - id: columnIndex
-          description: ''
+          description: The zero-based column index to which the AutoFilter is applied.
           type:
             - number
         - id: criteria
-          description: ''
+          description: The filter criteria.
           type:
             - 'excel!ExcelScript.FilterCriteria:interface'
   - uid: 'excel!ExcelScript.AutoFilter#clearCriteria:member(1)'

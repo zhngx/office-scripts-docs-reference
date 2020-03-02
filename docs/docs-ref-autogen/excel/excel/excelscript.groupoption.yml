@@ -11,12 +11,14 @@ items:
       - 'excel!ExcelScript.GroupOption.byColumns:member'
       - 'excel!ExcelScript.GroupOption.byRows:member'
   - uid: 'excel!ExcelScript.GroupOption.byColumns:member'
+    summary: Group by columns.
     name: byColumns
     fullName: byColumns
     langs:
       - typeScript
     type: field
   - uid: 'excel!ExcelScript.GroupOption.byRows:member'
+    summary: Group by rows.
     name: byRows
     fullName: byRows
     langs:

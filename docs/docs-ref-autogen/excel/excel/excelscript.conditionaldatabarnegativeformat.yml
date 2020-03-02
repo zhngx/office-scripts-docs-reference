@@ -74,6 +74,9 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange"). "Empty String" if no border is present or set.
     name: setBorderColor(borderColor)
     fullName: setBorderColor(borderColor)
     langs:
@@ -91,6 +94,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+    summary: >-
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
+      "orange").
     name: setFillColor(fillColor)
     fullName: setFillColor(fillColor)
     langs:
@@ -108,6 +114,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+    summary: Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
     name: setMatchPositiveBorderColor(matchPositiveBorderColor)
     fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
     langs:
@@ -125,6 +132,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+    summary: Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
     name: setMatchPositiveFillColor(matchPositiveFillColor)
     fullName: setMatchPositiveFillColor(matchPositiveFillColor)
     langs:

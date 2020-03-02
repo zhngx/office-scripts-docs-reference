@@ -39,6 +39,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.ChartGridlines#setVisible:member(1)'
+    summary: Boolean value representing if the axis gridlines are visible or not.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

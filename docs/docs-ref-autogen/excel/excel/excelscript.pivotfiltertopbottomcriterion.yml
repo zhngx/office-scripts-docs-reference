@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.PivotFilterTopBottomCriterion:enum'
+    summary: Represents the criteria for the top/bottom values filter.
     name: ExcelScript.PivotFilterTopBottomCriterion
     fullName: ExcelScript.PivotFilterTopBottomCriterion
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalTopBottomCriterionType:enum'
+    summary: Represents the criteria for the above/below average conditional format type.
     name: ExcelScript.ConditionalTopBottomCriterionType
     fullName: ExcelScript.ConditionalTopBottomCriterionType
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeTextReadingOrder:enum'
+    summary: Specifies the reading order for the text frame in a shape.
     name: ExcelScript.ShapeTextReadingOrder
     fullName: ExcelScript.ShapeTextReadingOrder
     langs:

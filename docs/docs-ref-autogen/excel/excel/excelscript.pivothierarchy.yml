@@ -15,6 +15,7 @@ items:
       - 'excel!ExcelScript.PivotHierarchy#getPivotField:member(1)'
       - 'excel!ExcelScript.PivotHierarchy#setName:member(1)'
   - uid: 'excel!ExcelScript.PivotHierarchy#getFields:member(1)'
+    summary: Returns the PivotFields associated with the PivotHierarchy.
     name: getFields()
     fullName: getFields()
     langs:
@@ -53,6 +54,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    summary: 'Gets a PivotField by name. If the PivotField does not exist, will return a null object.'
     name: getPivotField(name)
     fullName: getPivotField(name)
     langs:
@@ -66,10 +68,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotField to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.PivotHierarchy#setName:member(1)'
+    summary: Name of the PivotHierarchy.
     name: setName(name)
     fullName: setName(name)
     langs:

@@ -67,6 +67,7 @@ items:
           - any
         description: ''
   - uid: 'excel!ExcelScript.CustomProperty#setValue:member(1)'
+    summary: Gets or sets the value of the custom property.
     name: setValue(value)
     fullName: setValue(value)
     langs:

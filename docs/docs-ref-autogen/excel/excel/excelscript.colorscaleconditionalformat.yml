@@ -41,6 +41,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    summary: The criteria of the color scale. Midpoint is optional when using a two point color scale.
     name: setCriteria(criteria)
     fullName: setCriteria(criteria)
     langs:

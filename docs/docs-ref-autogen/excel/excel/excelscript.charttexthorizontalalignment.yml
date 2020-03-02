@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartTextHorizontalAlignment:enum'
+    summary: Represents the horizontal alignment for the specified object.
     name: ExcelScript.ChartTextHorizontalAlignment
     fullName: ExcelScript.ChartTextHorizontalAlignment
     langs:

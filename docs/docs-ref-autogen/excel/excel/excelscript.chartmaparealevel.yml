@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartMapAreaLevel:enum'
+    summary: Represents the mapping level of a chart series. This only applies to region map charts.
     name: ExcelScript.ChartMapAreaLevel
     fullName: ExcelScript.ChartMapAreaLevel
     langs:

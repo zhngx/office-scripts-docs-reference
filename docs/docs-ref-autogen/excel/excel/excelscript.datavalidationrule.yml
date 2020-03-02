@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.DataValidationRule:interface'
+    summary: >-
+      Data validation rule contains different types of data validation. You can only use one of them at a time according
+      the Excel.DataValidationType.
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:
@@ -16,6 +19,7 @@ items:
       - 'excel!ExcelScript.DataValidationRule#time:member'
       - 'excel!ExcelScript.DataValidationRule#wholeNumber:member'
   - uid: 'excel!ExcelScript.DataValidationRule#custom:member'
+    summary: Custom data validation criteria.
     name: custom
     fullName: custom
     langs:
@@ -27,6 +31,7 @@ items:
         type:
           - 'excel!ExcelScript.CustomDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#date:member'
+    summary: Date data validation criteria.
     name: date
     fullName: date
     langs:
@@ -38,6 +43,7 @@ items:
         type:
           - 'excel!ExcelScript.DateTimeDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#decimal:member'
+    summary: Decimal data validation criteria.
     name: decimal
     fullName: decimal
     langs:
@@ -49,6 +55,7 @@ items:
         type:
           - 'excel!ExcelScript.BasicDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#list:member'
+    summary: List data validation criteria.
     name: list
     fullName: list
     langs:
@@ -60,6 +67,7 @@ items:
         type:
           - 'excel!ExcelScript.ListDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#textLength:member'
+    summary: TextLength data validation criteria.
     name: textLength
     fullName: textLength
     langs:
@@ -71,6 +79,7 @@ items:
         type:
           - 'excel!ExcelScript.BasicDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#time:member'
+    summary: Time data validation criteria.
     name: time
     fullName: time
     langs:
@@ -82,6 +91,7 @@ items:
         type:
           - 'excel!ExcelScript.DateTimeDataValidation:interface'
   - uid: 'excel!ExcelScript.DataValidationRule#wholeNumber:member'
+    summary: WholeNumber data validation criteria.
     name: wholeNumber
     fullName: wholeNumber
     langs:

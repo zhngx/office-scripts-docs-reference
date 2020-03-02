@@ -433,6 +433,8 @@ items:
             uid: 'excel!ExcelScript.DataValidation:interface'
           - name: DataValidationErrorAlert
             uid: 'excel!ExcelScript.DataValidationErrorAlert:interface'
+          - name: DataValidationPrompt
+            uid: 'excel!ExcelScript.DataValidationPrompt:interface'
           - name: DataValidationRule
             uid: 'excel!ExcelScript.DataValidationRule:interface'
           - name: DateTimeDataValidation

@@ -15,12 +15,15 @@ items:
       - 'excel!ExcelScript.NamedItem#delete:member(1)'
       - 'excel!ExcelScript.NamedItem#getArrayValues:member(1)'
       - 'excel!ExcelScript.NamedItem#getComment:member(1)'
+      - 'excel!ExcelScript.NamedItem#getFormula:member(1)'
       - 'excel!ExcelScript.NamedItem#getName:member(1)'
       - 'excel!ExcelScript.NamedItem#getRange:member(1)'
       - 'excel!ExcelScript.NamedItem#getScope:member(1)'
       - 'excel!ExcelScript.NamedItem#getType:member(1)'
+      - 'excel!ExcelScript.NamedItem#getValue:member(1)'
       - 'excel!ExcelScript.NamedItem#getVisible:member(1)'
       - 'excel!ExcelScript.NamedItem#setComment:member(1)'
+      - 'excel!ExcelScript.NamedItem#setFormula:member(1)'
       - 'excel!ExcelScript.NamedItem#setVisible:member(1)'
   - uid: 'excel!ExcelScript.NamedItem#delete:member(1)'
     summary: Deletes the given name.
@@ -57,6 +60,19 @@ items:
     type: method
     syntax:
       content: 'getComment(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'excel!ExcelScript.NamedItem#getFormula:member(1)'
+    summary: Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+    name: getFormula()
+    fullName: getFormula()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormula(): string;'
       return:
         type:
           - string
@@ -117,6 +133,19 @@ items:
         type:
           - 'excel!ExcelScript.NamedItemType:enum'
         description: ''
+  - uid: 'excel!ExcelScript.NamedItem#getValue:member(1)'
+    summary: 'Represents the value computed by the name''s formula. For a named range, will return the range address. Read-only.'
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string | number;'
+      return:
+        type:
+          - string | number
+        description: ''
   - uid: 'excel!ExcelScript.NamedItem#getVisible:member(1)'
     summary: Specifies whether the object is visible or not.
     name: getVisible()
@@ -131,6 +160,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.NamedItem#setComment:member(1)'
+    summary: Represents the comment associated with this name.
     name: setComment(comment)
     fullName: setComment(comment)
     langs:
@@ -147,7 +177,26 @@ items:
           description: ''
           type:
             - string
+  - uid: 'excel!ExcelScript.NamedItem#setFormula:member(1)'
+    summary: Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: ''
+          type:
+            - string
   - uid: 'excel!ExcelScript.NamedItem#setVisible:member(1)'
+    summary: Specifies whether the object is visible or not.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

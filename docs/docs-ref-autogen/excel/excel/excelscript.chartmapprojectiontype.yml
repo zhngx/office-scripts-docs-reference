@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartMapProjectionType:enum'
+    summary: Represents the region projection type of a chart series layout. This only applies to region map charts.
     name: ExcelScript.ChartMapProjectionType
     fullName: ExcelScript.ChartMapProjectionType
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartTextVerticalAlignment:enum'
+    summary: Represents the vertical alignment for the specified object.
     name: ExcelScript.ChartTextVerticalAlignment
     fullName: ExcelScript.ChartTextVerticalAlignment
     langs:

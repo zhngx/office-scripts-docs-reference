@@ -12,6 +12,7 @@ items:
       - 'excel!ExcelScript.ShowAsRule#baseItem:member'
       - 'excel!ExcelScript.ShowAsRule#calculation:member'
   - uid: 'excel!ExcelScript.ShowAsRule#baseField:member'
+    summary: 'The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.'
     name: baseField
     fullName: baseField
     langs:
@@ -23,6 +24,7 @@ items:
         type:
           - 'excel!ExcelScript.PivotField:interface'
   - uid: 'excel!ExcelScript.ShowAsRule#baseItem:member'
+    summary: 'The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.'
     name: baseItem
     fullName: baseItem
     langs:
@@ -34,6 +36,7 @@ items:
         type:
           - 'excel!ExcelScript.PivotItem:interface'
   - uid: 'excel!ExcelScript.ShowAsRule#calculation:member'
+    summary: The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
     name: calculation
     fullName: calculation
     langs:

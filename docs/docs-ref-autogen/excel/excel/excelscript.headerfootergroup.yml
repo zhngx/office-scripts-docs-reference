@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.HeaderFooterGroup:interface'
-    summary: no comment
     name: ExcelScript.HeaderFooterGroup
     fullName: ExcelScript.HeaderFooterGroup
     langs:
@@ -115,6 +114,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.HeaderFooterGroup#setState:member(1)'
+    summary: Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
     name: setState(state)
     fullName: setState(state)
     langs:
@@ -132,6 +132,9 @@ items:
           type:
             - 'excel!ExcelScript.HeaderFooterState:enum'
   - uid: 'excel!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+    summary: >-
+      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
+      for the worksheet.
     name: setUseSheetMargins(useSheetMargins)
     fullName: setUseSheetMargins(useSheetMargins)
     langs:
@@ -149,6 +152,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+    summary: >-
+      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
+      layout options for the worksheet.
     name: setUseSheetScale(useSheetScale)
     fullName: setUseSheetScale(useSheetScale)
     langs:

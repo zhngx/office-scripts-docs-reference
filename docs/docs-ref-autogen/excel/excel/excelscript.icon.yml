@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.Icon:interface'
+    summary: Represents a cell icon.
     name: ExcelScript.Icon
     fullName: ExcelScript.Icon
     langs:
@@ -11,6 +12,7 @@ items:
       - 'excel!ExcelScript.Icon#index:member'
       - 'excel!ExcelScript.Icon#set:member'
   - uid: 'excel!ExcelScript.Icon#index:member'
+    summary: Represents the index of the icon in the given set.
     name: index
     fullName: index
     langs:
@@ -22,6 +24,7 @@ items:
         type:
           - number
   - uid: 'excel!ExcelScript.Icon#set:member'
+    summary: Represents the set that the icon is part of.
     name: set
     fullName: set
     langs:

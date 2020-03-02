@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalPresetCriteriaRule:interface'
+    summary: Represents the Preset Criteria Conditional Format Rule
     name: ExcelScript.ConditionalPresetCriteriaRule
     fullName: ExcelScript.ConditionalPresetCriteriaRule
     langs:
@@ -10,6 +11,7 @@ items:
     children:
       - 'excel!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
   - uid: 'excel!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
+    summary: The criterion of the conditional format.
     name: criterion
     fullName: criterion
     langs:

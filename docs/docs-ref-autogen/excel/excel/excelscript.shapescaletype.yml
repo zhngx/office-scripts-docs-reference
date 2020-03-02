@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeScaleType:enum'
+    summary: Specifies whether the shape is scaled relative to its original or current size.
     name: ExcelScript.ShapeScaleType
     fullName: ExcelScript.ShapeScaleType
     langs:

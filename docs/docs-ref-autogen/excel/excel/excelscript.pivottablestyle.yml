@@ -67,6 +67,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.PivotTableStyle#setName:member(1)'
+    summary: Gets the name of the PivotTableStyle.
     name: setName(name)
     fullName: setName(name)
     langs:

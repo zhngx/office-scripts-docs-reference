@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartTitlePosition:enum'
+    summary: Represents the position of chart title.
     name: ExcelScript.ChartTitlePosition
     fullName: ExcelScript.ChartTitlePosition
     langs:

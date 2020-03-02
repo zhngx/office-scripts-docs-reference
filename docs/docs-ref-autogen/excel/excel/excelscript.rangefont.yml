@@ -171,6 +171,7 @@ items:
           - 'excel!ExcelScript.RangeUnderlineStyle:enum'
         description: ''
   - uid: 'excel!ExcelScript.RangeFont#setBold:member(1)'
+    summary: Represents the bold status of font.
     name: setBold(bold)
     fullName: setBold(bold)
     langs:
@@ -188,6 +189,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFont#setColor:member(1)'
+    summary: 'HTML color code representation of the text color. E.g. \#FF0000 represents Red.'
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -205,6 +207,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.RangeFont#setItalic:member(1)'
+    summary: Represents the italic status of the font.
     name: setItalic(italic)
     fullName: setItalic(italic)
     langs:
@@ -222,6 +225,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFont#setName:member(1)'
+    summary: Font name (e.g. "Calibri")
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -239,6 +243,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.RangeFont#setSize:member(1)'
+    summary: Font size.
     name: setSize(size)
     fullName: setSize(size)
     langs:
@@ -256,6 +261,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFont#setStrikethrough:member(1)'
+    summary: >-
+      Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
+      Strikethrough setting.
     name: setStrikethrough(strikethrough)
     fullName: setStrikethrough(strikethrough)
     langs:
@@ -273,6 +281,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFont#setSubscript:member(1)'
+    summary: >-
+      Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
+      if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
     name: setSubscript(subscript)
     fullName: setSubscript(subscript)
     langs:
@@ -290,6 +302,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFont#setSuperscript:member(1)'
+    summary: >-
+      Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
+      False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
     name: setSuperscript(superscript)
     fullName: setSuperscript(superscript)
     langs:
@@ -307,6 +323,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFont#setTintAndShade:member(1)'
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
+      tintAndShade setting.
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -324,6 +344,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFont#setUnderline:member(1)'
+    summary: Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

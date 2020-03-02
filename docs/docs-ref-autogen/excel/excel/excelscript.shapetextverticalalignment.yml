@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeTextVerticalAlignment:enum'
+    summary: Specifies the vertical alignment for the text frame in a shape.
     name: ExcelScript.ShapeTextVerticalAlignment
     fullName: ExcelScript.ShapeTextVerticalAlignment
     langs:

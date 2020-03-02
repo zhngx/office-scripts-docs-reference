@@ -69,6 +69,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartBorder#setColor:member(1)'
+    summary: HTML color code representing the color of borders in the chart.
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -86,6 +87,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartBorder#setLineStyle:member(1)'
+    summary: Represents the line style of the border. See Excel.ChartLineStyle for details.
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:
@@ -103,6 +105,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartLineStyle:enum'
   - uid: 'excel!ExcelScript.ChartBorder#setWeight:member(1)'
+    summary: 'Represents weight of the border, in points.'
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

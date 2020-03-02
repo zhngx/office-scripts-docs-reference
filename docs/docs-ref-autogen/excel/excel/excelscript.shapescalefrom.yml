@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeScaleFrom:enum'
+    summary: Specifies which part of the shape retains its position when the shape is scaled.
     name: ExcelScript.ShapeScaleFrom
     fullName: ExcelScript.ShapeScaleFrom
     langs:

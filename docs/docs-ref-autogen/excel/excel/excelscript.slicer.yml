@@ -156,6 +156,7 @@ items:
           - 'string[]'
         description: ''
   - uid: 'excel!ExcelScript.Slicer#getSlicerItem:member(1)'
+    summary: 'Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.'
     name: getSlicerItem(key)
     fullName: getSlicerItem(key)
     langs:
@@ -169,10 +170,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Key or name of the slicer to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Slicer#getSlicerItems:member(1)'
+    summary: Represents the collection of SlicerItems that are part of the slicer. Read-only.
     name: getSlicerItems()
     fullName: getSlicerItems()
     langs:
@@ -275,10 +277,11 @@ items:
         description: ''
       parameters:
         - id: items
-          description: ''
+          description: Optional. The specified slicer item names to be selected.
           type:
             - 'string[]'
   - uid: 'excel!ExcelScript.Slicer#setCaption:member(1)'
+    summary: Represents the caption of slicer.
     name: setCaption(caption)
     fullName: setCaption(caption)
     langs:
@@ -296,6 +299,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Slicer#setHeight:member(1)'
+    summary: >-
+      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
     name: setHeight(height)
     fullName: setHeight(height)
     langs:
@@ -313,6 +319,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Slicer#setLeft:member(1)'
+    summary: >-
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     name: setLeft(left)
     fullName: setLeft(left)
     langs:
@@ -330,6 +339,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Slicer#setName:member(1)'
+    summary: Represents the name of slicer.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -347,6 +357,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Slicer#setSortBy:member(1)'
+    summary: >-
+      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
+      "Descending".
     name: setSortBy(sortBy)
     fullName: setSortBy(sortBy)
     langs:
@@ -364,6 +377,10 @@ items:
           type:
             - 'excel!ExcelScript.SlicerSortType:enum'
   - uid: 'excel!ExcelScript.Slicer#setStyle:member(1)'
+    summary: >-
+      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      A custom user-defined style present in the workbook can also be specified.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -381,6 +398,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Slicer#setTop:member(1)'
+    summary: >-
+      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     name: setTop(top)
     fullName: setTop(top)
     langs:
@@ -398,6 +418,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Slicer#setWidth:member(1)'
+    summary: >-
+      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
     name: setWidth(width)
     fullName: setWidth(width)
     langs:

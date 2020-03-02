@@ -21,7 +21,6 @@ items:
       - 'excel!ExcelScript.Worksheet#addLine:member(1)'
       - 'excel!ExcelScript.Worksheet#addNamedItem:member(1)'
       - 'excel!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
-      - 'excel!ExcelScript.Worksheet#addPivotTable:member(1)'
       - 'excel!ExcelScript.Worksheet#addSlicer:member(1)'
       - 'excel!ExcelScript.Worksheet#addTable:member(1)'
       - 'excel!ExcelScript.Worksheet#addTextBox:member(1)'
@@ -91,6 +90,7 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#addChart:member(1)'
+    summary: Creates a new chart.
     name: 'addChart(type, sourceData, seriesBy)'
     fullName: 'addChart(type, sourceData, seriesBy)'
     langs:
@@ -109,18 +109,23 @@ items:
         description: ''
       parameters:
         - id: type
-          description: ''
+          description: Represents the type of a chart. See Excel.ChartType for details.
           type:
             - 'excel!ExcelScript.ChartType:enum'
         - id: sourceData
-          description: ''
+          description: The Range object corresponding to the source data.
           type:
             - 'excel!ExcelScript.Range:interface'
         - id: seriesBy
-          description: ''
+          description: >-
+            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            for details.
           type:
             - 'excel!ExcelScript.ChartSeriesBy:enum'
   - uid: 'excel!ExcelScript.Worksheet#addComment:member(1)'
+    summary: >-
+      Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
+      provided range is larger than one cell.
     name: 'addComment(cellAddress, content, contentType)'
     fullName: 'addComment(cellAddress, content, contentType)'
     langs:
@@ -139,18 +144,26 @@ items:
         description: ''
       parameters:
         - id: cellAddress
-          description: ''
+          description: >-
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type:
             - 'excel!ExcelScript.Worksheet#addComment~0:complex'
         - id: content
-          description: ''
+          description: >-
+            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
+            text. CommentRichContent objects allow for other comment features, such as mentions.
           type:
             - 'excel!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: ''
+          description: >-
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->.
           type:
             - 'excel!ExcelScript.ContentType:enum'
   - uid: 'excel!ExcelScript.Worksheet#addGeometricShape:member(1)'
+    summary: Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     name: addGeometricShape(geometricShapeType)
     fullName: addGeometricShape(geometricShapeType)
     langs:
@@ -164,10 +177,13 @@ items:
         description: ''
       parameters:
         - id: geometricShapeType
-          description: ''
+          description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
           type:
             - 'excel!ExcelScript.GeometricShapeType:enum'
   - uid: 'excel!ExcelScript.Worksheet#addGroup:member(1)'
+    summary: >-
+      Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of
+      shapes.
     name: addGroup(values)
     fullName: addGroup(values)
     langs:
@@ -181,10 +197,13 @@ items:
         description: ''
       parameters:
         - id: values
-          description: ''
+          description: An array of shape ID or shape objects.
           type:
             - 'excel!ExcelScript.Worksheet#addGroup~0:complex'
   - uid: 'excel!ExcelScript.Worksheet#addImage:member(1)'
+    summary: >-
+      Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that
+      represents the new image.
     name: addImage(base64ImageString)
     fullName: addImage(base64ImageString)
     langs:
@@ -198,10 +217,11 @@ items:
         description: ''
       parameters:
         - id: base64ImageString
-          description: ''
+          description: A base64-encoded string representing an image in either JPEG or PNG format.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#addLine:member(1)'
+    summary: Adds a line to worksheet. Returns a Shape object that represents the new line.
     name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     langs:
@@ -222,26 +242,27 @@ items:
         description: ''
       parameters:
         - id: startLeft
-          description: ''
+          description: 'The distance, in points, from the start of the line to the left side of the worksheet.'
           type:
             - number
         - id: startTop
-          description: ''
+          description: 'The distance, in points, from the start of the line to the top of the worksheet.'
           type:
             - number
         - id: endLeft
-          description: ''
+          description: 'The distance, in points, from the end of the line to the left of the worksheet.'
           type:
             - number
         - id: endTop
-          description: ''
+          description: 'The distance, in points, from the end of the line to the top of the worksheet.'
           type:
             - number
         - id: connectorType
-          description: ''
+          description: Represents the connector type. See Excel.ConnectorType for details.
           type:
             - 'excel!ExcelScript.ConnectorType:enum'
   - uid: 'excel!ExcelScript.Worksheet#addNamedItem:member(1)'
+    summary: Adds a new name to the collection of the given scope.
     name: 'addNamedItem(name, reference, comment)'
     fullName: 'addNamedItem(name, reference, comment)'
     langs:
@@ -260,18 +281,19 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The name of the named item.
           type:
             - string
         - id: reference
-          description: ''
+          description: The formula or the range that the name will refer to.
           type:
             - 'excel!ExcelScript.Worksheet#addNamedItem~0:complex'
         - id: comment
-          description: ''
+          description: Optional. The comment associated with the named item.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
+    summary: Adds a new name to the collection of the given scope using the user's locale for the formula.
     name: 'addNamedItemFormulaLocal(name, formula, comment)'
     fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
     langs:
@@ -290,48 +312,19 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The "name" of the named item.
           type:
             - string
         - id: formula
-          description: ''
+          description: The formula in the user's locale that the name will refer to.
           type:
             - string
         - id: comment
-          description: ''
+          description: Optional. The comment associated with the named item.
           type:
             - string
-  - uid: 'excel!ExcelScript.Worksheet#addPivotTable:member(1)'
-    name: 'addPivotTable(name, source, destination)'
-    fullName: 'addPivotTable(name, source, destination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addPivotTable(
-                    name: string,
-                    source: Range | string | Table,
-                    destination: Range | string
-                ): PivotTable;
-      return:
-        type:
-          - 'excel!ExcelScript.PivotTable:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-        - id: source
-          description: ''
-          type:
-            - 'excel!ExcelScript.Worksheet#addPivotTable~0:complex'
-        - id: destination
-          description: ''
-          type:
-            - 'excel!ExcelScript.Worksheet#addPivotTable~1:complex'
   - uid: 'excel!ExcelScript.Worksheet#addSlicer:member(1)'
+    summary: Adds a new slicer to the workbook.
     name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
     fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
     langs:
@@ -350,18 +343,30 @@ items:
         description: ''
       parameters:
         - id: slicerSource
-          description: ''
+          description: >-
+            The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a
+            string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a
+            Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as
+            the name/id of a PivotTable/Table.
           type:
             - 'excel!ExcelScript.Worksheet#addSlicer~0:complex'
         - id: sourceField
-          description: ''
+          description: >-
+            The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a
+            PivotField or the id/name of TableColumn.
           type:
             - 'excel!ExcelScript.Worksheet#addSlicer~1:complex'
         - id: slicerDestination
-          description: ''
+          description: >-
+            Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id
+            of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
           type:
             - 'excel!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'excel!ExcelScript.Worksheet#addTable:member(1)'
+    summary: >-
+      Create a new table. The range object or source address determines the worksheet under which the table will be
+      added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
+      table), an error will be thrown.
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -375,14 +380,22 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: >-
+            A Range object, or a string address or name of the range representing the data source. If the address does
+            not contain a sheet name, the currently-active sheet is used.
           type:
             - 'excel!ExcelScript.Worksheet#addTable~0:complex'
         - id: hasHeaders
-          description: ''
+          description: >-
+            Boolean value that indicates whether the data being imported has column labels. If the source does not
+            contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting
+            the data down by one row.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#addTextBox:member(1)'
+    summary: >-
+      Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the
+      new text box.
     name: addTextBox(text)
     fullName: addTextBox(text)
     langs:
@@ -396,7 +409,7 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: Represents the text that will be shown in the created text box.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#calculate:member(1)'
@@ -414,7 +427,7 @@ items:
         description: ''
       parameters:
         - id: markAllDirty
-          description: ''
+          description: 'True, to mark all as dirty.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#copy:member(1)'
@@ -436,11 +449,15 @@ items:
         description: ''
       parameters:
         - id: positionType
-          description: ''
+          description: >-
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type:
             - 'excel!ExcelScript.WorksheetPositionType:enum'
         - id: relativeTo
-          description: ''
+          description: >-
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type:
             - 'excel!ExcelScript.Worksheet:interface'
   - uid: 'excel!ExcelScript.Worksheet#delete:member(1)'
@@ -476,11 +493,13 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: ''
+          description: >-
+            Additional search criteria, including whether the search needs to match the entire cell or be case
+            sensitive.
           type:
             - 'excel!ExcelScript.WorksheetSearchCriteria:interface'
   - uid: 'excel!ExcelScript.Worksheet#getAutoFilter:member(1)'
@@ -513,14 +532,17 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: The row number of the cell to be retrieved. Zero-indexed.
           type:
             - number
         - id: column
-          description: ''
+          description: the column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
   - uid: 'excel!ExcelScript.Worksheet#getChart:member(1)'
+    summary: >-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
+      the chart does not exist, will return a null object.
     name: getChart(name)
     fullName: getChart(name)
     langs:
@@ -534,10 +556,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the chart to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getCharts:member(1)'
+    summary: Returns a collection of charts that are part of the worksheet. Read-only.
     name: getCharts()
     fullName: getCharts()
     langs:
@@ -550,6 +573,7 @@ items:
           - 'excel!ExcelScript.Worksheet#getCharts~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#getComment:member(1)'
+    summary: Gets a comment from the collection based on its ID. Read-only.
     name: getComment(commentId)
     fullName: getComment(commentId)
     langs:
@@ -563,10 +587,11 @@ items:
         description: ''
       parameters:
         - id: commentId
-          description: ''
+          description: The identifier for the comment.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getCommentByCell:member(1)'
+    summary: Gets the comment from the specified cell.
     name: getCommentByCell(cellAddress)
     fullName: getCommentByCell(cellAddress)
     langs:
@@ -580,10 +605,14 @@ items:
         description: ''
       parameters:
         - id: cellAddress
-          description: ''
+          description: >-
+            The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain
+            the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
+            larger than one cell.
           type:
             - 'excel!ExcelScript.Worksheet#getCommentByCell~0:complex'
   - uid: 'excel!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
+    summary: Gets the comment to which the given reply is connected.
     name: getCommentByReplyId(replyId)
     fullName: getCommentByReplyId(replyId)
     langs:
@@ -597,10 +626,11 @@ items:
         description: ''
       parameters:
         - id: replyId
-          description: ''
+          description: The identifier of comment reply.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getComments:member(1)'
+    summary: Returns a collection of all the Comments objects on the worksheet. Read-only.
     name: getComments()
     fullName: getComments()
     langs:
@@ -669,6 +699,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#getNamedItem:member(1)'
+    summary: 'Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.'
     name: getNamedItem(name)
     fullName: getNamedItem(name)
     langs:
@@ -682,10 +713,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Nameditem name.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getNames:member(1)'
+    summary: Collection of names scoped to the current worksheet. Read-only.
     name: getNames()
     fullName: getNames()
     langs:
@@ -714,7 +746,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#getPageLayout:member(1)'
@@ -731,6 +763,7 @@ items:
           - 'excel!ExcelScript.PageLayout:interface'
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#getPivotTable:member(1)'
+    summary: 'Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.'
     name: getPivotTable(name)
     fullName: getPivotTable(name)
     langs:
@@ -744,10 +777,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotTable to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getPivotTables:member(1)'
+    summary: Collection of PivotTables that are part of the worksheet. Read-only.
     name: getPivotTables()
     fullName: getPivotTables()
     langs:
@@ -789,7 +823,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#getProtection:member(1)'
@@ -820,7 +854,9 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: >-
+            Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified,
+            the entire worksheet range is returned.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
@@ -846,19 +882,19 @@ items:
         description: ''
       parameters:
         - id: startRow
-          description: ''
+          description: Start row (zero-indexed).
           type:
             - number
         - id: startColumn
-          description: ''
+          description: Start column (zero-indexed).
           type:
             - number
         - id: rowCount
-          description: ''
+          description: Number of rows to include in the range.
           type:
             - number
         - id: columnCount
-          description: ''
+          description: Number of columns to include in the range.
           type:
             - number
   - uid: 'excel!ExcelScript.Worksheet#getRanges:member(1)'
@@ -878,10 +914,13 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: >-
+            Optional. A string containing the comma-separated addresses or names of the individual ranges. For example,
+            "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getShape:member(1)'
+    summary: Gets a shape using its Name or ID.
     name: getShape(key)
     fullName: getShape(key)
     langs:
@@ -895,10 +934,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or ID of the shape to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getShapes:member(1)'
+    summary: Returns the collection of all the Shape objects on the worksheet. Read-only.
     name: getShapes()
     fullName: getShapes()
     langs:
@@ -937,6 +977,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#getSlicer:member(1)'
+    summary: 'Gets a slicer using its name or id. If the slicer does not exist, will return a null object.'
     name: getSlicer(key)
     fullName: getSlicer(key)
     langs:
@@ -950,10 +991,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or Id of the slicer to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getSlicers:member(1)'
+    summary: Returns a collection of slicers that are part of the worksheet. Read-only.
     name: getSlicers()
     fullName: getSlicers()
     langs:
@@ -1012,6 +1054,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#getTable:member(1)'
+    summary: 'Gets a table by Name or ID. If the table does not exist, will return a null object.'
     name: getTable(key)
     fullName: getTable(key)
     langs:
@@ -1025,10 +1068,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or ID of the table to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#getTables:member(1)'
+    summary: Collection of tables that are part of the worksheet. Read-only.
     name: getTables()
     fullName: getTables()
     langs:
@@ -1057,7 +1101,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: Optional. Considers only cells with values as used cells.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#getVisibility:member(1)'
@@ -1074,6 +1118,7 @@ items:
           - 'excel!ExcelScript.SheetVisibility:enum'
         description: ''
   - uid: 'excel!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
+    summary: Refreshes all the pivot tables in the collection.
     name: refreshAllPivotTables()
     fullName: refreshAllPivotTables()
     langs:
@@ -1105,18 +1150,21 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: String to find.
           type:
             - string
         - id: replacement
-          description: ''
+          description: String to replace the original with.
           type:
             - string
         - id: criteria
-          description: ''
+          description: Additional Replace Criteria.
           type:
             - 'excel!ExcelScript.ReplaceCriteria:interface'
   - uid: 'excel!ExcelScript.Worksheet#setEnableCalculation:member(1)'
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
     name: setEnableCalculation(enableCalculation)
     fullName: setEnableCalculation(enableCalculation)
     langs:
@@ -1134,6 +1182,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#setName:member(1)'
+    summary: The display name of the worksheet.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -1151,6 +1200,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#setPosition:member(1)'
+    summary: The zero-based position of the worksheet within the workbook.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -1168,6 +1218,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Worksheet#setShowGridlines:member(1)'
+    summary: Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
     name: setShowGridlines(showGridlines)
     fullName: setShowGridlines(showGridlines)
     langs:
@@ -1185,6 +1236,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#setShowHeadings:member(1)'
+    summary: Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
     name: setShowHeadings(showHeadings)
     fullName: setShowHeadings(showHeadings)
     langs:
@@ -1202,6 +1254,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Worksheet#setStandardWidth:member(1)'
+    summary: >-
+      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
+      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
+      (zero) is used.
     name: setStandardWidth(standardWidth)
     fullName: setStandardWidth(standardWidth)
     langs:
@@ -1219,6 +1275,11 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Worksheet#setTabColor:member(1)'
+    summary: >-
+      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
+      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
+      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
+      to set an "auto" color, or a real color otherwise.
     name: setTabColor(tabColor)
     fullName: setTabColor(tabColor)
     langs:
@@ -1236,6 +1297,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Worksheet#setVisibility:member(1)'
+    summary: The Visibility of the worksheet.
     name: setVisibility(visibility)
     fullName: setVisibility(visibility)
     langs:
@@ -1271,11 +1333,11 @@ items:
         description: ''
       parameters:
         - id: rowLevels
-          description: ''
+          description: The number of row levels of an outline to display.
           type:
             - number
         - id: columnLevels
-          description: ''
+          description: The number of column levels of an outline to display.
           type:
             - number
 references:
@@ -1340,33 +1402,6 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!ExcelScript.PivotTable:interface'
-    name: PivotTable
-  - uid: 'excel!ExcelScript.Worksheet#addPivotTable~0:complex'
-    name: Range | string | Table
-    fullName: ExcelScript.Range | string | ExcelScript.Table
-    spec.typeScript:
-      - uid: 'excel!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string | '
-        fullName: ' | string | '
-      - uid: 'excel!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'excel!ExcelScript.Worksheet#addPivotTable~1:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'excel!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
   - uid: 'excel!ExcelScript.Slicer:interface'
     name: Slicer
   - uid: 'excel!ExcelScript.Worksheet#addSlicer~0:complex'

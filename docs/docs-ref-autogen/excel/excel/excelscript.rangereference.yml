@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.RangeReference:interface'
+    summary: 'Represents a string reference of the form SheetName!A1:B5, or a global or local named range.'
     name: ExcelScript.RangeReference
     fullName: ExcelScript.RangeReference
     langs:
@@ -10,6 +11,7 @@ items:
     children:
       - 'excel!ExcelScript.RangeReference#address:member'
   - uid: 'excel!ExcelScript.RangeReference#address:member'
+    summary: 'Gets or sets the address of the range; for example ''SheetName!A1:B5''.'
     name: address
     fullName: address
     langs:

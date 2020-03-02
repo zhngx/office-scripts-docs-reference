@@ -84,6 +84,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.ChartErrorBars#setEndStyleCap:member(1)'
+    summary: Specifies whether or not the error bars have an end style cap.
     name: setEndStyleCap(endStyleCap)
     fullName: setEndStyleCap(endStyleCap)
     langs:
@@ -101,6 +102,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartErrorBars#setInclude:member(1)'
+    summary: Specifies which parts of the error bars to include.
     name: setInclude(include)
     fullName: setInclude(include)
     langs:
@@ -118,6 +120,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartErrorBarsInclude:enum'
   - uid: 'excel!ExcelScript.ChartErrorBars#setType:member(1)'
+    summary: The type of range marked by the error bars.
     name: setType(type)
     fullName: setType(type)
     langs:
@@ -135,6 +138,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartErrorBarsType:enum'
   - uid: 'excel!ExcelScript.ChartErrorBars#setVisible:member(1)'
+    summary: Specifies whether or not the error bars are displayed.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartErrorBarsInclude:enum'
+    summary: Represents which parts of the error bar to include.
     name: ExcelScript.ChartErrorBarsInclude
     fullName: ExcelScript.ChartErrorBarsInclude
     langs:

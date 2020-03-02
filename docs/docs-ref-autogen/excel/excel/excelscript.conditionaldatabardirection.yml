@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalDataBarDirection:enum'
+    summary: Represents the Data Bar direction within a cell.
     name: ExcelScript.ConditionalDataBarDirection
     fullName: ExcelScript.ConditionalDataBarDirection
     langs:

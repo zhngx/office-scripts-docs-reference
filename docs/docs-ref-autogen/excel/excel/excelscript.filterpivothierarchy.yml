@@ -33,6 +33,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#getFields:member(1)'
+    summary: Returns the PivotFields associated with the FilterPivotHierarchy.
     name: getFields()
     fullName: getFields()
     langs:
@@ -71,6 +72,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)'
+    summary: 'Gets a PivotField by name. If the PivotField does not exist, will return a null object.'
     name: getPivotField(name)
     fullName: getPivotField(name)
     langs:
@@ -84,7 +86,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotField to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#getPosition:member(1)'
@@ -101,6 +103,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#setEnableMultipleFilterItems:member(1)'
+    summary: Determines whether to allow multiple filter items.
     name: setEnableMultipleFilterItems(enableMultipleFilterItems)
     fullName: setEnableMultipleFilterItems(enableMultipleFilterItems)
     langs:
@@ -118,6 +121,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#setName:member(1)'
+    summary: Name of the FilterPivotHierarchy.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -135,6 +139,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.FilterPivotHierarchy#setPosition:member(1)'
+    summary: Position of the FilterPivotHierarchy.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:

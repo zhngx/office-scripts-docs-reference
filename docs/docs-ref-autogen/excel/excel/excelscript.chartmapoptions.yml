@@ -55,6 +55,7 @@ items:
           - 'excel!ExcelScript.ChartMapProjectionType:enum'
         description: ''
   - uid: 'excel!ExcelScript.ChartMapOptions#setLabelStrategy:member(1)'
+    summary: Returns or sets the series map labels strategy of a region map chart. Read/Write.
     name: setLabelStrategy(labelStrategy)
     fullName: setLabelStrategy(labelStrategy)
     langs:
@@ -72,6 +73,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartMapLabelStrategy:enum'
   - uid: 'excel!ExcelScript.ChartMapOptions#setLevel:member(1)'
+    summary: Returns or sets the series mapping level of a region map chart. Read/Write.
     name: setLevel(level)
     fullName: setLevel(level)
     langs:
@@ -89,6 +91,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartMapAreaLevel:enum'
   - uid: 'excel!ExcelScript.ChartMapOptions#setProjectionType:member(1)'
+    summary: Returns or sets the series projection type of a region map chart. Read/Write.
     name: setProjectionType(projectionType)
     fullName: setProjectionType(projectionType)
     langs:

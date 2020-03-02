@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalFormatPresetCriterion:enum'
+    summary: Represents the criteria for the Preset Criteria conditional format type.
     name: ExcelScript.ConditionalFormatPresetCriterion
     fullName: ExcelScript.ConditionalFormatPresetCriterion
     langs:

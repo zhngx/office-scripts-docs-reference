@@ -67,6 +67,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.TimelineStyle#setName:member(1)'
+    summary: Gets the name of the TimelineStyle.
     name: setName(name)
     fullName: setName(name)
     langs:

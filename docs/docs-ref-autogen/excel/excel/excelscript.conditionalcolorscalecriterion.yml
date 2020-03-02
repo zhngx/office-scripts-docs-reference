@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion:interface'
+    summary: 'Represents a Color Scale Criterion which contains a type, value, and a color.'
     name: ExcelScript.ConditionalColorScaleCriterion
     fullName: ExcelScript.ConditionalColorScaleCriterion
     langs:
@@ -12,6 +13,7 @@ items:
       - 'excel!ExcelScript.ConditionalColorScaleCriterion#formula:member'
       - 'excel!ExcelScript.ConditionalColorScaleCriterion#type:member'
   - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    summary: 'HTML color code representation of the color scale color. E.g. \#FF0000 represents Red.'
     name: color
     fullName: color
     langs:
@@ -23,6 +25,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    summary: 'A number, a formula, or null (if Type is LowestValue).'
     name: formula
     fullName: formula
     langs:
@@ -34,6 +37,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    summary: What the criterion conditional formula should be based on.
     name: type
     fullName: type
     langs:

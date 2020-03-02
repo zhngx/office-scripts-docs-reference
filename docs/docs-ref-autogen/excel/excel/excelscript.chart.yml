@@ -69,6 +69,9 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.Chart#addChartSeries:member(1)'
+    summary: >-
+      Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble
+      sizes for it (depending on chart type).
     name: 'addChartSeries(name, index)'
     fullName: 'addChartSeries(name, index)'
     langs:
@@ -82,11 +85,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Optional. Name of the series.
           type:
             - string
         - id: index
-          description: ''
+          description: Optional. Index value of the series to be added. Zero-indexed.
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#delete:member(1)'
@@ -230,15 +233,17 @@ items:
         description: ''
       parameters:
         - id: width
-          description: ''
+          description: (Optional) The desired width of the resulting image.
           type:
             - number
         - id: height
-          description: ''
+          description: (Optional) The desired height of the resulting image.
           type:
             - number
         - id: fittingMode
-          description: ''
+          description: >-
+            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            and width are set).
           type:
             - 'excel!ExcelScript.ImageFittingMode:enum'
   - uid: 'excel!ExcelScript.Chart#getLeft:member(1)'
@@ -333,6 +338,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Chart#getSeries:member(1)'
+    summary: Represents either a single series or collection of series in the chart. Read-only.
     name: getSeries()
     fullName: getSeries()
     langs:
@@ -458,6 +464,9 @@ items:
           - 'excel!ExcelScript.Worksheet:interface'
         description: ''
   - uid: 'excel!ExcelScript.Chart#setCategoryLabelLevel:member(1)'
+    summary: >-
+      Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
+      are being sourced from. Read/Write.
     name: setCategoryLabelLevel(categoryLabelLevel)
     fullName: setCategoryLabelLevel(categoryLabelLevel)
     langs:
@@ -475,6 +484,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setChartType:member(1)'
+    summary: Represents the type of the chart. See Excel.ChartType for details.
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -506,14 +516,17 @@ items:
         description: ''
       parameters:
         - id: sourceData
-          description: ''
+          description: The range object corresponding to the source data.
           type:
             - 'excel!ExcelScript.Range:interface'
         - id: seriesBy
-          description: ''
+          description: >-
+            Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
+            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
             - 'excel!ExcelScript.ChartSeriesBy:enum'
   - uid: 'excel!ExcelScript.Chart#setDisplayBlanksAs:member(1)'
+    summary: Returns or sets the way that blank cells are plotted on a chart. Read/Write.
     name: setDisplayBlanksAs(displayBlanksAs)
     fullName: setDisplayBlanksAs(displayBlanksAs)
     langs:
@@ -531,6 +544,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartDisplayBlanksAs:enum'
   - uid: 'excel!ExcelScript.Chart#setHeight:member(1)'
+    summary: 'Represents the height, in points, of the chart object.'
     name: setHeight(height)
     fullName: setHeight(height)
     langs:
@@ -548,6 +562,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setLeft:member(1)'
+    summary: 'The distance, in points, from the left side of the chart to the worksheet origin.'
     name: setLeft(left)
     fullName: setLeft(left)
     langs:
@@ -565,6 +580,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setName:member(1)'
+    summary: Represents the name of a chart object.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -582,6 +598,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Chart#setPlotBy:member(1)'
+    summary: Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
     name: setPlotBy(plotBy)
     fullName: setPlotBy(plotBy)
     langs:
@@ -599,6 +616,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartPlotBy:enum'
   - uid: 'excel!ExcelScript.Chart#setPlotVisibleOnly:member(1)'
+    summary: True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
     name: setPlotVisibleOnly(plotVisibleOnly)
     fullName: setPlotVisibleOnly(plotVisibleOnly)
     langs:
@@ -630,14 +648,21 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: ''
+          description: >-
+            The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell,
+            depending on the user's right-to-left display settings.
           type:
             - 'excel!ExcelScript.Chart#setPosition~0:complex'
         - id: endCell
-          description: ''
+          description: >-
+            (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this
+            cell/range.
           type:
             - 'excel!ExcelScript.Chart#setPosition~1:complex'
   - uid: 'excel!ExcelScript.Chart#setSeriesNameLevel:member(1)'
+    summary: >-
+      Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
+      being sourced from. Read/Write.
     name: setSeriesNameLevel(seriesNameLevel)
     fullName: setSeriesNameLevel(seriesNameLevel)
     langs:
@@ -655,6 +680,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setShowAllFieldButtons:member(1)'
+    summary: Represents whether to display all field buttons on a PivotChart.
     name: setShowAllFieldButtons(showAllFieldButtons)
     fullName: setShowAllFieldButtons(showAllFieldButtons)
     langs:
@@ -672,6 +698,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)'
+    summary: >-
+      Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
     name: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
     fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
     langs:
@@ -689,6 +719,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Chart#setStyle:member(1)'
+    summary: Returns or sets the chart style for the chart. Read/Write.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -706,6 +737,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setTop:member(1)'
+    summary: >-
+      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
+      top of the chart area (on a chart).
     name: setTop(top)
     fullName: setTop(top)
     langs:
@@ -723,6 +757,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Chart#setWidth:member(1)'
+    summary: 'Represents the width, in points, of the chart object.'
     name: setWidth(width)
     fullName: setWidth(width)
     langs:

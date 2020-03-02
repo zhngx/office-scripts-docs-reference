@@ -156,6 +156,7 @@ items:
       - 'excel!ExcelScript.DataValidationAlertStyle:enum'
       - 'excel!ExcelScript.DataValidationErrorAlert:interface'
       - 'excel!ExcelScript.DataValidationOperator:enum'
+      - 'excel!ExcelScript.DataValidationPrompt:interface'
       - 'excel!ExcelScript.DataValidationRule:interface'
       - 'excel!ExcelScript.DataValidationType:enum'
       - 'excel!ExcelScript.DateTimeDataValidation:interface'
@@ -613,6 +614,8 @@ references:
     name: ExcelScript.DataValidationErrorAlert
   - uid: 'excel!ExcelScript.DataValidationOperator:enum'
     name: ExcelScript.DataValidationOperator
+  - uid: 'excel!ExcelScript.DataValidationPrompt:interface'
+    name: ExcelScript.DataValidationPrompt
   - uid: 'excel!ExcelScript.DataValidationRule:interface'
     name: ExcelScript.DataValidationRule
   - uid: 'excel!ExcelScript.DataValidationType:enum'

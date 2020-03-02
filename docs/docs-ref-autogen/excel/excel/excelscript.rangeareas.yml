@@ -15,6 +15,7 @@ items:
       - 'excel!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
       - 'excel!ExcelScript.RangeAreas#calculate:member(1)'
       - 'excel!ExcelScript.RangeAreas#clear:member(1)'
+      - 'excel!ExcelScript.RangeAreas#clearAllConditionalFormat:member(1)'
       - 'excel!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
       - 'excel!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
       - 'excel!ExcelScript.RangeAreas#copyFrom:member(1)'
@@ -40,6 +41,7 @@ items:
       - 'excel!ExcelScript.RangeAreas#setDirty:member(1)'
       - 'excel!ExcelScript.RangeAreas#setStyle:member(1)'
   - uid: 'excel!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
+    summary: Adds a new conditional format to the collection at the first/top priority.
     name: addConditionalFormat(type)
     fullName: addConditionalFormat(type)
     langs:
@@ -53,7 +55,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: ''
+          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
             - 'excel!ExcelScript.ConditionalFormatType:enum'
   - uid: 'excel!ExcelScript.RangeAreas#calculate:member(1)'
@@ -84,9 +86,22 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: ''
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
           type:
             - 'excel!ExcelScript.ClearApplyTo:enum'
+  - uid: 'excel!ExcelScript.RangeAreas#clearAllConditionalFormat:member(1)'
+    summary: Clears all conditional formats active on the current specified range.
+    name: clearAllConditionalFormat()
+    fullName: clearAllConditionalFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAllConditionalFormat(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
     summary: Converts all cells in the RangeAreas with datatypes into text.
     name: convertDataTypeToText()
@@ -119,11 +134,11 @@ items:
         description: ''
       parameters:
         - id: serviceID
-          description: ''
+          description: The Service ID which will be used to query the data.
           type:
             - number
         - id: languageCulture
-          description: ''
+          description: Language Culture to query the service for.
           type:
             - string
   - uid: 'excel!ExcelScript.RangeAreas#copyFrom:member(1)'
@@ -150,24 +165,26 @@ items:
         description: ''
       parameters:
         - id: sourceRange
-          description: ''
+          description: >-
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!ExcelScript.RangeAreas#copyFrom~0:complex'
         - id: copyType
-          description: ''
+          description: The type of cell data or formatting to copy over. Default is "All".
           type:
             - 'excel!ExcelScript.RangeCopyType:enum'
         - id: skipBlanks
-          description: ''
+          description: True if to skip blank cells in the source range or RangeAreas. Default is false.
           type:
             - boolean
         - id: transpose
-          description: ''
+          description: True if to transpose the cells in the destination RangeAreas. Default is false.
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeAreas#getAddress:member(1)'
     summary: >-
-      Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
+      Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
       block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
     name: getAddress()
     fullName: getAddress()
@@ -181,7 +198,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.RangeAreas#getAddressLocal:member(1)'
-    summary: Returns the RageAreas reference in the user locale. Read-only.
+    summary: Returns the RangeAreas reference in the user locale. Read-only.
     name: getAddressLocal()
     fullName: getAddressLocal()
     langs:
@@ -207,6 +224,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.RangeAreas#getAreas:member(1)'
+    summary: Returns a collection of rectangular ranges that comprise this RangeAreas object.
     name: getAreas()
     fullName: getAreas()
     langs:
@@ -234,6 +252,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
+    summary: Returns a conditional format for the given ID.
     name: getConditionalFormat(id)
     fullName: getConditionalFormat(id)
     langs:
@@ -247,10 +266,11 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: The id of the conditional format.
           type:
             - string
   - uid: 'excel!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
+    summary: Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
     name: getConditionalFormats()
     fullName: getConditionalFormats()
     langs:
@@ -337,7 +357,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: 'The range, RangeAreas, or address that will be used to determine the intersection.'
           type:
             - 'excel!ExcelScript.RangeAreas#getIntersection~0:complex'
   - uid: 'excel!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
@@ -388,11 +408,15 @@ items:
         description: ''
       parameters:
         - id: rowOffset
-          description: ''
+          description: >-
+            The number of rows (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values are
+            offset downward, and negative values are offset upward.
           type:
             - number
         - id: columnOffset
-          description: ''
+          description: >-
+            The number of columns (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values
+            are offset to the right, and negative values are offset to the left.
           type:
             - number
   - uid: 'excel!ExcelScript.RangeAreas#getSpecialCells:member(1)'
@@ -416,11 +440,14 @@ items:
         description: ''
       parameters:
         - id: cellType
-          description: ''
+          description: The type of cells to include.
           type:
             - 'excel!ExcelScript.SpecialCellType:enum'
         - id: cellValueType
-          description: ''
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
+            include in the result. These values can be combined together to return more than one type. The default is to
+            select all constants or formulas, no matter what the type.
           type:
             - 'excel!ExcelScript.SpecialCellValueType:enum'
   - uid: 'excel!ExcelScript.RangeAreas#getStyle:member(1)'
@@ -456,7 +483,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: Whether to only consider cells with values as used cells.
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeAreas#getWorksheet:member(1)'
@@ -486,6 +513,10 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.RangeAreas#setStyle:member(1)'
+    summary: >-
+      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
+      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
+      value in the BuiltInStyle enum will be returned.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

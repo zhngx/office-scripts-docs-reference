@@ -69,6 +69,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.PivotItem#setIsExpanded:member(1)'
+    summary: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
     name: setIsExpanded(isExpanded)
     fullName: setIsExpanded(isExpanded)
     langs:
@@ -86,6 +87,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotItem#setName:member(1)'
+    summary: Name of the PivotItem.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -103,6 +105,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.PivotItem#setVisible:member(1)'
+    summary: Determines whether the PivotItem is visible or not.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

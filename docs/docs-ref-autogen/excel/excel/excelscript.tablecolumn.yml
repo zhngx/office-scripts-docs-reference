@@ -154,6 +154,7 @@ items:
           - 'any[][]'
         description: ''
   - uid: 'excel!ExcelScript.TableColumn#setName:member(1)'
+    summary: Represents the name of the table column.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -171,6 +172,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.TableColumn#setValues:member(1)'
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
     name: setValues(values)
     fullName: setValues(values)
     langs:

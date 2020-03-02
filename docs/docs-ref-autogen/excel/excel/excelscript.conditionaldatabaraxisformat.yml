@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalDataBarAxisFormat:enum'
+    summary: Represents the format options for a Data Bar Axis.
     name: ExcelScript.ConditionalDataBarAxisFormat
     fullName: ExcelScript.ConditionalDataBarAxisFormat
     langs:

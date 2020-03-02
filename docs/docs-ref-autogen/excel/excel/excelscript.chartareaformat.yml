@@ -82,6 +82,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.ChartAreaFormat#setColorScheme:member(1)'
+    summary: Returns or sets color scheme of the chart. Read/Write.
     name: setColorScheme(colorScheme)
     fullName: setColorScheme(colorScheme)
     langs:
@@ -99,6 +100,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartColorScheme:enum'
   - uid: 'excel!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)'
+    summary: Specifies whether or not chart area of the chart has rounded corners. Read/Write.
     name: setRoundedCorners(roundedCorners)
     fullName: setRoundedCorners(roundedCorners)
     langs:

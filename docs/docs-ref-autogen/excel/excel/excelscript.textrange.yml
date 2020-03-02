@@ -41,11 +41,13 @@ items:
         description: ''
       parameters:
         - id: start
-          description: ''
+          description: The zero-based index of the first character to get from the text range.
           type:
             - number
         - id: length
-          description: ''
+          description: >-
+            Optional. The number of characters to be returned in the new text range. If length is omitted, all the
+            characters from start to the end of the text range's last paragraph will be returned.
           type:
             - number
   - uid: 'excel!ExcelScript.TextRange#getText:member(1)'
@@ -62,6 +64,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.TextRange#setText:member(1)'
+    summary: Represents the plain text content of the text range.
     name: setText(text)
     fullName: setText(text)
     langs:

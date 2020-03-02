@@ -19,7 +19,6 @@ items:
       - 'excel!ExcelScript.Workbook#addCustomXmlPart:member(1)'
       - 'excel!ExcelScript.Workbook#addNamedItem:member(1)'
       - 'excel!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
-      - 'excel!ExcelScript.Workbook#addPivotTable:member(1)'
       - 'excel!ExcelScript.Workbook#addPivotTableStyle:member(1)'
       - 'excel!ExcelScript.Workbook#addSetting:member(1)'
       - 'excel!ExcelScript.Workbook#addSlicer:member(1)'
@@ -91,6 +90,7 @@ items:
       - 'excel!ExcelScript.Workbook#setIsDirty:member(1)'
       - 'excel!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
   - uid: 'excel!ExcelScript.Workbook#addBinding:member(1)'
+    summary: Add a new binding to a particular Range.
     name: 'addBinding(range, bindingType, id)'
     fullName: 'addBinding(range, bindingType, id)'
     langs:
@@ -109,18 +109,23 @@ items:
         description: ''
       parameters:
         - id: range
-          description: ''
+          description: >-
+            Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full
+            address, including the sheet name
           type:
             - 'excel!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - 'excel!ExcelScript.BindingType:enum'
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+    summary: >-
+      Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the
+      "InvalidReference" error will be returned.
     name: 'addBindingFromNamedItem(name, bindingType, id)'
     fullName: 'addBindingFromNamedItem(name, bindingType, id)'
     langs:
@@ -139,18 +144,21 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name from which to create binding.
           type:
             - string
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - 'excel!ExcelScript.BindingType:enum'
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+    summary: >-
+      Add a new binding based on the current selection. If the selection has multiple areas, the "InvalidReference"
+      error will be returned.
     name: 'addBindingFromSelection(bindingType, id)'
     fullName: 'addBindingFromSelection(bindingType, id)'
     langs:
@@ -164,14 +172,17 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - 'excel!ExcelScript.BindingType:enum'
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addComment:member(1)'
+    summary: >-
+      Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
+      provided range is larger than one cell.
     name: 'addComment(cellAddress, content, contentType)'
     fullName: 'addComment(cellAddress, content, contentType)'
     langs:
@@ -190,18 +201,26 @@ items:
         description: ''
       parameters:
         - id: cellAddress
-          description: ''
+          description: >-
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type:
             - 'excel!ExcelScript.Workbook#addComment~0:complex'
         - id: content
-          description: ''
+          description: >-
+            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
+            text. CommentRichContent objects allow for other comment features, such as mentions.
           type:
             - 'excel!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: ''
+          description: >-
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->.
           type:
             - 'excel!ExcelScript.ContentType:enum'
   - uid: 'excel!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+    summary: Adds a new custom XML part to the workbook.
     name: addCustomXmlPart(xml)
     fullName: addCustomXmlPart(xml)
     langs:
@@ -215,10 +234,11 @@ items:
         description: ''
       parameters:
         - id: xml
-          description: ''
+          description: XML content. Must be a valid XML fragment.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addNamedItem:member(1)'
+    summary: Adds a new name to the collection of the given scope.
     name: 'addNamedItem(name, reference, comment)'
     fullName: 'addNamedItem(name, reference, comment)'
     langs:
@@ -237,18 +257,19 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The name of the named item.
           type:
             - string
         - id: reference
-          description: ''
+          description: The formula or the range that the name will refer to.
           type:
             - 'excel!ExcelScript.Workbook#addNamedItem~0:complex'
         - id: comment
-          description: ''
+          description: Optional. The comment associated with the named item.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+    summary: Adds a new name to the collection of the given scope using the user's locale for the formula.
     name: 'addNamedItemFormulaLocal(name, formula, comment)'
     fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
     langs:
@@ -267,48 +288,19 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The "name" of the named item.
           type:
             - string
         - id: formula
-          description: ''
+          description: The formula in the user's locale that the name will refer to.
           type:
             - string
         - id: comment
-          description: ''
+          description: Optional. The comment associated with the named item.
           type:
             - string
-  - uid: 'excel!ExcelScript.Workbook#addPivotTable:member(1)'
-    name: 'addPivotTable(name, source, destination)'
-    fullName: 'addPivotTable(name, source, destination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addPivotTable(
-                    name: string,
-                    source: Range | string | Table,
-                    destination: Range | string
-                ): PivotTable;
-      return:
-        type:
-          - 'excel!ExcelScript.PivotTable:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-        - id: source
-          description: ''
-          type:
-            - 'excel!ExcelScript.Workbook#addPivotTable~0:complex'
-        - id: destination
-          description: ''
-          type:
-            - 'excel!ExcelScript.Workbook#addPivotTable~1:complex'
   - uid: 'excel!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+    summary: Creates a blank PivotTableStyle with the specified name.
     name: 'addPivotTableStyle(name, makeUniqueName)'
     fullName: 'addPivotTableStyle(name, makeUniqueName)'
     langs:
@@ -326,14 +318,17 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            The unique name for the new PivotTableStyle. Will throw an invalid argument exception if the name is already
+            in use.
           type:
             - string
         - id: makeUniqueName
-          description: ''
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#addSetting:member(1)'
+    summary: Sets or adds the specified setting to the workbook.
     name: 'addSetting(key, value)'
     fullName: 'addSetting(key, value)'
     langs:
@@ -351,14 +346,15 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The Key of the new setting.
           type:
             - string
         - id: value
-          description: ''
+          description: The Value for the new setting.
           type:
             - 'excel!ExcelScript.Workbook#addSetting~0:complex'
   - uid: 'excel!ExcelScript.Workbook#addSlicer:member(1)'
+    summary: Adds a new slicer to the workbook.
     name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
     fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
     langs:
@@ -377,18 +373,27 @@ items:
         description: ''
       parameters:
         - id: slicerSource
-          description: ''
+          description: >-
+            The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a
+            string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a
+            Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as
+            the name/id of a PivotTable/Table.
           type:
             - 'excel!ExcelScript.Workbook#addSlicer~0:complex'
         - id: sourceField
-          description: ''
+          description: >-
+            The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a
+            PivotField or the id/name of TableColumn.
           type:
             - 'excel!ExcelScript.Workbook#addSlicer~1:complex'
         - id: slicerDestination
-          description: ''
+          description: >-
+            Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id
+            of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
           type:
             - 'excel!ExcelScript.Workbook#addSlicer~2:complex'
   - uid: 'excel!ExcelScript.Workbook#addSlicerStyle:member(1)'
+    summary: Creates a blank SlicerStyle with the specified name.
     name: 'addSlicerStyle(name, makeUniqueName)'
     fullName: 'addSlicerStyle(name, makeUniqueName)'
     langs:
@@ -402,14 +407,20 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            The unique name for the new SlicerStyle. Will throw an invalid argument exception if the name is already in
+            use.
           type:
             - string
         - id: makeUniqueName
-          description: ''
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#addTable:member(1)'
+    summary: >-
+      Create a new table. The range object or source address determines the worksheet under which the table will be
+      added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
+      table), an error will be thrown.
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -423,14 +434,20 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: >-
+            A Range object, or a string address or name of the range representing the data source. If the address does
+            not contain a sheet name, the currently-active sheet is used.
           type:
             - 'excel!ExcelScript.Workbook#addTable~0:complex'
         - id: hasHeaders
-          description: ''
+          description: >-
+            Boolean value that indicates whether the data being imported has column labels. If the source does not
+            contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting
+            the data down by one row.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#addTableStyle:member(1)'
+    summary: Creates a blank TableStyle with the specified name.
     name: 'addTableStyle(name, makeUniqueName)'
     fullName: 'addTableStyle(name, makeUniqueName)'
     langs:
@@ -444,14 +461,17 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in
+            use.
           type:
             - string
         - id: makeUniqueName
-          description: ''
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#addTimelineStyle:member(1)'
+    summary: Creates a blank TimelineStyle with the specified name.
     name: 'addTimelineStyle(name, makeUniqueName)'
     fullName: 'addTimelineStyle(name, makeUniqueName)'
     langs:
@@ -465,14 +485,17 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            The unique name for the new TimelineStyle. Will throw an invalid argument exception if the name is already
+            in use.
           type:
             - string
         - id: makeUniqueName
-          description: ''
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#addvoid:member(1)'
+    summary: Adds a new style to the collection.
     name: addvoid(name)
     fullName: addvoid(name)
     langs:
@@ -486,10 +509,13 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the style to be added.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#addWorksheet:member(1)'
+    summary: >-
+      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
+      to activate the newly added worksheet, call ".activate() on it.
     name: addWorksheet(name)
     fullName: addWorksheet(name)
     langs:
@@ -503,7 +529,9 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
+            Excel determines the name of the new worksheet.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getActiveCell:member(1)'
@@ -546,6 +574,7 @@ items:
           - 'excel!ExcelScript.Slicer:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+    summary: Gets the currently active worksheet in the workbook.
     name: getActiveWorksheet()
     fullName: getActiveWorksheet()
     langs:
@@ -584,6 +613,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getBinding:member(1)'
+    summary: 'Gets a binding object by ID. If the binding object does not exist, will return a null object.'
     name: getBinding(id)
     fullName: getBinding(id)
     langs:
@@ -597,10 +627,11 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: Id of the binding object to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getBindings:member(1)'
+    summary: Represents a collection of bindings that are part of the workbook. Read-only.
     name: getBindings()
     fullName: getBindings()
     langs:
@@ -641,6 +672,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getComment:member(1)'
+    summary: Gets a comment from the collection based on its ID. Read-only.
     name: getComment(commentId)
     fullName: getComment(commentId)
     langs:
@@ -654,10 +686,11 @@ items:
         description: ''
       parameters:
         - id: commentId
-          description: ''
+          description: The identifier for the comment.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getCommentByCell:member(1)'
+    summary: Gets the comment from the specified cell.
     name: getCommentByCell(cellAddress)
     fullName: getCommentByCell(cellAddress)
     langs:
@@ -671,10 +704,14 @@ items:
         description: ''
       parameters:
         - id: cellAddress
-          description: ''
+          description: >-
+            The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain
+            the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
+            larger than one cell.
           type:
             - 'excel!ExcelScript.Workbook#getCommentByCell~0:complex'
   - uid: 'excel!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+    summary: Gets the comment to which the given reply is connected.
     name: getCommentByReplyId(replyId)
     fullName: getCommentByReplyId(replyId)
     langs:
@@ -688,10 +725,11 @@ items:
         description: ''
       parameters:
         - id: replyId
-          description: ''
+          description: The identifier of comment reply.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getComments:member(1)'
+    summary: Represents a collection of Comments associated with the workbook. Read-only.
     name: getComments()
     fullName: getComments()
     langs:
@@ -704,6 +742,9 @@ items:
           - 'excel!ExcelScript.Workbook#getComments~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+    summary: >-
+      Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
+      will be true.
     name: getCustomXmlPart(id)
     fullName: getCustomXmlPart(id)
     langs:
@@ -717,10 +758,11 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: ID of the object to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+    summary: Represents the collection of custom XML parts contained by this workbook. Read-only.
     name: getCustomXmlParts()
     fullName: getCustomXmlParts()
     langs:
@@ -733,6 +775,7 @@ items:
           - 'excel!ExcelScript.Workbook#getCustomXmlParts~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+    summary: Gets the default PivotTableStyle for the parent object's scope.
     name: getDefaultPivotTableStyle()
     fullName: getDefaultPivotTableStyle()
     langs:
@@ -745,6 +788,7 @@ items:
           - 'excel!ExcelScript.PivotTableStyle:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+    summary: Gets the default SlicerStyle for the parent object's scope.
     name: getDefaultSlicerStyle()
     fullName: getDefaultSlicerStyle()
     langs:
@@ -757,6 +801,7 @@ items:
           - 'excel!ExcelScript.SlicerStyle:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+    summary: Gets the default TableStyle for the parent object's scope.
     name: getDefaultTableStyle()
     fullName: getDefaultTableStyle()
     langs:
@@ -769,6 +814,7 @@ items:
           - 'excel!ExcelScript.TableStyle:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+    summary: Gets the default TimelineStyle for the parent object's scope.
     name: getDefaultTimelineStyle()
     fullName: getDefaultTimelineStyle()
     langs:
@@ -781,6 +827,7 @@ items:
           - 'excel!ExcelScript.TimelineStyle:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+    summary: Gets the first worksheet in the collection.
     name: getFirstWorksheet(visibleOnly)
     fullName: getFirstWorksheet(visibleOnly)
     langs:
@@ -794,7 +841,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#getIsDirty:member(1)'
@@ -813,6 +860,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getLastWorksheet:member(1)'
+    summary: Gets the last worksheet in the collection.
     name: getLastWorksheet(visibleOnly)
     fullName: getLastWorksheet(visibleOnly)
     langs:
@@ -826,7 +874,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#getName:member(1)'
@@ -843,6 +891,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getNamedItem:member(1)'
+    summary: 'Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.'
     name: getNamedItem(name)
     fullName: getNamedItem(name)
     langs:
@@ -856,10 +905,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Nameditem name.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getNames:member(1)'
+    summary: Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
     name: getNames()
     fullName: getNames()
     langs:
@@ -872,6 +922,7 @@ items:
           - 'excel!ExcelScript.Workbook#getNames~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getPivotTable:member(1)'
+    summary: 'Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.'
     name: getPivotTable(name)
     fullName: getPivotTable(name)
     langs:
@@ -885,10 +936,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotTable to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getPivotTables:member(1)'
+    summary: Represents a collection of PivotTables associated with the workbook. Read-only.
     name: getPivotTables()
     fullName: getPivotTables()
     langs:
@@ -901,6 +953,7 @@ items:
           - 'excel!ExcelScript.Workbook#getPivotTables~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+    summary: 'Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.'
     name: getPivotTableStyle(name)
     fullName: getPivotTableStyle(name)
     langs:
@@ -914,10 +967,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the PivotTableStyle to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+    summary: Represents a collection of PivotTableStyles associated with the workbook. Read-only.
     name: getPivotTableStyles()
     fullName: getPivotTableStyles()
     langs:
@@ -1012,6 +1066,7 @@ items:
           - 'excel!ExcelScript.RangeAreas:interface'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getSetting:member(1)'
+    summary: 'Gets a Setting entry via the key. If the Setting does not exist, will return a null object.'
     name: getSetting(key)
     fullName: getSetting(key)
     langs:
@@ -1025,10 +1080,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The key of the setting.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getSettings:member(1)'
+    summary: Represents a collection of Settings associated with the workbook. Read-only.
     name: getSettings()
     fullName: getSettings()
     langs:
@@ -1041,6 +1097,7 @@ items:
           - 'excel!ExcelScript.Workbook#getSettings~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getSlicer:member(1)'
+    summary: 'Gets a slicer using its name or id. If the slicer does not exist, will return a null object.'
     name: getSlicer(key)
     fullName: getSlicer(key)
     langs:
@@ -1054,10 +1111,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or Id of the slicer to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getSlicers:member(1)'
+    summary: Represents a collection of Slicers associated with the workbook. Read-only.
     name: getSlicers()
     fullName: getSlicers()
     langs:
@@ -1070,6 +1128,7 @@ items:
           - 'excel!ExcelScript.Workbook#getSlicers~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getSlicerStyle:member(1)'
+    summary: 'Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.'
     name: getSlicerStyle(name)
     fullName: getSlicerStyle(name)
     langs:
@@ -1083,10 +1142,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the SlicerStyle to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getSlicerStyles:member(1)'
+    summary: Represents a collection of SlicerStyles associated with the workbook. Read-only.
     name: getSlicerStyles()
     fullName: getSlicerStyles()
     langs:
@@ -1099,6 +1159,7 @@ items:
           - 'excel!ExcelScript.Workbook#getSlicerStyles~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getStyle:member(1)'
+    summary: Gets a style by name.
     name: getStyle(name)
     fullName: getStyle(name)
     langs:
@@ -1112,10 +1173,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the style to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getStyles:member(1)'
+    summary: Represents a collection of styles associated with the workbook. Read-only.
     name: getStyles()
     fullName: getStyles()
     langs:
@@ -1128,6 +1190,7 @@ items:
           - 'excel!ExcelScript.Workbook#getStyles~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getTable:member(1)'
+    summary: 'Gets a table by Name or ID. If the table does not exist, will return a null object.'
     name: getTable(key)
     fullName: getTable(key)
     langs:
@@ -1141,10 +1204,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or ID of the table to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getTables:member(1)'
+    summary: Represents a collection of tables associated with the workbook. Read-only.
     name: getTables()
     fullName: getTables()
     langs:
@@ -1157,6 +1221,7 @@ items:
           - 'excel!ExcelScript.Workbook#getTables~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getTableStyle:member(1)'
+    summary: 'Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.'
     name: getTableStyle(name)
     fullName: getTableStyle(name)
     langs:
@@ -1170,10 +1235,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the TableStyle to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getTableStyles:member(1)'
+    summary: Represents a collection of TableStyles associated with the workbook. Read-only.
     name: getTableStyles()
     fullName: getTableStyles()
     langs:
@@ -1186,6 +1252,7 @@ items:
           - 'excel!ExcelScript.Workbook#getTableStyles~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getTimelineStyle:member(1)'
+    summary: 'Gets a TimelineStyle by name. If the TimelineStyle does not exist, will return a null object.'
     name: getTimelineStyle(name)
     fullName: getTimelineStyle(name)
     langs:
@@ -1199,10 +1266,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name of the TimelineStyle to be retrieved.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getTimelineStyles:member(1)'
+    summary: Represents a collection of TimelineStyles associated with the workbook. Read-only.
     name: getTimelineStyles()
     fullName: getTimelineStyles()
     langs:
@@ -1230,6 +1298,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.Workbook#getWorksheet:member(1)'
+    summary: 'Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.'
     name: getWorksheet(key)
     fullName: getWorksheet(key)
     langs:
@@ -1243,10 +1312,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The Name or ID of the worksheet.
           type:
             - string
   - uid: 'excel!ExcelScript.Workbook#getWorksheets:member(1)'
+    summary: Represents a collection of worksheets associated with the workbook. Read-only.
     name: getWorksheets()
     fullName: getWorksheets()
     langs:
@@ -1259,6 +1329,7 @@ items:
           - 'excel!ExcelScript.Workbook#getWorksheets~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+    summary: Refreshes all the pivot tables in the collection.
     name: refreshAllPivotTables()
     fullName: refreshAllPivotTables()
     langs:
@@ -1271,6 +1342,9 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
     name: setChartDataPointTrack(chartDataPointTrack)
     fullName: setChartDataPointTrack(chartDataPointTrack)
     langs:
@@ -1288,6 +1362,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+    summary: Sets the default PivotTableStyle for use in the parent object's scope.
     name: setDefaultPivotTableStyle(newDefaultStyle)
     fullName: setDefaultPivotTableStyle(newDefaultStyle)
     langs:
@@ -1304,10 +1379,11 @@ items:
         description: ''
       parameters:
         - id: newDefaultStyle
-          description: ''
+          description: The PivotTableStyle object or name of the PivotTableStyle object that should be the new default.
           type:
             - 'excel!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
   - uid: 'excel!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+    summary: Sets the default SlicerStyle for use in the parent object's scope.
     name: setDefaultSlicerStyle(newDefaultStyle)
     fullName: setDefaultSlicerStyle(newDefaultStyle)
     langs:
@@ -1321,10 +1397,11 @@ items:
         description: ''
       parameters:
         - id: newDefaultStyle
-          description: ''
+          description: The SlicerStyle object or name of the SlicerStyle object that should be the new default.
           type:
             - 'excel!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
   - uid: 'excel!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+    summary: Sets the default TableStyle for use in the parent object's scope.
     name: setDefaultTableStyle(newDefaultStyle)
     fullName: setDefaultTableStyle(newDefaultStyle)
     langs:
@@ -1338,10 +1415,11 @@ items:
         description: ''
       parameters:
         - id: newDefaultStyle
-          description: ''
+          description: The TableStyle object or name of the TableStyle object that should be the new default.
           type:
             - 'excel!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
   - uid: 'excel!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+    summary: Sets the default TimelineStyle for use in the parent object's scope.
     name: setDefaultTimelineStyle(newDefaultStyle)
     fullName: setDefaultTimelineStyle(newDefaultStyle)
     langs:
@@ -1355,10 +1433,13 @@ items:
         description: ''
       parameters:
         - id: newDefaultStyle
-          description: ''
+          description: The TimelineStyle object or name of the TimelineStyle object that should be the new default.
           type:
             - 'excel!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
   - uid: 'excel!ExcelScript.Workbook#setIsDirty:member(1)'
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
     name: setIsDirty(isDirty)
     fullName: setIsDirty(isDirty)
     langs:
@@ -1376,6 +1457,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
     name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
     fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
     langs:
@@ -1441,33 +1525,6 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!ExcelScript.PivotTable:interface'
-    name: PivotTable
-  - uid: 'excel!ExcelScript.Workbook#addPivotTable~0:complex'
-    name: Range | string | Table
-    fullName: ExcelScript.Range | string | ExcelScript.Table
-    spec.typeScript:
-      - uid: 'excel!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string | '
-        fullName: ' | string | '
-      - uid: 'excel!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'excel!ExcelScript.Workbook#addPivotTable~1:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'excel!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
   - uid: 'excel!ExcelScript.PivotTableStyle:interface'
     name: PivotTableStyle
   - uid: 'excel!ExcelScript.Setting:interface'

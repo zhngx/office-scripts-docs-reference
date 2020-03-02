@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeType:enum'
+    summary: Specifies the type of a shape.
     name: ExcelScript.ShapeType
     fullName: ExcelScript.ShapeType
     langs:

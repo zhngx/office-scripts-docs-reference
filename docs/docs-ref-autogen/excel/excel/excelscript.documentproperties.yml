@@ -34,6 +34,7 @@ items:
       - 'excel!ExcelScript.DocumentProperties#setSubject:member(1)'
       - 'excel!ExcelScript.DocumentProperties#setTitle:member(1)'
   - uid: 'excel!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+    summary: Creates a new or sets an existing custom property.
     name: 'addCustomProperty(key, value)'
     fullName: 'addCustomProperty(key, value)'
     langs:
@@ -47,14 +48,15 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: 'Required. The custom property''s key, which is case-insensitive.'
           type:
             - string
         - id: value
-          description: ''
+          description: Required. The custom property's value.
           type:
             - any
   - uid: 'excel!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+    summary: Deletes all custom properties in this collection.
     name: deleteAllCustomProperties()
     fullName: deleteAllCustomProperties()
     langs:
@@ -132,6 +134,7 @@ items:
           - '!Date:interface'
         description: ''
   - uid: 'excel!ExcelScript.DocumentProperties#getCustom:member(1)'
+    summary: Gets the collection of custom properties of the workbook. Read only.
     name: getCustom()
     fullName: getCustom()
     langs:
@@ -144,6 +147,9 @@ items:
           - 'excel!ExcelScript.DocumentProperties#getCustom~0:complex'
         description: ''
   - uid: 'excel!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+    summary: >-
+      Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
+      does not exist.
     name: getCustomProperty(key)
     fullName: getCustomProperty(key)
     langs:
@@ -157,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Required. The key that identifies the custom property object.
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#getKeywords:member(1)'
@@ -239,6 +245,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.DocumentProperties#setAuthor:member(1)'
+    summary: Gets or sets the author of the workbook.
     name: setAuthor(author)
     fullName: setAuthor(author)
     langs:
@@ -256,6 +263,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setCategory:member(1)'
+    summary: Gets or sets the category of the workbook.
     name: setCategory(category)
     fullName: setCategory(category)
     langs:
@@ -273,6 +281,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setComments:member(1)'
+    summary: Gets or sets the comments of the workbook.
     name: setComments(comments)
     fullName: setComments(comments)
     langs:
@@ -290,6 +299,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setCompany:member(1)'
+    summary: Gets or sets the company of the workbook.
     name: setCompany(company)
     fullName: setCompany(company)
     langs:
@@ -307,6 +317,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setKeywords:member(1)'
+    summary: Gets or sets the keywords of the workbook.
     name: setKeywords(keywords)
     fullName: setKeywords(keywords)
     langs:
@@ -324,6 +335,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setManager:member(1)'
+    summary: Gets or sets the manager of the workbook.
     name: setManager(manager)
     fullName: setManager(manager)
     langs:
@@ -341,6 +353,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+    summary: Gets the revision number of the workbook. Read only.
     name: setRevisionNumber(revisionNumber)
     fullName: setRevisionNumber(revisionNumber)
     langs:
@@ -358,6 +371,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.DocumentProperties#setSubject:member(1)'
+    summary: Gets or sets the subject of the workbook.
     name: setSubject(subject)
     fullName: setSubject(subject)
     langs:
@@ -375,6 +389,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DocumentProperties#setTitle:member(1)'
+    summary: Gets or sets the title of the workbook.
     name: setTitle(title)
     fullName: setTitle(title)
     langs:

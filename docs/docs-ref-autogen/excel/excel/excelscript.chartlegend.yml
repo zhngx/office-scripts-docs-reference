@@ -67,6 +67,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartLegend#getLegendEntries:member(1)'
+    summary: Represents a collection of legendEntries in the legend. Read-only.
     name: getLegendEntries()
     fullName: getLegendEntries()
     langs:
@@ -157,6 +158,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartLegend#setHeight:member(1)'
+    summary: 'Represents the height, in points, of the legend on the chart. Null if legend is not visible.'
     name: setHeight(height)
     fullName: setHeight(height)
     langs:
@@ -174,6 +176,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartLegend#setLeft:member(1)'
+    summary: 'Represents the left, in points, of a chart legend. Null if legend is not visible.'
     name: setLeft(left)
     fullName: setLeft(left)
     langs:
@@ -191,6 +194,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartLegend#setOverlay:member(1)'
+    summary: Boolean value for whether the chart legend should overlap with the main body of the chart.
     name: setOverlay(overlay)
     fullName: setOverlay(overlay)
     langs:
@@ -208,6 +212,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartLegend#setPosition:member(1)'
+    summary: Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -225,6 +230,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartLegendPosition:enum'
   - uid: 'excel!ExcelScript.ChartLegend#setShowShadow:member(1)'
+    summary: Represents if the legend has a shadow on the chart.
     name: setShowShadow(showShadow)
     fullName: setShowShadow(showShadow)
     langs:
@@ -242,6 +248,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartLegend#setTop:member(1)'
+    summary: Represents the top of a chart legend.
     name: setTop(top)
     fullName: setTop(top)
     langs:
@@ -259,6 +266,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartLegend#setVisible:member(1)'
+    summary: A boolean value the represents the visibility of a ChartLegend object.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:
@@ -276,6 +284,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartLegend#setWidth:member(1)'
+    summary: 'Represents the width, in points, of the legend on the chart. Null if legend is not visible.'
     name: setWidth(width)
     fullName: setWidth(width)
     langs:

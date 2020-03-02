@@ -81,6 +81,6 @@ items:
         description: ''
       parameters:
         - id: xml
-          description: ''
+          description: XML content for the part.
           type:
             - string

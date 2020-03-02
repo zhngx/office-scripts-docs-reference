@@ -117,9 +117,6 @@ function fixToc(tocPath: string): Toc {
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
-                        let iconSetList = membersToMove.items.filter(item => {
-                              return excelIconSetFilter.indexOf(item.name) >= 0;
-                        });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });

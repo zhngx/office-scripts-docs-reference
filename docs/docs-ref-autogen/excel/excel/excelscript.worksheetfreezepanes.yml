@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.WorksheetFreezePanes:interface'
-    summary: no comment
     name: ExcelScript.WorksheetFreezePanes
     fullName: ExcelScript.WorksheetFreezePanes
     langs:
@@ -31,7 +30,7 @@ items:
         description: ''
       parameters:
         - id: frozenRange
-          description: ''
+          description: 'A range that represents the cells to be frozen, or null to remove all frozen panes.'
           type:
             - 'excel!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
   - uid: 'excel!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
@@ -49,7 +48,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: 'Optional number of columns to freeze, or zero to unfreeze all columns'
           type:
             - number
   - uid: 'excel!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
@@ -67,7 +66,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: 'Optional number of rows to freeze, or zero to unfreeze all rows'
           type:
             - number
   - uid: 'excel!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'

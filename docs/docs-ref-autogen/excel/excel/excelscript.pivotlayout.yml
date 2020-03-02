@@ -84,7 +84,7 @@ items:
         description: ''
       parameters:
         - id: cell
-          description: ''
+          description: A single cell within the PivotTable data body.
           type:
             - 'excel!ExcelScript.PivotLayout#getDataHierarchy~0:complex'
   - uid: 'excel!ExcelScript.PivotLayout#getEnableFieldList:member(1)'
@@ -211,6 +211,7 @@ items:
           - 'excel!ExcelScript.SubtotalLocationType:enum'
         description: ''
   - uid: 'excel!ExcelScript.PivotLayout#setAutoFormat:member(1)'
+    summary: Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
     name: setAutoFormat(autoFormat)
     fullName: setAutoFormat(autoFormat)
     langs:
@@ -244,14 +245,15 @@ items:
         description: ''
       parameters:
         - id: cell
-          description: ''
+          description: A single cell to use get the criteria from for applying the autosort.
           type:
             - 'excel!ExcelScript.PivotLayout#setAutoSortOnCell~0:complex'
         - id: sortBy
-          description: ''
+          description: The direction of the sort.
           type:
             - 'excel!ExcelScript.SortBy:enum'
   - uid: 'excel!ExcelScript.PivotLayout#setEnableFieldList:member(1)'
+    summary: Specifies whether the field list can be shown in the UI.
     name: setEnableFieldList(enableFieldList)
     fullName: setEnableFieldList(enableFieldList)
     langs:
@@ -269,6 +271,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotLayout#setLayoutType:member(1)'
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
     name: setLayoutType(layoutType)
     fullName: setLayoutType(layoutType)
     langs:
@@ -286,6 +291,9 @@ items:
           type:
             - 'excel!ExcelScript.PivotLayoutType:enum'
   - uid: 'excel!ExcelScript.PivotLayout#setPreserveFormatting:member(1)'
+    summary: >-
+      Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
+      pivoting, sorting, or changing page field items.
     name: setPreserveFormatting(preserveFormatting)
     fullName: setPreserveFormatting(preserveFormatting)
     langs:
@@ -303,6 +311,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)'
+    summary: Specifies whether the PivotTable report shows grand totals for columns.
     name: setShowColumnGrandTotals(showColumnGrandTotals)
     fullName: setShowColumnGrandTotals(showColumnGrandTotals)
     langs:
@@ -320,6 +329,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)'
+    summary: Specifies whether the PivotTable report shows grand totals for rows.
     name: setShowRowGrandTotals(showRowGrandTotals)
     fullName: setShowRowGrandTotals(showRowGrandTotals)
     langs:
@@ -337,6 +347,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.PivotLayout#setSubtotalLocation:member(1)'
+    summary: >-
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
     name: setSubtotalLocation(subtotalLocation)
     fullName: setSubtotalLocation(subtotalLocation)
     langs:

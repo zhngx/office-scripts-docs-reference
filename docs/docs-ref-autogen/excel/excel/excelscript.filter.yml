@@ -37,7 +37,7 @@ items:
         description: ''
       parameters:
         - id: criteria
-          description: ''
+          description: The criteria to apply.
           type:
             - 'excel!ExcelScript.FilterCriteria:interface'
   - uid: 'excel!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
@@ -55,7 +55,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: The number of elements from the bottom to show.
           type:
             - number
   - uid: 'excel!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
@@ -73,7 +73,7 @@ items:
         description: ''
       parameters:
         - id: percent
-          description: ''
+          description: The percentage of elements from the bottom to show.
           type:
             - number
   - uid: 'excel!ExcelScript.Filter#applyCellColorFilter:member(1)'
@@ -91,7 +91,7 @@ items:
         description: ''
       parameters:
         - id: color
-          description: ''
+          description: The background color of the cells to show.
           type:
             - string
   - uid: 'excel!ExcelScript.Filter#applyCustomFilter:member(1)'
@@ -114,15 +114,15 @@ items:
         description: ''
       parameters:
         - id: criteria1
-          description: ''
+          description: The first criteria string.
           type:
             - string
         - id: criteria2
-          description: ''
+          description: Optional. The second criteria string.
           type:
             - string
         - id: oper
-          description: ''
+          description: Optional. The operator that describes how the two criteria are joined.
           type:
             - 'excel!ExcelScript.FilterOperator:enum'
   - uid: 'excel!ExcelScript.Filter#applyDynamicFilter:member(1)'
@@ -140,7 +140,7 @@ items:
         description: ''
       parameters:
         - id: criteria
-          description: ''
+          description: The dynamic criteria to apply.
           type:
             - 'excel!ExcelScript.DynamicFilterCriteria:enum'
   - uid: 'excel!ExcelScript.Filter#applyFontColorFilter:member(1)'
@@ -158,7 +158,7 @@ items:
         description: ''
       parameters:
         - id: color
-          description: ''
+          description: The font color of the cells to show.
           type:
             - string
   - uid: 'excel!ExcelScript.Filter#applyIconFilter:member(1)'
@@ -176,7 +176,7 @@ items:
         description: ''
       parameters:
         - id: icon
-          description: ''
+          description: The icons of the cells to show.
           type:
             - 'excel!ExcelScript.Icon:interface'
   - uid: 'excel!ExcelScript.Filter#applyTopItemsFilter:member(1)'
@@ -194,7 +194,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: The number of elements from the top to show.
           type:
             - number
   - uid: 'excel!ExcelScript.Filter#applyTopPercentFilter:member(1)'
@@ -212,7 +212,7 @@ items:
         description: ''
       parameters:
         - id: percent
-          description: ''
+          description: The percentage of elements from the top to show.
           type:
             - number
   - uid: 'excel!ExcelScript.Filter#applyValuesFilter:member(1)'
@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: ''
+          description: The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
           type:
             - 'excel!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'excel!ExcelScript.Filter#clear:member(1)'

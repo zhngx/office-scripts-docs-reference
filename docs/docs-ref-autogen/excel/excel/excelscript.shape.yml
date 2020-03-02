@@ -72,7 +72,7 @@ items:
         description: ''
       parameters:
         - id: destinationSheet
-          description: ''
+          description: The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
           type:
             - 'excel!ExcelScript.Shape#copyTo~0:complex'
   - uid: 'excel!ExcelScript.Shape#delete:member(1)'
@@ -132,7 +132,7 @@ items:
         description: ''
       parameters:
         - id: format
-          description: ''
+          description: Specifies the format of the image.
           type:
             - 'excel!ExcelScript.PictureFormat:enum'
   - uid: 'excel!ExcelScript.Shape#getConnectionSiteCount:member(1)'
@@ -453,7 +453,10 @@ items:
         description: ''
       parameters:
         - id: increment
-          description: ''
+          description: >-
+            The increment, in points, the shape will be horizontally moved. A positive value moves the shape to the
+            right and a negative value moves it to the left. If the sheet is right-to-left oriented, this is reversed:
+            positive values will move the shape to the left and negative values will move it to the right.
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#incrementRotation:member(1)'
@@ -473,7 +476,9 @@ items:
         description: ''
       parameters:
         - id: increment
-          description: ''
+          description: >-
+            How many degrees the shape will be rotated. A positive value rotates the shape clockwise; a negative value
+            rotates it counterclockwise.
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#incrementTop:member(1)'
@@ -491,7 +496,9 @@ items:
         description: ''
       parameters:
         - id: increment
-          description: ''
+          description: >-
+            The increment, in points, the shape will be vertically moved. in points. A positive value moves the shape
+            down and a negative value moves it up.
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#scaleHeight:member(1)'
@@ -517,15 +524,19 @@ items:
         description: ''
       parameters:
         - id: scaleFactor
-          description: ''
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
           type:
             - number
         - id: scaleType
-          description: ''
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - 'excel!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: ''
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - 'excel!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'excel!ExcelScript.Shape#scaleWidth:member(1)'
@@ -551,18 +562,23 @@ items:
         description: ''
       parameters:
         - id: scaleFactor
-          description: ''
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
           type:
             - number
         - id: scaleType
-          description: ''
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - 'excel!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: ''
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - 'excel!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'excel!ExcelScript.Shape#setAltTextDescription:member(1)'
+    summary: Returns or sets the alternative description text for a Shape object.
     name: setAltTextDescription(altTextDescription)
     fullName: setAltTextDescription(altTextDescription)
     langs:
@@ -580,6 +596,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Shape#setAltTextTitle:member(1)'
+    summary: Returns or sets the alternative title text for a Shape object.
     name: setAltTextTitle(altTextTitle)
     fullName: setAltTextTitle(altTextTitle)
     langs:
@@ -597,6 +614,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Shape#setGeometricShapeType:member(1)'
+    summary: >-
+      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
+      null if the shape type is not "GeometricShape".
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -614,6 +634,9 @@ items:
           type:
             - 'excel!ExcelScript.GeometricShapeType:enum'
   - uid: 'excel!ExcelScript.Shape#setHeight:member(1)'
+    summary: >-
+      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
+      value or zero as input.
     name: setHeight(height)
     fullName: setHeight(height)
     langs:
@@ -631,6 +654,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#setLeft:member(1)'
+    summary: >-
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
     name: setLeft(left)
     fullName: setLeft(left)
     langs:
@@ -648,6 +674,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#setLockAspectRatio:member(1)'
+    summary: Specifies whether or not the aspect ratio of this shape is locked.
     name: setLockAspectRatio(lockAspectRatio)
     fullName: setLockAspectRatio(lockAspectRatio)
     langs:
@@ -665,6 +692,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Shape#setName:member(1)'
+    summary: Represents the name of the shape.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -682,6 +710,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Shape#setPlacement:member(1)'
+    summary: Represents how the object is attached to the cells below it.
     name: setPlacement(placement)
     fullName: setPlacement(placement)
     langs:
@@ -699,6 +728,7 @@ items:
           type:
             - 'excel!ExcelScript.Placement:enum'
   - uid: 'excel!ExcelScript.Shape#setRotation:member(1)'
+    summary: 'Represents the rotation, in degrees, of the shape.'
     name: setRotation(rotation)
     fullName: setRotation(rotation)
     langs:
@@ -716,6 +746,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#setTop:member(1)'
+    summary: >-
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
     name: setTop(top)
     fullName: setTop(top)
     langs:
@@ -733,6 +766,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.Shape#setVisible:member(1)'
+    summary: Represents the visibility of this shape.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:
@@ -750,6 +784,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Shape#setWidth:member(1)'
+    summary: >-
+      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
     name: setWidth(width)
     fullName: setWidth(width)
     langs:
@@ -781,7 +818,9 @@ items:
         description: ''
       parameters:
         - id: position
-          description: ''
+          description: >-
+            Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
+            details.
           type:
             - 'excel!ExcelScript.ShapeZOrder:enum'
 references:

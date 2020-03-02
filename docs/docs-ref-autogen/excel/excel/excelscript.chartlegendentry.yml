@@ -95,6 +95,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+    summary: Represents the visible of a chart legend entry.
     name: setVisible(visible)
     fullName: setVisible(visible)
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.DataValidationErrorAlert:interface'
+    summary: Represents the error alert properties for the data validation.
     name: ExcelScript.DataValidationErrorAlert
     fullName: ExcelScript.DataValidationErrorAlert
     langs:
@@ -13,6 +14,7 @@ items:
       - 'excel!ExcelScript.DataValidationErrorAlert#style:member'
       - 'excel!ExcelScript.DataValidationErrorAlert#title:member'
   - uid: 'excel!ExcelScript.DataValidationErrorAlert#message:member'
+    summary: Represents error alert message.
     name: message
     fullName: message
     langs:
@@ -24,6 +26,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    summary: Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.
     name: showAlert
     fullName: showAlert
     langs:
@@ -35,6 +38,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.DataValidationErrorAlert#style:member'
+    summary: 'Represents data validation alert type, please see Excel.DataValidationAlertStyle for details.'
     name: style
     fullName: style
     langs:
@@ -46,6 +50,7 @@ items:
         type:
           - 'excel!ExcelScript.DataValidationAlertStyle:enum'
   - uid: 'excel!ExcelScript.DataValidationErrorAlert#title:member'
+    summary: Represents error alert dialog title.
     name: title
     fullName: title
     langs:

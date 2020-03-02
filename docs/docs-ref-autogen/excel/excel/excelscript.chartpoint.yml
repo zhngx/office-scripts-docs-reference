@@ -16,6 +16,7 @@ items:
       - 'excel!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
       - 'excel!ExcelScript.ChartPoint#getMarkerSize:member(1)'
       - 'excel!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
+      - 'excel!ExcelScript.ChartPoint#getValue:member(1)'
       - 'excel!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
       - 'excel!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
       - 'excel!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
@@ -112,7 +113,21 @@ items:
         type:
           - 'excel!ExcelScript.ChartMarkerStyle:enum'
         description: ''
+  - uid: 'excel!ExcelScript.ChartPoint#getValue:member(1)'
+    summary: Returns the value of a chart point. Read-only.
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
+    summary: Represents whether a data point has a data label. Not applicable for surface charts.
     name: setHasDataLabel(hasDataLabel)
     fullName: setHasDataLabel(hasDataLabel)
     langs:
@@ -130,6 +145,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
+    summary: 'HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.'
     name: setMarkerBackgroundColor(markerBackgroundColor)
     fullName: setMarkerBackgroundColor(markerBackgroundColor)
     langs:
@@ -147,6 +163,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
+    summary: 'HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.'
     name: setMarkerForegroundColor(markerForegroundColor)
     fullName: setMarkerForegroundColor(markerForegroundColor)
     langs:
@@ -164,6 +181,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartPoint#setMarkerSize:member(1)'
+    summary: Represents marker size of data point.
     name: setMarkerSize(markerSize)
     fullName: setMarkerSize(markerSize)
     langs:
@@ -181,6 +199,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
+    summary: Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:

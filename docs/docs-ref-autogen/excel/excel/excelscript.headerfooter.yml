@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.HeaderFooter:interface'
-    summary: no comment
     name: ExcelScript.HeaderFooter
     fullName: ExcelScript.HeaderFooter
     langs:
@@ -112,6 +111,9 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.HeaderFooter#setCenterFooter:member(1)'
+    summary: >-
+      Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setCenterFooter(centerFooter)
     fullName: setCenterFooter(centerFooter)
     langs:
@@ -129,6 +131,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.HeaderFooter#setCenterHeader:member(1)'
+    summary: >-
+      Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setCenterHeader(centerHeader)
     fullName: setCenterHeader(centerHeader)
     langs:
@@ -146,6 +151,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.HeaderFooter#setLeftFooter:member(1)'
+    summary: >-
+      Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setLeftFooter(leftFooter)
     fullName: setLeftFooter(leftFooter)
     langs:
@@ -163,6 +171,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.HeaderFooter#setLeftHeader:member(1)'
+    summary: >-
+      Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setLeftHeader(leftHeader)
     fullName: setLeftHeader(leftHeader)
     langs:
@@ -180,6 +191,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.HeaderFooter#setRightFooter:member(1)'
+    summary: >-
+      Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setRightFooter(rightFooter)
     fullName: setRightFooter(rightFooter)
     langs:
@@ -197,6 +211,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.HeaderFooter#setRightHeader:member(1)'
+    summary: >-
+      Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
     name: setRightHeader(rightHeader)
     fullName: setRightHeader(rightHeader)
     langs:

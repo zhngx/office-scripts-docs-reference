@@ -18,6 +18,7 @@ items:
       - 'excel!ExcelScript.Range#autoFill:member(1)'
       - 'excel!ExcelScript.Range#calculate:member(1)'
       - 'excel!ExcelScript.Range#clear:member(1)'
+      - 'excel!ExcelScript.Range#clearAllConditionalFormat:member(1)'
       - 'excel!ExcelScript.Range#convertDataTypeToText:member(1)'
       - 'excel!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'excel!ExcelScript.Range#copyFrom:member(1)'
@@ -42,6 +43,9 @@ items:
       - 'excel!ExcelScript.Range#getEntireColumn:member(1)'
       - 'excel!ExcelScript.Range#getEntireRow:member(1)'
       - 'excel!ExcelScript.Range#getFormat:member(1)'
+      - 'excel!ExcelScript.Range#getFormulas:member(1)'
+      - 'excel!ExcelScript.Range#getFormulasLocal:member(1)'
+      - 'excel!ExcelScript.Range#getFormulasR1C1:member(1)'
       - 'excel!ExcelScript.Range#getHeight:member(1)'
       - 'excel!ExcelScript.Range#getHidden:member(1)'
       - 'excel!ExcelScript.Range#getHyperlink:member(1)'
@@ -53,6 +57,8 @@ items:
       - 'excel!ExcelScript.Range#getLastColumn:member(1)'
       - 'excel!ExcelScript.Range#getLastRow:member(1)'
       - 'excel!ExcelScript.Range#getLeft:member(1)'
+      - 'excel!ExcelScript.Range#getNumberFormat:member(1)'
+      - 'excel!ExcelScript.Range#getNumberFormatLocal:member(1)'
       - 'excel!ExcelScript.Range#getOffsetRange:member(1)'
       - 'excel!ExcelScript.Range#getResizedRange:member(1)'
       - 'excel!ExcelScript.Range#getRow:member(1)'
@@ -76,12 +82,18 @@ items:
       - 'excel!ExcelScript.Range#hideGroupDetails:member(1)'
       - 'excel!ExcelScript.Range#insert:member(1)'
       - 'excel!ExcelScript.Range#merge:member(1)'
+      - 'excel!ExcelScript.Range#moveTo:member(1)'
       - 'excel!ExcelScript.Range#removeDuplicates:member(1)'
       - 'excel!ExcelScript.Range#replaceAll:member(1)'
       - 'excel!ExcelScript.Range#select:member(1)'
       - 'excel!ExcelScript.Range#setColumnHidden:member(1)'
       - 'excel!ExcelScript.Range#setDirty:member(1)'
+      - 'excel!ExcelScript.Range#setFormulas:member(1)'
+      - 'excel!ExcelScript.Range#setFormulasLocal:member(1)'
+      - 'excel!ExcelScript.Range#setFormulasR1C1:member(1)'
       - 'excel!ExcelScript.Range#setHyperlink:member(1)'
+      - 'excel!ExcelScript.Range#setNumberFormat:member(1)'
+      - 'excel!ExcelScript.Range#setNumberFormatLocal:member(1)'
       - 'excel!ExcelScript.Range#setRowHidden:member(1)'
       - 'excel!ExcelScript.Range#setStyle:member(1)'
       - 'excel!ExcelScript.Range#setValues:member(1)'
@@ -90,6 +102,7 @@ items:
       - 'excel!ExcelScript.Range#ungroup:member(1)'
       - 'excel!ExcelScript.Range#unmerge:member(1)'
   - uid: 'excel!ExcelScript.Range#addConditionalFormat:member(1)'
+    summary: Adds a new conditional format to the collection at the first/top priority.
     name: addConditionalFormat(type)
     fullName: addConditionalFormat(type)
     langs:
@@ -103,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: ''
+          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
             - 'excel!ExcelScript.ConditionalFormatType:enum'
   - uid: 'excel!ExcelScript.Range#autoFill:member(1)'
@@ -133,11 +146,15 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: ''
+          description: >-
+            The destination range to autofill. If the destination range is null, data is filled out based on the
+            surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
           type:
             - 'excel!ExcelScript.Range#autoFill~0:complex'
         - id: autoFillType
-          description: ''
+          description: >-
+            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
+            current range. Default is "FillDefault".
           type:
             - 'excel!ExcelScript.AutoFillType:enum'
   - uid: 'excel!ExcelScript.Range#calculate:member(1)'
@@ -168,9 +185,22 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: ''
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - 'excel!ExcelScript.ClearApplyTo:enum'
+  - uid: 'excel!ExcelScript.Range#clearAllConditionalFormat:member(1)'
+    summary: Clears all conditional formats active on the current specified range.
+    name: clearAllConditionalFormat()
+    fullName: clearAllConditionalFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAllConditionalFormat(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!ExcelScript.Range#convertDataTypeToText:member(1)'
     summary: Converts the range cells with datatypes into text.
     name: convertDataTypeToText()
@@ -203,11 +233,11 @@ items:
         description: ''
       parameters:
         - id: serviceID
-          description: ''
+          description: The Service ID which will be used to query the data.
           type:
             - number
         - id: languageCulture
-          description: ''
+          description: Language Culture to query the service for.
           type:
             - string
   - uid: 'excel!ExcelScript.Range#copyFrom:member(1)'
@@ -234,19 +264,21 @@ items:
         description: ''
       parameters:
         - id: sourceRange
-          description: ''
+          description: >-
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            be able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!ExcelScript.Range#copyFrom~0:complex'
         - id: copyType
-          description: ''
+          description: The type of cell data or formatting to copy over. Default is "All".
           type:
             - 'excel!ExcelScript.RangeCopyType:enum'
         - id: skipBlanks
-          description: ''
+          description: True if to skip blank cells in the source range. Default is false.
           type:
             - boolean
         - id: transpose
-          description: ''
+          description: True if to transpose the cells in the destination range. Default is false.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Range#delete:member(1)'
@@ -264,7 +296,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: ''
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - 'excel!ExcelScript.DeleteShiftDirection:enum'
   - uid: 'excel!ExcelScript.Range#find:member(1)'
@@ -285,11 +317,13 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: ''
+          description: >-
+            Additional search criteria, including the search direction and whether the search needs to match the entire
+            cell or be case sensitive.
           type:
             - 'excel!ExcelScript.SearchCriteria:interface'
   - uid: 'excel!ExcelScript.Range#flashFill:member(1)'
@@ -324,11 +358,11 @@ items:
         description: ''
       parameters:
         - id: numRows
-          description: ''
+          description: The number of rows of the new range size.
           type:
             - number
         - id: numColumns
-          description: ''
+          description: The number of columns of the new range size.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getAddress:member(1)'
@@ -376,7 +410,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: The range object or address or range name.
           type:
             - 'excel!ExcelScript.Range#getBoundingRect~0:complex'
   - uid: 'excel!ExcelScript.Range#getCell:member(1)'
@@ -397,11 +431,11 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: Row number of the cell to be retrieved. Zero-indexed.
           type:
             - number
         - id: column
-          description: ''
+          description: Column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getCellCount:member(1)'
@@ -432,7 +466,7 @@ items:
         description: ''
       parameters:
         - id: column
-          description: ''
+          description: Column number of the range to be retrieved. Zero-indexed.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getColumnCount:member(1)'
@@ -489,7 +523,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getColumnsBefore:member(1)'
@@ -507,10 +544,14 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getConditionalFormat:member(1)'
+    summary: Returns a conditional format for the given ID.
     name: getConditionalFormat(id)
     fullName: getConditionalFormat(id)
     langs:
@@ -524,10 +565,11 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: The id of the conditional format.
           type:
             - string
   - uid: 'excel!ExcelScript.Range#getConditionalFormats:member(1)'
+    summary: Collection of ConditionalFormats that intersect the range. Read-only.
     name: getConditionalFormats()
     fullName: getConditionalFormats()
     langs:
@@ -596,6 +638,47 @@ items:
       return:
         type:
           - 'excel!ExcelScript.RangeFormat:interface'
+        description: ''
+  - uid: 'excel!ExcelScript.Range#getFormulas:member(1)'
+    summary: Represents the formula in A1-style notation.
+    name: getFormulas()
+    fullName: getFormulas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulas(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'excel!ExcelScript.Range#getFormulasLocal:member(1)'
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+    name: getFormulasLocal()
+    fullName: getFormulasLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulasLocal(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'excel!ExcelScript.Range#getFormulasR1C1:member(1)'
+    summary: Represents the formula in R1C1-style notation.
+    name: getFormulasR1C1()
+    fullName: getFormulasR1C1()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulasR1C1(): string[][];'
+      return:
+        type:
+          - 'string[][]'
         description: ''
   - uid: 'excel!ExcelScript.Range#getHeight:member(1)'
     summary: 'Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.'
@@ -666,7 +749,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: The range object or range address that will be used to determine the intersection of ranges.
           type:
             - 'excel!ExcelScript.Range#getIntersection~0:complex'
   - uid: 'excel!ExcelScript.Range#getIsEntireColumn:member(1)'
@@ -749,6 +832,35 @@ items:
         type:
           - number
         description: ''
+  - uid: 'excel!ExcelScript.Range#getNumberFormat:member(1)'
+    summary: Represents Excel's number format code for the given range.
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'excel!ExcelScript.Range#getNumberFormatLocal:member(1)'
+    summary: >-
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
+      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
+      text uses the locally-formatted strings based on the language specified in the system settings.
+    name: getNumberFormatLocal()
+    fullName: getNumberFormatLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatLocal(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
   - uid: 'excel!ExcelScript.Range#getOffsetRange:member(1)'
     summary: >-
       Gets an object which represents a range that's offset from the specified range. The dimension of the returned
@@ -767,11 +879,15 @@ items:
         description: ''
       parameters:
         - id: rowOffset
-          description: ''
+          description: >-
+            The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset
+            downward, and negative values are offset upward.
           type:
             - number
         - id: columnOffset
-          description: ''
+          description: >-
+            The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are
+            offset to the right, and negative values are offset to the left.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getResizedRange:member(1)'
@@ -791,11 +907,15 @@ items:
         description: ''
       parameters:
         - id: deltaRows
-          description: ''
+          description: >-
+            The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive
+            number to expand the range, or a negative number to decrease it.
           type:
             - number
         - id: deltaColumns
-          description: ''
+          description: >-
+            The number of columns by which to expand the bottom-right corner, relative to the current range. Use a
+            positive number to expand the range, or a negative number to decrease it.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getRow:member(1)'
@@ -813,7 +933,7 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: Row number of the range to be retrieved. Zero-indexed.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getRowCount:member(1)'
@@ -870,7 +990,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getRowsBelow:member(1)'
@@ -888,7 +1011,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type:
             - number
   - uid: 'excel!ExcelScript.Range#getSort:member(1)'
@@ -925,11 +1051,14 @@ items:
         description: ''
       parameters:
         - id: cellType
-          description: ''
+          description: The type of cells to include.
           type:
             - 'excel!ExcelScript.SpecialCellType:enum'
         - id: cellValueType
-          description: ''
+          description: >-
+            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
+            include in the result. These values can be combined together to return more than one type. The default is to
+            select all constants or formulas, no matter what the type.
           type:
             - 'excel!ExcelScript.SpecialCellValueType:enum'
   - uid: 'excel!ExcelScript.Range#getStyle:member(1)'
@@ -1008,15 +1137,13 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: Considers only cells with values as used cells.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Range#getValues:member(1)'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string. When setting values to a range, the value argument can
-      be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single
-      value, it will be applied to all cells in the range.
+      Cells that contain an error will return the error string.
     name: getValues()
     fullName: getValues()
     langs:
@@ -1082,7 +1209,10 @@ items:
         description: ''
       parameters:
         - id: groupOption
-          description: ''
+          description: >-
+            Specifies how the range can be grouped by rows or columns. An `InvalidArgument` error is thrown when the
+            group option differs from the range's `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow`
+            is true and `groupOption` is "ByColumns" or `range.isEntireColumn` is true and `groupOption` is "ByRows").
           type:
             - 'excel!ExcelScript.GroupOption:enum'
   - uid: 'excel!ExcelScript.Range#hideGroupDetails:member(1)'
@@ -1100,7 +1230,7 @@ items:
         description: ''
       parameters:
         - id: groupOption
-          description: ''
+          description: Specifies whether to hide details of grouped rows or grouped columns.
           type:
             - 'excel!ExcelScript.GroupOption:enum'
   - uid: 'excel!ExcelScript.Range#insert:member(1)'
@@ -1120,7 +1250,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: ''
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - 'excel!ExcelScript.InsertShiftDirection:enum'
   - uid: 'excel!ExcelScript.Range#merge:member(1)'
@@ -1138,9 +1268,32 @@ items:
         description: ''
       parameters:
         - id: across
-          description: ''
+          description: >-
+            Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default
+            value is false.
           type:
             - boolean
+  - uid: 'excel!ExcelScript.Range#moveTo:member(1)'
+    summary: >-
+      Moves cell values, formatting, and formulas from current range to the destination range, replacing the old
+      information in those cells. The destination range will be expanded automatically if it is smaller than the current
+      range. Any cells in the destination range that are outside of the original range's area are not changed.
+    name: moveTo(destinationRange)
+    fullName: moveTo(destinationRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'moveTo(destinationRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: destinationRange
+          description: destinationRange Specifies the range to where the information in this range will be moved.
+          type:
+            - 'excel!ExcelScript.Range#moveTo~0:complex'
   - uid: 'excel!ExcelScript.Range#removeDuplicates:member(1)'
     summary: Removes duplicate values from the range specified by the columns.
     name: 'removeDuplicates(columns, includesHeader)'
@@ -1160,11 +1313,13 @@ items:
         description: ''
       parameters:
         - id: columns
-          description: ''
+          description: >-
+            The columns inside the range that may contain duplicates. At least one column needs to be specified.
+            Zero-indexed.
           type:
             - 'number[]'
         - id: includesHeader
-          description: ''
+          description: True if the input data contains header. Default is false.
           type:
             - boolean
   - uid: 'excel!ExcelScript.Range#replaceAll:member(1)'
@@ -1187,15 +1342,15 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: String to find.
           type:
             - string
         - id: replacement
-          description: ''
+          description: String to replace the original with.
           type:
             - string
         - id: criteria
-          description: ''
+          description: Additional Replace Criteria.
           type:
             - 'excel!ExcelScript.ReplaceCriteria:interface'
   - uid: 'excel!ExcelScript.Range#select:member(1)'
@@ -1212,6 +1367,7 @@ items:
           - void
         description: ''
   - uid: 'excel!ExcelScript.Range#setColumnHidden:member(1)'
+    summary: Represents if all columns of the current range are hidden.
     name: setColumnHidden(columnHidden)
     fullName: setColumnHidden(columnHidden)
     langs:
@@ -1241,7 +1397,64 @@ items:
         type:
           - void
         description: ''
+  - uid: 'excel!ExcelScript.Range#setFormulas:member(1)'
+    summary: Represents the formula in A1-style notation.
+    name: setFormulas(formulas)
+    fullName: setFormulas(formulas)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulas(formulas: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulas
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'excel!ExcelScript.Range#setFormulasLocal:member(1)'
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+    name: setFormulasLocal(formulasLocal)
+    fullName: setFormulasLocal(formulasLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulasLocal
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'excel!ExcelScript.Range#setFormulasR1C1:member(1)'
+    summary: Represents the formula in R1C1-style notation.
+    name: setFormulasR1C1(formulasR1C1)
+    fullName: setFormulasR1C1(formulasR1C1)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulasR1C1
+          description: ''
+          type:
+            - 'string[][]'
   - uid: 'excel!ExcelScript.Range#setHyperlink:member(1)'
+    summary: Represents the hyperlink for the current range.
     name: setHyperlink(hyperlink)
     fullName: setHyperlink(hyperlink)
     langs:
@@ -1258,7 +1471,47 @@ items:
           description: ''
           type:
             - 'excel!ExcelScript.RangeHyperlink:interface'
+  - uid: 'excel!ExcelScript.Range#setNumberFormat:member(1)'
+    summary: Represents Excel's number format code for the given range.
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'excel!ExcelScript.Range#setNumberFormatLocal:member(1)'
+    summary: >-
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
+      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
+      text uses the locally-formatted strings based on the language specified in the system settings.
+    name: setNumberFormatLocal(numberFormatLocal)
+    fullName: setNumberFormatLocal(numberFormatLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormatLocal(numberFormatLocal: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormatLocal
+          description: ''
+          type:
+            - 'string[][]'
   - uid: 'excel!ExcelScript.Range#setRowHidden:member(1)'
+    summary: Represents if all rows of the current range are hidden.
     name: setRowHidden(rowHidden)
     fullName: setRowHidden(rowHidden)
     langs:
@@ -1276,6 +1529,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.Range#setStyle:member(1)'
+    summary: >-
+      Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
+      custom styles, the style name will be returned. For built-in styles, a string representing a value in the
+      BuiltInStyle enum will be returned.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -1293,6 +1550,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.Range#setValues:member(1)'
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
     name: setValues(values)
     fullName: setValues(values)
     langs:
@@ -1337,7 +1597,7 @@ items:
         description: ''
       parameters:
         - id: groupOption
-          description: ''
+          description: Specifies whether to show details of grouped rows or grouped columns.
           type:
             - 'excel!ExcelScript.GroupOption:enum'
   - uid: 'excel!ExcelScript.Range#ungroup:member(1)'
@@ -1355,7 +1615,7 @@ items:
         description: ''
       parameters:
         - id: groupOption
-          description: ''
+          description: Specifies how the range can be ungrouped by rows or columns.
           type:
             - 'excel!ExcelScript.GroupOption:enum'
   - uid: 'excel!ExcelScript.Range#unmerge:member(1)'
@@ -1460,6 +1720,15 @@ references:
     name: GroupOption
   - uid: 'excel!ExcelScript.InsertShiftDirection:enum'
     name: InsertShiftDirection
+  - uid: 'excel!ExcelScript.Range#moveTo~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'excel!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!ExcelScript.RemoveDuplicatesResult:interface'
     name: RemoveDuplicatesResult
   - uid: 'excel!ExcelScript.ReplaceCriteria:interface'

@@ -154,6 +154,7 @@ items:
           - string
         description: ''
   - uid: 'excel!ExcelScript.CommentReply#setContent:member(1)'
+    summary: Gets or sets the comment reply's content. The string is plain text.
     name: setContent(content)
     fullName: setContent(content)
     langs:
@@ -185,7 +186,9 @@ items:
         description: ''
       parameters:
         - id: contentWithMentions
-          description: ''
+          description: >-
+            The content for the comment. This contains a specially formatted string and a list of mentions that will be
+            parsed into the string when displayed by Excel.
           type:
             - 'excel!ExcelScript.CommentRichContent:interface'
 references:

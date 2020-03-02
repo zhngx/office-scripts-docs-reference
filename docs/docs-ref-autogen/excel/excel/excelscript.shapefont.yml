@@ -110,6 +110,7 @@ items:
           - 'excel!ExcelScript.ShapeFontUnderlineStyle:enum'
         description: ''
   - uid: 'excel!ExcelScript.ShapeFont#setBold:member(1)'
+    summary: Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
     name: setBold(bold)
     fullName: setBold(bold)
     langs:
@@ -127,6 +128,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ShapeFont#setColor:member(1)'
+    summary: >-
+      The HTML color code representation of the text color (e.g. "\#FF0000" represents red). Returns null if the
+      TextRange includes text fragments with different colors.
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -144,6 +148,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ShapeFont#setItalic:member(1)'
+    summary: >-
+      Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text
+      fragments.
     name: setItalic(italic)
     fullName: setItalic(italic)
     langs:
@@ -161,6 +168,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ShapeFont#setName:member(1)'
+    summary: >-
+      Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -178,6 +188,9 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ShapeFont#setSize:member(1)'
+    summary: >-
+      Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different
+      font sizes.
     name: setSize(size)
     fullName: setSize(size)
     langs:
@@ -195,6 +208,9 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ShapeFont#setUnderline:member(1)'
+    summary: >-
+      Type of underline applied to the font. Returns null if the TextRange includes text fragments with different
+      underline styles. See Excel.ShapeFontUnderlineStyle for details.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

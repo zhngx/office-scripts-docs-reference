@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeLineDashStyle:enum'
+    summary: The dash style for a line.
     name: ExcelScript.ShapeLineDashStyle
     fullName: ExcelScript.ShapeLineDashStyle
     langs:

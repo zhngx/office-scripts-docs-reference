@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.CellBorderCollection:interface'
+    summary: >-
+      Represents the `format.borders` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+      `getColumnProperties` or the `format.borders` input parameter of `setCellProperties`<!-- -->,
+      `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
     name: ExcelScript.CellBorderCollection
     fullName: ExcelScript.CellBorderCollection
     langs:
@@ -17,6 +21,7 @@ items:
       - 'excel!ExcelScript.CellBorderCollection#top:member'
       - 'excel!ExcelScript.CellBorderCollection#vertical:member'
   - uid: 'excel!ExcelScript.CellBorderCollection#bottom:member'
+    summary: Represents the `format.borders.bottom` property.
     name: bottom
     fullName: bottom
     langs:
@@ -28,6 +33,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#diagonalDown:member'
+    summary: Represents the `format.borders.diagonalDown` property.
     name: diagonalDown
     fullName: diagonalDown
     langs:
@@ -39,6 +45,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#diagonalUp:member'
+    summary: Represents the `format.borders.diagonalUp` property.
     name: diagonalUp
     fullName: diagonalUp
     langs:
@@ -50,6 +57,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#horizontal:member'
+    summary: Represents the `format.borders.horizontal` property.
     name: horizontal
     fullName: horizontal
     langs:
@@ -61,6 +69,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#left:member'
+    summary: Represents the `format.borders.left` property.
     name: left
     fullName: left
     langs:
@@ -72,6 +81,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#right:member'
+    summary: Represents the `format.borders.right` property.
     name: right
     fullName: right
     langs:
@@ -83,6 +93,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#top:member'
+    summary: Represents the `format.borders.top` property.
     name: top
     fullName: top
     langs:
@@ -94,6 +105,7 @@ items:
         type:
           - 'excel!ExcelScript.CellBorder:interface'
   - uid: 'excel!ExcelScript.CellBorderCollection#vertical:member'
+    summary: Represents the `format.borders.vertical` property.
     name: vertical
     fullName: vertical
     langs:

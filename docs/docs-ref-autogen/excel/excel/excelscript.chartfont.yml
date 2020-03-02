@@ -100,6 +100,7 @@ items:
           - 'excel!ExcelScript.ChartUnderlineStyle:enum'
         description: ''
   - uid: 'excel!ExcelScript.ChartFont#setBold:member(1)'
+    summary: Represents the bold status of font.
     name: setBold(bold)
     fullName: setBold(bold)
     langs:
@@ -117,6 +118,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartFont#setColor:member(1)'
+    summary: 'HTML color code representation of the text color. E.g. \#FF0000 represents Red.'
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -134,6 +136,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartFont#setItalic:member(1)'
+    summary: Represents the italic status of the font.
     name: setItalic(italic)
     fullName: setItalic(italic)
     langs:
@@ -151,6 +154,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.ChartFont#setName:member(1)'
+    summary: Font name (e.g. "Calibri")
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -168,6 +172,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartFont#setSize:member(1)'
+    summary: Size of the font (e.g. 11)
     name: setSize(size)
     fullName: setSize(size)
     langs:
@@ -185,6 +190,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartFont#setUnderline:member(1)'
+    summary: Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

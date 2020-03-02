@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.CommentMention:interface'
+    summary: Represents the entity that is mentioned in comments.
     name: ExcelScript.CommentMention
     fullName: ExcelScript.CommentMention
     langs:
@@ -12,6 +13,7 @@ items:
       - 'excel!ExcelScript.CommentMention#id:member'
       - 'excel!ExcelScript.CommentMention#name:member'
   - uid: 'excel!ExcelScript.CommentMention#email:member'
+    summary: Gets or sets the email address of the entity that is mentioned in comment.
     name: email
     fullName: email
     langs:
@@ -23,6 +25,7 @@ items:
         type:
           - string
   - uid: 'excel!ExcelScript.CommentMention#id:member'
+    summary: Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`<!-- -->.
     name: id
     fullName: id
     langs:
@@ -34,6 +37,7 @@ items:
         type:
           - number
   - uid: 'excel!ExcelScript.CommentMention#name:member'
+    summary: Gets or sets the name of the entity that is mentioned in comment.
     name: name
     fullName: name
     langs:

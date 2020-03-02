@@ -84,6 +84,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.RangeFormat#getBorders:member(1)'
+    summary: Collection of border objects that apply to the overall range. Read-only.
     name: getBorders()
     fullName: getBorders()
     langs:
@@ -176,6 +177,7 @@ items:
           - 'excel!ExcelScript.FormatProtection:interface'
         description: ''
   - uid: 'excel!ExcelScript.RangeFormat#getRangeBorder:member(1)'
+    summary: Gets a border object using its name.
     name: getRangeBorder(index)
     fullName: getRangeBorder(index)
     langs:
@@ -189,7 +191,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
             - 'excel!ExcelScript.BorderIndex:enum'
   - uid: 'excel!ExcelScript.RangeFormat#getReadingOrder:member(1)'
@@ -308,6 +310,7 @@ items:
           - boolean
         description: ''
   - uid: 'excel!ExcelScript.RangeFormat#setAutoIndent:member(1)'
+    summary: Indicates if text is automatically indented when text alignment is set to equal distribution.
     name: setAutoIndent(autoIndent)
     fullName: setAutoIndent(autoIndent)
     langs:
@@ -325,6 +328,9 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFormat#setColumnWidth:member(1)'
+    summary: >-
+      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
+      returned.
     name: setColumnWidth(columnWidth)
     fullName: setColumnWidth(columnWidth)
     langs:
@@ -342,6 +348,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
+    summary: Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -359,6 +366,7 @@ items:
           type:
             - 'excel!ExcelScript.HorizontalAlignment:enum'
   - uid: 'excel!ExcelScript.RangeFormat#setIndentLevel:member(1)'
+    summary: An integer from 0 to 250 that indicates the indent level.
     name: setIndentLevel(indentLevel)
     fullName: setIndentLevel(indentLevel)
     langs:
@@ -376,6 +384,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFormat#setReadingOrder:member(1)'
+    summary: The reading order for the range.
     name: setReadingOrder(readingOrder)
     fullName: setReadingOrder(readingOrder)
     langs:
@@ -393,6 +402,7 @@ items:
           type:
             - 'excel!ExcelScript.ReadingOrder:enum'
   - uid: 'excel!ExcelScript.RangeFormat#setRowHeight:member(1)'
+    summary: 'Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.'
     name: setRowHeight(rowHeight)
     fullName: setRowHeight(rowHeight)
     langs:
@@ -410,6 +420,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
+    summary: Indicates if text automatically shrinks to fit in the available column width.
     name: setShrinkToFit(shrinkToFit)
     fullName: setShrinkToFit(shrinkToFit)
     langs:
@@ -427,6 +438,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFormat#setTextOrientation:member(1)'
+    summary: >-
+      Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
+      either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
+      then null will be returned.
     name: setTextOrientation(textOrientation)
     fullName: setTextOrientation(textOrientation)
     langs:
@@ -444,6 +459,10 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
+    summary: >-
+      Determines if the row height of the Range object equals the standard height of the sheet. Returns True if the row
+      height of the Range object equals the standard height of the sheet. Returns Null if the range contains more than
+      one row and the rows aren't all the same height. Returns False otherwise.
     name: setUseStandardHeight(useStandardHeight)
     fullName: setUseStandardHeight(useStandardHeight)
     langs:
@@ -461,6 +480,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
+    summary: >-
+      Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
+      column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
+      than one column and the columns aren't all the same height. Returns False otherwise.
     name: setUseStandardWidth(useStandardWidth)
     fullName: setUseStandardWidth(useStandardWidth)
     langs:
@@ -478,6 +501,7 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
+    summary: Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
@@ -495,6 +519,9 @@ items:
           type:
             - 'excel!ExcelScript.VerticalAlignment:enum'
   - uid: 'excel!ExcelScript.RangeFormat#setWrapText:member(1)'
+    summary: >-
+      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      wrap setting
     name: setWrapText(wrapText)
     fullName: setWrapText(wrapText)
     langs:

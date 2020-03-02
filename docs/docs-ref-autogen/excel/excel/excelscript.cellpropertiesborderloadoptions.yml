@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.CellPropertiesBorderLoadOptions:interface'
+    summary: Specifies which properties to load on the `format.borders` object.
     name: ExcelScript.CellPropertiesBorderLoadOptions
     fullName: ExcelScript.CellPropertiesBorderLoadOptions
     langs:
@@ -13,6 +14,7 @@ items:
       - 'excel!ExcelScript.CellPropertiesBorderLoadOptions#tintAndShade:member'
       - 'excel!ExcelScript.CellPropertiesBorderLoadOptions#weight:member'
   - uid: 'excel!ExcelScript.CellPropertiesBorderLoadOptions#color:member'
+    summary: Specifies whether to load on the `color` property.
     name: color
     fullName: color
     langs:
@@ -24,6 +26,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesBorderLoadOptions#style:member'
+    summary: Specifies whether to load on the `style` property.
     name: style
     fullName: style
     langs:
@@ -35,6 +38,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesBorderLoadOptions#tintAndShade:member'
+    summary: Specifies whether to load on the `tintAndShade` property.
     name: tintAndShade
     fullName: tintAndShade
     langs:
@@ -46,6 +50,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.CellPropertiesBorderLoadOptions#weight:member'
+    summary: Specifies whether to load on the `weight` property.
     name: weight
     fullName: weight
     langs:

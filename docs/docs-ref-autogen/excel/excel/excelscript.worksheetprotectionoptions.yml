@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions:interface'
+    summary: Represents the options in sheet protection.
     name: ExcelScript.WorksheetProtectionOptions
     fullName: ExcelScript.WorksheetProtectionOptions
     langs:
@@ -23,6 +24,7 @@ items:
       - 'excel!ExcelScript.WorksheetProtectionOptions#allowSort:member'
       - 'excel!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member'
+    summary: Represents the worksheet protection option of allowing using auto filter feature.
     name: allowAutoFilter
     fullName: allowAutoFilter
     langs:
@@ -34,6 +36,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member'
+    summary: Represents the worksheet protection option of allowing deleting columns.
     name: allowDeleteColumns
     fullName: allowDeleteColumns
     langs:
@@ -45,6 +48,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member'
+    summary: Represents the worksheet protection option of allowing deleting rows.
     name: allowDeleteRows
     fullName: allowDeleteRows
     langs:
@@ -56,6 +60,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member'
+    summary: Represents the worksheet protection option of allowing editing objects.
     name: allowEditObjects
     fullName: allowEditObjects
     langs:
@@ -67,6 +72,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member'
+    summary: Represents the worksheet protection option of allowing editing scenarios.
     name: allowEditScenarios
     fullName: allowEditScenarios
     langs:
@@ -78,6 +84,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member'
+    summary: Represents the worksheet protection option of allowing formatting cells.
     name: allowFormatCells
     fullName: allowFormatCells
     langs:
@@ -89,6 +96,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member'
+    summary: Represents the worksheet protection option of allowing formatting columns.
     name: allowFormatColumns
     fullName: allowFormatColumns
     langs:
@@ -100,6 +108,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member'
+    summary: Represents the worksheet protection option of allowing formatting rows.
     name: allowFormatRows
     fullName: allowFormatRows
     langs:
@@ -111,6 +120,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member'
+    summary: Represents the worksheet protection option of allowing inserting columns.
     name: allowInsertColumns
     fullName: allowInsertColumns
     langs:
@@ -122,6 +132,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member'
+    summary: Represents the worksheet protection option of allowing inserting hyperlinks.
     name: allowInsertHyperlinks
     fullName: allowInsertHyperlinks
     langs:
@@ -133,6 +144,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member'
+    summary: Represents the worksheet protection option of allowing inserting rows.
     name: allowInsertRows
     fullName: allowInsertRows
     langs:
@@ -144,6 +156,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member'
+    summary: Represents the worksheet protection option of allowing using PivotTable feature.
     name: allowPivotTables
     fullName: allowPivotTables
     langs:
@@ -155,6 +168,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#allowSort:member'
+    summary: Represents the worksheet protection option of allowing using sort feature.
     name: allowSort
     fullName: allowSort
     langs:
@@ -166,6 +180,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
+    summary: Represents the worksheet protection option of selection mode.
     name: selectionMode
     fullName: selectionMode
     langs:

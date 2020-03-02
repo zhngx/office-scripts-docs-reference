@@ -159,6 +159,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartPlotArea#setHeight:member(1)'
+    summary: Represents the height value of plotArea.
     name: setHeight(height)
     fullName: setHeight(height)
     langs:
@@ -176,6 +177,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setInsideHeight:member(1)'
+    summary: Represents the insideHeight value of plotArea.
     name: setInsideHeight(insideHeight)
     fullName: setInsideHeight(insideHeight)
     langs:
@@ -193,6 +195,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setInsideLeft:member(1)'
+    summary: Represents the insideLeft value of plotArea.
     name: setInsideLeft(insideLeft)
     fullName: setInsideLeft(insideLeft)
     langs:
@@ -210,6 +213,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setInsideTop:member(1)'
+    summary: Represents the insideTop value of plotArea.
     name: setInsideTop(insideTop)
     fullName: setInsideTop(insideTop)
     langs:
@@ -227,6 +231,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setInsideWidth:member(1)'
+    summary: Represents the insideWidth value of plotArea.
     name: setInsideWidth(insideWidth)
     fullName: setInsideWidth(insideWidth)
     langs:
@@ -244,6 +249,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setLeft:member(1)'
+    summary: Represents the left value of plotArea.
     name: setLeft(left)
     fullName: setLeft(left)
     langs:
@@ -261,6 +267,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setPosition:member(1)'
+    summary: Represents the position of plotArea.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -278,6 +285,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartPlotAreaPosition:enum'
   - uid: 'excel!ExcelScript.ChartPlotArea#setTop:member(1)'
+    summary: Represents the top value of plotArea.
     name: setTop(top)
     fullName: setTop(top)
     langs:
@@ -295,6 +303,7 @@ items:
           type:
             - number
   - uid: 'excel!ExcelScript.ChartPlotArea#setWidth:member(1)'
+    summary: Represents the width value of plotArea.
     name: setWidth(width)
     fullName: setWidth(width)
     langs:

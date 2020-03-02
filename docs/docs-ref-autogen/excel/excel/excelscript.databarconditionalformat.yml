@@ -136,6 +136,9 @@ items:
           - 'excel!ExcelScript.ConditionalDataBarRule:interface'
         description: ''
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+    summary: >-
+      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange"). "" (empty string) if no axis is present or set.
     name: setAxisColor(axisColor)
     fullName: setAxisColor(axisColor)
     langs:
@@ -153,6 +156,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+    summary: Representation of how the axis is determined for an Excel data bar.
     name: setAxisFormat(axisFormat)
     fullName: setAxisFormat(axisFormat)
     langs:
@@ -170,6 +174,7 @@ items:
           type:
             - 'excel!ExcelScript.ConditionalDataBarAxisFormat:enum'
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+    summary: Represents the direction that the data bar graphic should be based on.
     name: setBarDirection(barDirection)
     fullName: setBarDirection(barDirection)
     langs:
@@ -187,6 +192,10 @@ items:
           type:
             - 'excel!ExcelScript.ConditionalDataBarDirection:enum'
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+    summary: >-
+      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of
+      `x.lowerBoundRule.formula = ...`<!-- -->).
     name: setLowerBoundRule(lowerBoundRule)
     fullName: setLowerBoundRule(lowerBoundRule)
     langs:
@@ -204,6 +213,7 @@ items:
           type:
             - 'excel!ExcelScript.ConditionalDataBarRule:interface'
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+    summary: 'If true, hides the values from the cells where the data bar is applied.'
     name: setShowDataBarOnly(showDataBarOnly)
     fullName: setShowDataBarOnly(showDataBarOnly)
     langs:
@@ -221,6 +231,10 @@ items:
           type:
             - boolean
   - uid: 'excel!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+    summary: >-
+      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. The
+      `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of
+      `x.upperBoundRule.formula = ...`<!-- -->).
     name: setUpperBoundRule(upperBoundRule)
     fullName: setUpperBoundRule(upperBoundRule)
     langs:

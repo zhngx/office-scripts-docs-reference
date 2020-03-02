@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ShapeTextOrientation:enum'
+    summary: Specifies the orientation for the text frame in a shape.
     name: ExcelScript.ShapeTextOrientation
     fullName: ExcelScript.ShapeTextOrientation
     langs:

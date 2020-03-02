@@ -69,6 +69,7 @@ items:
           - number
         description: ''
   - uid: 'excel!ExcelScript.ChartLineFormat#setColor:member(1)'
+    summary: HTML color code representing the color of lines in the chart.
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -86,6 +87,7 @@ items:
           type:
             - string
   - uid: 'excel!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
+    summary: Represents the line style. See Excel.ChartLineStyle for details.
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:
@@ -103,6 +105,7 @@ items:
           type:
             - 'excel!ExcelScript.ChartLineStyle:enum'
   - uid: 'excel!ExcelScript.ChartLineFormat#setWeight:member(1)'
+    summary: 'Represents weight of the line, in points.'
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

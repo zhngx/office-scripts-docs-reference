@@ -57,6 +57,7 @@ items:
           - any
         description: ''
   - uid: 'excel!ExcelScript.Setting#setValue:member(1)'
+    summary: Represents the value stored for this setting.
     name: setValue(value)
     fullName: setValue(value)
     langs:

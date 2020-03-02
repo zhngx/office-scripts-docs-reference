@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.Subtotals:interface'
+    summary: Subtotals for the Pivot Field.
     name: ExcelScript.Subtotals
     fullName: ExcelScript.Subtotals
     langs:
@@ -21,6 +22,7 @@ items:
       - 'excel!ExcelScript.Subtotals#variance:member'
       - 'excel!ExcelScript.Subtotals#varianceP:member'
   - uid: 'excel!ExcelScript.Subtotals#automatic:member'
+    summary: 'If Automatic is set to true, then all other values will be ignored when setting the Subtotals.'
     name: automatic
     fullName: automatic
     langs:
@@ -32,6 +34,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#average:member'
+    summary: Average
     name: average
     fullName: average
     langs:
@@ -43,6 +46,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#count:member'
+    summary: Count
     name: count
     fullName: count
     langs:
@@ -54,6 +58,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#countNumbers:member'
+    summary: CountNumbers
     name: countNumbers
     fullName: countNumbers
     langs:
@@ -65,6 +70,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#max:member'
+    summary: Max
     name: max
     fullName: max
     langs:
@@ -76,6 +82,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#min:member'
+    summary: Min
     name: min
     fullName: min
     langs:
@@ -87,6 +94,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#product:member'
+    summary: Product
     name: product
     fullName: product
     langs:
@@ -98,6 +106,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#standardDeviation:member'
+    summary: StandardDeviation
     name: standardDeviation
     fullName: standardDeviation
     langs:
@@ -109,6 +118,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#standardDeviationP:member'
+    summary: StandardDeviationP
     name: standardDeviationP
     fullName: standardDeviationP
     langs:
@@ -120,6 +130,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#sum:member'
+    summary: Sum
     name: sum
     fullName: sum
     langs:
@@ -131,6 +142,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#variance:member'
+    summary: Variance
     name: variance
     fullName: variance
     langs:
@@ -142,6 +154,7 @@ items:
         type:
           - boolean
   - uid: 'excel!ExcelScript.Subtotals#varianceP:member'
+    summary: VarianceP
     name: varianceP
     fullName: varianceP
     langs:

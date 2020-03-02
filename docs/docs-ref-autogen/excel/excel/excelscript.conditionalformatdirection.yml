@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalFormatDirection:enum'
+    summary: Represents the direction for a selection.
     name: ExcelScript.ConditionalFormatDirection
     fullName: ExcelScript.ConditionalFormatDirection
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ChartErrorBarsType:enum'
+    summary: Represents the range type for error bars.
     name: ExcelScript.ChartErrorBarsType
     fullName: ExcelScript.ChartErrorBarsType
     langs:

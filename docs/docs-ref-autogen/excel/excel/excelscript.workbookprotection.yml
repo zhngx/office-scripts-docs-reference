@@ -40,7 +40,7 @@ items:
         description: ''
       parameters:
         - id: password
-          description: ''
+          description: workbook protection password.
           type:
             - string
   - uid: 'excel!ExcelScript.WorkbookProtection#unprotect:member(1)'
@@ -58,6 +58,6 @@ items:
         description: ''
       parameters:
         - id: password
-          description: ''
+          description: workbook protection password.
           type:
             - string

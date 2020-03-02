@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!ExcelScript.ConditionalCellValueOperator:enum'
+    summary: Represents the operator of the text conditional format type.
     name: ExcelScript.ConditionalCellValueOperator
     fullName: ExcelScript.ConditionalCellValueOperator
     langs:
